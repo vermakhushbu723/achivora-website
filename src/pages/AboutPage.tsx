@@ -54,23 +54,24 @@ export default function AboutPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop"
             alt="About Background"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div
-            className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 animate-fade-in-up' : 'opacity-0 translate-y-10'
+            className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 animate-fade-in-up' : 'opacity-0 translate-y-10'
               }`}
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Achivora</span>
+            <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Our Story</p>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+              About <span className="text-primary-light">Achivora</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
               We are a leading development services provider helping businesses achieve digital transformation through innovative technology solutions
             </p>
           </div>
@@ -78,14 +79,14 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div
               className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0 animate-fade-in-left' : 'opacity-0 -translate-x-10'
                 }`}
             >
-              <div className="relative h-full min-h-[500px] rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/10 border border-blue-500/20">
+              <div className="relative h-full min-h-[500px] rounded-2xl overflow-hidden shadow-card border border-border">
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                   alt="Team"
@@ -99,30 +100,30 @@ export default function AboutPage() {
               className={`flex flex-col justify-center transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-x-0 animate-fade-in-right' : 'opacity-0 translate-x-10'
                 }`}
             >
-              <h2 className="text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-4xl font-bold text-text-main mb-6">
                 Your Trusted Development Partner
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-text-sub mb-6">
                 Founded in 2014, Achivora has grown from a small startup to a leading provider of comprehensive development services. With over 10+ years of experience, we have helped 500+ businesses achieve their digital goals through innovative website development, app development, and custom software solutions.
               </p>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-text-sub mb-6">
                 Our journey has been driven by a passion for technology and a commitment to excellence. We believe every business is unique, which is why we provide customized solutions that meet your specific needs and drive real, measurable results.
               </p>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-text-sub mb-8">
                 Today, we're proud to be a trusted partner for businesses of all sizes, from startups to enterprise organizations, helping them navigate the digital landscape and achieve sustainable growth.
               </p>
               <div className="grid grid-cols-3 gap-6">
                 <div>
-                  <div className="text-4xl font-bold text-blue-400 mb-2">500+</div>
-                  <div className="text-sm text-muted-foreground">Satisfied Clients</div>
+                  <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                  <div className="text-sm text-text-sub">Satisfied Clients</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-blue-400 mb-2">1000+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
+                  <div className="text-4xl font-bold text-primary mb-2">1000+</div>
+                  <div className="text-sm text-text-sub">Projects Completed</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-blue-400 mb-2">10+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-4xl font-bold text-primary mb-2">10+</div>
+                  <div className="text-sm text-text-sub">Years Experience</div>
                 </div>
               </div>
             </div>
@@ -133,11 +134,11 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12">
+            <h2 className="section-title">
               Our Core Values
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="section-subtitle mt-3">
               The principles that guide everything we do and define who we are
             </p>
           </div>
@@ -146,16 +147,16 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className={`transition-all duration-1000 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border-blue-500/20 bg-card/80 backdrop-blur-sm ${isVisible ? 'opacity-100 translate-y-0 animate-fade-in-up' : 'opacity-0 translate-y-10'
+                className={`transition-all duration-1000 hover:-translate-y-1 hover:shadow-card-hover border-border bg-surface ${isVisible ? 'opacity-100 translate-y-0 animate-fade-in-up' : 'opacity-0 translate-y-10'
                   }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-8">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
-                    <value.icon className="h-7 w-7 text-blue-400" />
+                  <div className="w-14 h-14 bg-job-tag-bg rounded-xl flex items-center justify-center mb-6 shadow-card">
+                    <value.icon className="h-7 w-7 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">{value.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                  <h3 className="text-2xl font-bold text-text-main mb-4">{value.title}</h3>
+                  <p className="text-text-sub leading-relaxed">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -167,13 +168,13 @@ export default function AboutPage() {
       <TeamSection />
 
       {/* Timeline Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-tint-blue">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12">
+            <h2 className="section-title">
               Our Journey
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="section-subtitle mt-3">
               Key milestones that shaped our growth and success
             </p>
           </div>
@@ -183,21 +184,21 @@ export default function AboutPage() {
               {milestones.map((milestone, index) => (
                 <Card
                   key={index}
-                  className={`transition-all duration-1000 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border-blue-500/20 bg-card/80 backdrop-blur-sm ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+                  className={`transition-all duration-1000 hover:-translate-y-1 hover:shadow-card-hover border-border bg-surface ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
                     }`}
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                          <Rocket className="h-10 w-10 text-blue-400" />
+                        <div className="w-20 h-20 bg-job-tag-bg rounded-xl flex items-center justify-center shadow-card">
+                          <Rocket className="h-10 w-10 text-primary" />
                         </div>
                       </div>
                       <div className="flex-1">
-                        <div className="text-3xl font-bold text-blue-400 mb-2">{milestone.year}</div>
-                        <h3 className="text-2xl font-bold text-foreground mb-3">{milestone.title}</h3>
-                        <p className="text-lg text-muted-foreground">{milestone.description}</p>
+                        <div className="text-3xl font-bold text-primary mb-2">{milestone.year}</div>
+                        <h3 className="text-2xl font-bold text-text-main mb-3">{milestone.title}</h3>
+                        <p className="text-lg text-text-sub">{milestone.description}</p>
                       </div>
                     </div>
                   </CardContent>

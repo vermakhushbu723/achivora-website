@@ -33,47 +33,47 @@ export default function TechnologiesSection() {
     {
       title: 'Frontend',
       technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js', 'Angular', 'Redux', 'React Query'],
-      color: 'from-blue-500 to-cyan-500'
+      color: '#0A66C2'
     },
     {
       title: 'Backend',
       technologies: ['Node.js', 'Python', 'Java', 'Express', 'Django', 'Spring Boot', 'GraphQL', 'REST APIs'],
-      color: 'from-cyan-500 to-teal-500'
+      color: '#004182'
     },
     {
       title: 'Mobile',
       technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Expo', 'Firebase', 'iOS', 'Android'],
-      color: 'from-teal-500 to-green-500'
+      color: '#378FE9'
     },
     {
       title: 'Database',
       technologies: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Elasticsearch', 'DynamoDB', 'Prisma', 'TypeORM'],
-      color: 'from-green-500 to-emerald-500'
+      color: '#057642'
     },
     {
       title: 'DevOps & Cloud',
       technologies: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Terraform', 'Azure', 'Google Cloud'],
-      color: 'from-emerald-500 to-blue-500'
+      color: '#F5A623'
     },
     {
       title: 'Blockchain',
       technologies: ['Motoko', 'Internet Computer', 'Solidity', 'Web3.js', 'Ethereum', 'Smart Contracts', 'DeFi', 'NFTs'],
-      color: 'from-purple-500 to-pink-500'
+      color: '#9B59B6'
     }
   ];
 
   return (
-    <section id="technologies-section" className="py-20">
+    <section id="technologies-section" className="py-20 bg-tint-blue">
       <div className="container mx-auto px-4">
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-12 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Technologies & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Tools</span>
+          <h2 className="section-title">
+            Technologies & <span className="text-gradient">Tools</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="section-subtitle mt-3">
             We leverage cutting-edge technologies to build powerful, scalable solutions
           </p>
         </div>
@@ -82,20 +82,20 @@ export default function TechnologiesSection() {
           {categories.map((category, index) => (
             <Card
               key={index}
-              className={`transition-all duration-1000 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border-blue-500/20 bg-card/80 backdrop-blur-sm ${
+              className={`transition-all duration-1000 hover:-translate-y-1 hover:shadow-card-hover border-border bg-surface ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-8">
-                <div className={`w-full h-2 bg-gradient-to-r ${category.color} rounded-full mb-6`} />
-                <h3 className="text-2xl font-bold text-foreground mb-6">{category.title}</h3>
+                <div className="w-full h-2 rounded-full mb-6" style={{ backgroundColor: category.color }} />
+                <h3 className="text-2xl font-bold text-text-main mb-6">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.technologies.map((tech, idx) => (
                     <Badge
                       key={idx}
                       variant="secondary"
-                      className="bg-blue-500/20 text-blue-400 border border-blue-500/30 hover:bg-blue-500/30 transition-all duration-300 hover:scale-110"
+                      className="bg-job-tag-bg text-primary border border-border hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110"
                     >
                       {tech}
                     </Badge>

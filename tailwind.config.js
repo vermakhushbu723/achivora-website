@@ -7,13 +7,18 @@ export default {
     theme: {
         container: {
             center: true,
-            padding: '2rem',
+            padding: {
+                DEFAULT: '1rem',
+                sm: '1.5rem',
+                lg: '2rem'
+            },
             screens: {
-                '2xl': '1400px'
+                '2xl': '1280px'
             }
         },
         extend: {
             colors: {
+                /* ── shadcn token bridge (driven by CSS vars in index.css) ── */
                 border: 'oklch(var(--border))',
                 input: 'oklch(var(--input))',
                 ring: 'oklch(var(--ring) / <alpha-value>)',
@@ -21,7 +26,9 @@ export default {
                 foreground: 'oklch(var(--foreground))',
                 primary: {
                     DEFAULT: 'oklch(var(--primary) / <alpha-value>)',
-                    foreground: 'oklch(var(--primary-foreground))'
+                    foreground: 'oklch(var(--primary-foreground))',
+                    dark: 'oklch(var(--primary-dark) / <alpha-value>)',
+                    light: 'oklch(var(--primary-light) / <alpha-value>)'
                 },
                 secondary: {
                     DEFAULT: 'oklch(var(--secondary) / <alpha-value>)',
@@ -68,7 +75,59 @@ export default {
                     'accent-foreground': 'oklch(var(--sidebar-accent-foreground))',
                     border: 'oklch(var(--sidebar-border))',
                     ring: 'oklch(var(--sidebar-ring))'
-                }
+                },
+
+                /* ── Invoidea brand palette ───────────────────────────────── */
+                'primary-dark': '#f16b22',
+                'primary-light': '#faae1c',
+
+                /* Secondary sky-blue family */
+                sky: {
+                    DEFAULT: '#29abe2',
+                    dark: '#0b86c8',
+                    deep: '#0c77bd',
+                    bright: '#0ba0db'
+                },
+
+                /* Backgrounds / Surfaces */
+                bg: '#FFFFFF',
+                surface: '#FFFFFF',
+                'bg-soft': '#f3f3f3',
+                'input-bg': '#f7f7f7',
+                'tint-blue': '#eefaff',
+                'tint-blue-2': '#f1fbff',
+                'tint-orange': '#fff4e6',
+
+                /* Text */
+                'text-main': '#1b1d21',
+                'text-body': '#4e4e4e',
+                'text-sub': '#6d6d6d',
+                'text-hint': '#999999',
+
+                /* Status / Tag */
+                'job-tag-bg': '#fff4e6',
+                'job-tag-txt': '#f79b1f',
+                'remote-bg': '#eefaff',
+                'remote-txt': '#0b86c8',
+                'urgent-bg': '#FFEBEB',
+                'urgent-txt': '#e63946',
+                'course-clr': '#9B59B6',
+                'course-bg': '#F5EEFB',
+
+                /* Semantic */
+                success: '#22a45d',
+                error: '#e63946',
+                warning: '#faae1c',
+                info: '#29abe2'
+            },
+            fontFamily: {
+                sans: ['"Mulish"', '"Segoe UI"', 'system-ui', 'sans-serif']
+            },
+            backgroundImage: {
+                'primary-gradient': 'linear-gradient(90deg, #f79b1f 0%, #f16b22 100%)',
+                'hero-gradient': 'linear-gradient(135deg, #1b1d21 0%, #0c77bd 55%, #29abe2 100%)',
+                'sky-gradient': 'linear-gradient(135deg, #0b86c8 0%, #29abe2 100%)',
+                'dark-gradient': 'linear-gradient(135deg, #1b1d21 0%, #1e1d28 100%)'
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -76,7 +135,11 @@ export default {
                 sm: 'calc(var(--radius) - 4px)'
             },
             boxShadow: {
-                xs: '0 1px 2px 0 rgba(0,0,0,0.05)'
+                xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
+                card: '0 2px 12px rgba(0,0,0,0.07)',
+                'card-hover': '0 8px 32px rgba(247,155,31,0.18)',
+                cta: '0 4px 20px rgba(247,155,31,0.38)',
+                sky: '0 4px 20px rgba(41,171,226,0.32)'
             },
             keyframes: {
                 'accordion-down': {
@@ -86,11 +149,26 @@ export default {
                 'accordion-up': {
                     from: { height: 'var(--radix-accordion-content-height)' },
                     to: { height: '0' }
+                },
+                float: {
+                    '0%, 100%': { transform: 'translateY(0px)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                },
+                fadeUp: {
+                    from: { opacity: '0', transform: 'translateY(30px)' },
+                    to: { opacity: '1', transform: 'translateY(0)' }
+                },
+                slideIn: {
+                    from: { opacity: '0', transform: 'translateX(-20px)' },
+                    to: { opacity: '1', transform: 'translateX(0)' }
                 }
             },
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
-                'accordion-up': 'accordion-up 0.2s ease-out'
+                'accordion-up': 'accordion-up 0.2s ease-out',
+                float: 'float 3s ease-in-out infinite',
+                'fade-up': 'fadeUp 0.6s ease-out forwards',
+                'slide-in': 'slideIn 0.5s ease-out forwards'
             }
         }
     },

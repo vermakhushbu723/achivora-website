@@ -1,84 +1,130 @@
-import { SiFacebook,SiInstagram } from 'react-icons/si';
-import { Heart } from 'lucide-react';
+import { Clock, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { SiFacebook, SiInstagram, SiLinkedin, SiX, SiYoutube } from 'react-icons/si';
 import { useNavigate } from '@tanstack/react-router';
-import logo from '@/assets/logo.png';
+import Logo from './Logo';
+import { FOOTER_LINKS, SITE } from '@/constants/site';
+
+const SOCIALS = [
+  { Icon: SiYoutube, href: SITE.social.youtube, label: 'YouTube' },
+  { Icon: SiX, href: SITE.social.twitter, label: 'X' },
+  { Icon: SiLinkedin, href: SITE.social.linkedin, label: 'LinkedIn' },
+  { Icon: SiInstagram, href: SITE.social.instagram, label: 'Instagram' },
+  { Icon: SiFacebook, href: SITE.social.facebook, label: 'Facebook' },
+];
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const navigate = useNavigate();
 
-  const socialLinks = [
-    { icon: SiFacebook, href: 'https://www.facebook.com/profile.php?id=61589471525251', label: 'Facebook' },
-    { icon: SiInstagram, href: 'https://www.instagram.com/achivora9026', label: 'Instagram' }
-  ];
-
-  const footerLinks = [
-    {
-      title: 'Company',
-      links: [
-        { label: 'About Us', path: '/about' },
-        { label: 'Services', path: '/services' },
-        { label: 'Contact', path: '/contact' }
-      ]
-    },
-    {
-      title: 'Services',
-      links: [
-        { label: 'Website Development', path: '/website-development' },
-        { label: 'App Development', path: '/app-development' },
-        { label: 'Software Solutions', path: '/software-solutions' }
-      ]
-    },
-    {
-      title: 'Support',
-      links: [
-        { label: 'FAQ', path: '/faq' },
-        { label: 'Privacy Policy', path: '/privacy-policy' },
-        { label: 'Terms & Conditions', path: '/terms-conditions' }
-      ]
-    }
-  ];
-
   return (
-    <footer className="bg-card/50 backdrop-blur-sm border-t border-blue-500/20 text-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <footer className="bg-[#191919] text-white pt-16 pb-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* ── Top: brand · presence · contacts ── */}
+        <div className="grid lg:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+          {/* Brand + presence */}
           <div>
-            <button
-              onClick={() => navigate({ to: '/' })}
-              className="flex items-center space-x-2 mb-4 group"
-            >
-              <img src={logo} alt="Achivora" className="h-10 w-auto object-contain group-hover:scale-110 transition-all duration-300" />
-              <span className="text-2xl font-extrabold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 text-transparent bg-clip-text group-hover:from-blue-300 group-hover:via-cyan-200 group-hover:to-blue-400 transition-all duration-300 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">
-                Achivora
-              </span>
+            <button onClick={() => navigate({ to: '/' })} className="mb-4 group">
+              <Logo
+                onDark
+                markClassName="h-10 w-10 group-hover:scale-105 transition-transform"
+              />
             </button>
-            <p className="text-muted-foreground mb-4">
-              Your trusted development services provider for digital transformation
+
+            <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
+              {SITE.tagline}
             </p>
-            <div className="flex gap-3">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500/30 transition-all duration-300 hover:scale-110 shadow-sm shadow-blue-500/20"
-                >
-                  <social.icon className="h-5 w-5 text-blue-400" />
-                </a>
+
+            <h4 className="font-bold text-white text-sm mb-3">Our Presence</h4>
+            <div className="space-y-3">
+              {SITE.offices.map((office) => (
+                <div key={office.country} className="flex gap-2.5 text-sm text-white/50">
+                  <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>
+                    <span className="text-white/80 font-semibold">{office.flag} {office.country}</span>
+                    <br />
+                    {office.address}
+                  </span>
+                </div>
               ))}
             </div>
           </div>
 
-          {footerLinks.map((section, index) => (
-            <div key={index}>
-              <h4 className="font-bold text-lg mb-4 text-foreground">{section.title}</h4>
-              <ul className="space-y-2">
-                {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
+          {/* Business contacts */}
+          <div>
+            <h4 className="font-bold text-white text-sm mb-4">Get In Touch</h4>
+            <ul className="space-y-2.5 text-sm text-white/50 mb-8">
+              <li>
+                <a href={SITE.phoneHref} className="inline-flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone className="h-4 w-4" /> {SITE.phone}
+                </a>
+              </li>
+              <li>
+                <a href={SITE.emailHref} className="inline-flex items-center gap-2 hover:text-white transition-colors">
+                  <Mail className="h-4 w-4" /> {SITE.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                </a>
+              </li>
+            </ul>
+
+            <h4 className="font-bold text-white text-sm mb-4">Business Hours</h4>
+            <p className="text-sm text-white/50 inline-flex items-center gap-2">
+              <Clock className="h-4 w-4 shrink-0" /> {SITE.businessHours}
+            </p>
+          </div>
+
+          {/* Social + newsletter-ish CTA */}
+          <div>
+            <h4 className="font-bold text-white text-sm mb-4">Follow Us</h4>
+            <div className="flex flex-wrap gap-3 mb-8">
+              {SOCIALS.map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-10 h-10 rounded-xl bg-white/10 hover:bg-primary flex items-center justify-center transition-colors duration-150"
+                >
+                  <Icon className="h-4 w-4 text-white" />
+                </a>
+              ))}
+            </div>
+
+            <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
+              <p className="font-bold text-white text-sm mb-1">Have a project in mind?</p>
+              <p className="text-white/50 text-sm mb-4">
+                Share a brief and get an estimate within two working days.
+              </p>
+              <button
+                onClick={() => navigate({ to: '/contact' })}
+                className="btn-white w-full py-2.5 text-sm"
+              >
+                Start Your Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Link columns ── */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 py-12 border-b border-white/10">
+          {Object.entries(FOOTER_LINKS).map(([group, links]) => (
+            <div key={group}>
+              <h4 className="font-bold text-white text-sm mb-4">{group}</h4>
+              <ul className="space-y-2.5">
+                {links.map((link) => (
+                  <li key={link.label}>
                     <button
                       onClick={() => navigate({ to: link.path })}
-                      className="text-muted-foreground hover:text-blue-400 transition-colors text-left"
+                      className="text-white/50 text-sm hover:text-white transition-colors duration-150 text-left"
                     >
                       {link.label}
                     </button>
@@ -89,23 +135,26 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-blue-500/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-sm text-center md:text-left">
-              © {currentYear}. Built with{' '}
-              <Heart className="inline h-4 w-4 text-red-400 fill-red-400" /> using{' '}
-              <a
-                href="https://achivora.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-400 transition-colors underline"
-              >
-                achivora.com
-              </a>
-            </p>
-            <p className="text-muted-foreground text-sm">
-              All Rights Reserved - Achivora
-            </p>
+        {/* ── Bottom bar ── */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
+          <p className="text-white/30 text-sm text-center md:text-left">
+            © {currentYear} {SITE.legalName}. All rights reserved.
+          </p>
+
+          <div className="flex items-center gap-5">
+            <button
+              onClick={() => navigate({ to: '/terms-conditions' })}
+              className="text-white/50 text-sm hover:text-white transition-colors"
+            >
+              Terms of Service
+            </button>
+            <button
+              onClick={() => navigate({ to: '/privacy-policy' })}
+              className="text-white/50 text-sm hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </button>
+            <span className="tag bg-remote-bg text-remote-txt">Made with ❤️ in India</span>
           </div>
         </div>
       </div>

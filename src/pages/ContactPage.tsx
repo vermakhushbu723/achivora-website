@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
+import { SITE } from '@/constants/site';
 
 export default function ContactPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,14 +28,11 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      // Prepare message content
-      const messageText = `New Contact Form Submission:\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
-
       // Send to WhatsApp
       const whatsappMessage = encodeURIComponent(
         `*New Contact Form Submission*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Phone:* ${formData.phone}\n*Message:* ${formData.message}`
       );
-      const whatsappUrl = `https://wa.me/919026170655?text=${whatsappMessage}`;
+      const whatsappUrl = `${SITE.whatsapp}?text=${whatsappMessage}`;
 
       // Open WhatsApp in new tab
       window.open(whatsappUrl, '_blank');
@@ -44,7 +42,7 @@ export default function ContactPage() {
       const emailBody = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
       );
-      const mailtoUrl = `mailto:achivora9026@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+      const mailtoUrl = `${SITE.emailHref}?subject=${emailSubject}&body=${emailBody}`;
 
       // Open email client
       window.location.href = mailtoUrl;
@@ -77,28 +75,28 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: 'Email',
-      value: 'achivora9026@gmail.com',
-      link: 'mailto:achivora9026@gmail.com',
+      value: SITE.email,
+      link: SITE.emailHref,
       description: 'Send us an email anytime'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+91 9026170655',
-      link: 'tel:+919026170655',
+      value: SITE.phone,
+      link: SITE.phoneHref,
       description: 'Call us during business hours'
     },
     {
       icon: MapPin,
       title: 'Address',
-      value: 'Noida Sector 62 A Block',
+      value: SITE.offices[0].address,
       link: null,
       description: 'Visit our office'
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      value: 'Monday - Friday: 9:00 AM - 6:00 PM',
+      value: SITE.businessHours,
       link: null,
       description: 'We are here to help'
     }
@@ -107,23 +105,24 @@ export default function ContactPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop"
             alt="Contact Background"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div
-            className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 animate-fade-in-up' : 'opacity-0 translate-y-10'
+            className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 animate-fade-in-up' : 'opacity-0 translate-y-10'
               }`}
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Touch</span>
+            <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Let's Talk</p>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+              Get in <span className="text-primary-light">Touch</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
               Let's discuss how we can help your business grow with our expert development services
             </p>
           </div>
@@ -131,7 +130,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -139,17 +138,17 @@ export default function ContactPage() {
               className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0 animate-fade-in-left' : 'opacity-0 -translate-x-10'
                 }`}
             >
-              <Card className="h-full border-2 border-blue-500/20 bg-card/80 backdrop-blur-sm shadow-xl shadow-blue-500/10">
+              <Card className="h-full border border-border bg-surface shadow-card">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                      <Send className="h-6 w-6 text-blue-400" />
+                    <div className="w-12 h-12 bg-job-tag-bg rounded-xl flex items-center justify-center shadow-card">
+                      <Send className="h-6 w-6 text-primary" />
                     </div>
-                    <h2 className="text-3xl font-bold text-foreground">
+                    <h2 className="text-3xl font-bold text-text-main">
                       Send Us a Message
                     </h2>
                   </div>
-                  <p className="text-muted-foreground mb-8">
+                  <p className="text-text-sub mb-8">
                     Fill out the form below and we'll get back to you as soon as possible
                   </p>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -162,7 +161,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         placeholder="Your full name"
                         required
-                        className="mt-2 h-12 border-blue-500/20 focus:border-blue-400 bg-background/50"
+                        className="mt-2 h-12 border-border focus:border-primary bg-input-bg"
                       />
                     </div>
                     <div>
@@ -175,7 +174,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         placeholder="your@email.com"
                         required
-                        className="mt-2 h-12 border-blue-500/20 focus:border-blue-400 bg-background/50"
+                        className="mt-2 h-12 border-border focus:border-primary bg-input-bg"
                       />
                     </div>
                     <div>
@@ -186,8 +185,8 @@ export default function ContactPage() {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+1 (555) 123-4567"
-                        className="mt-2 h-12 border-blue-500/20 focus:border-blue-400 bg-background/50"
+                        placeholder="+91 00000 00000"
+                        className="mt-2 h-12 border-border focus:border-primary bg-input-bg"
                       />
                     </div>
                     <div>
@@ -200,13 +199,13 @@ export default function ContactPage() {
                         placeholder="Tell us about your project..."
                         required
                         rows={6}
-                        className="mt-2 border-blue-500/20 focus:border-blue-400 bg-background/50 resize-none"
+                        className="mt-2 border-border focus:border-primary bg-input-bg resize-none"
                       />
                     </div>
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full h-12 text-base bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:scale-105"
+                      className="w-full h-12 text-base bg-primary hover:bg-primary-dark text-white transition-all duration-300 shadow-lg hover:shadow-cta hover:-translate-y-1"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -224,10 +223,10 @@ export default function ContactPage() {
             >
               <div className="space-y-6">
                 <div>
-                  <h2 className="text-3xl font-bold text-foreground mb-3">
+                  <h2 className="text-3xl font-bold text-text-main mb-3">
                     Contact Information
                   </h2>
-                  <p className="text-lg text-muted-foreground mb-8">
+                  <p className="text-lg text-text-sub mb-8">
                     We're here to answer any questions you may have about our services
                   </p>
                 </div>
@@ -236,29 +235,29 @@ export default function ContactPage() {
                   {contactInfo.map((info, index) => (
                     <Card
                       key={index}
-                      className="transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border-2 border-blue-500/20 bg-card/80 backdrop-blur-sm"
+                      className="transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover border border-border bg-surface"
                     >
                       <CardContent className="p-6">
                         <div className="flex items-start gap-4">
-                          <div className="w-14 h-14 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/20">
-                            <info.icon className="h-7 w-7 text-blue-400" />
+                          <div className="w-14 h-14 bg-job-tag-bg rounded-xl flex items-center justify-center flex-shrink-0 shadow-card">
+                            <info.icon className="h-7 w-7 text-primary" />
                           </div>
                           <div className="flex-1">
-                            <h3 className="font-bold text-lg text-foreground mb-1">
+                            <h3 className="font-bold text-lg text-text-main mb-1">
                               {info.title}
                             </h3>
-                            <p className="text-sm text-muted-foreground mb-2">
+                            <p className="text-sm text-text-sub mb-2">
                               {info.description}
                             </p>
                             {info.link ? (
                               <a
                                 href={info.link}
-                                className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+                                className="text-primary hover:text-primary-dark transition-colors font-medium"
                               >
                                 {info.value}
                               </a>
                             ) : (
-                              <p className="text-foreground font-medium">{info.value}</p>
+                              <p className="text-text-main font-medium">{info.value}</p>
                             )}
                           </div>
                         </div>
@@ -267,7 +266,7 @@ export default function ContactPage() {
                   ))}
                 </div>
 
-                <Card className="overflow-hidden border-2 border-blue-500/20 bg-card/80 backdrop-blur-sm shadow-xl shadow-blue-500/10 mt-8">
+                <Card className="overflow-hidden border border-border bg-surface shadow-card mt-8">
                   <CardContent className="p-0">
                     <div className="aspect-video bg-muted relative">
                       <img
@@ -277,11 +276,11 @@ export default function ContactPage() {
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
-                          <MapPin className="h-16 w-16 text-blue-400 mx-auto mb-4" />
-                          <p className="text-xl text-foreground font-bold mb-2">
+                          <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
+                          <p className="text-xl text-text-main font-bold mb-2">
                             Visit Our Office
                           </p>
-                          <p className="text-muted-foreground">
+                          <p className="text-text-sub">
                             We'd love to meet you in person
                           </p>
                         </div>

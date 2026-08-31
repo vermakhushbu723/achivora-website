@@ -69,16 +69,16 @@ export default function ClientReviews() {
   ];
 
   return (
-    <section id="client-reviews" className="py-20 bg-muted/30">
+    <section id="client-reviews" className="py-20 bg-surface">
       <div className="container mx-auto px-4">
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Clients Say</span>
+          <h2 className="section-title">
+            What Our <span className="text-gradient">Clients Say</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="section-subtitle mt-3">
             Don't just take our word for it - hear from businesses we've helped transform
           </p>
         </div>
@@ -87,21 +87,21 @@ export default function ClientReviews() {
           {reviews.map((review, index) => (
             <Card
               key={index}
-              className={`transition-all duration-1000 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border-blue-500/20 bg-card/80 backdrop-blur-sm ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              className={`transition-all duration-1000 hover:-translate-y-1 hover:shadow-card-hover border-border bg-surface ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-6">
-                  <Avatar className="w-16 h-16 border-2 border-blue-500/30">
+                  <Avatar className="w-16 h-16 border border-border">
                     <AvatarImage src={review.image} alt={review.name} />
-                    <AvatarFallback className="bg-gradient-to-br from-blue-500/30 to-cyan-500/30 text-blue-400 font-bold">
+                    <AvatarFallback className="bg-job-tag-bg text-primary font-bold">
                       {review.name.split(' ').map(n => n[0]).join('')}
                     </AvatarFallback>
                   </Avatar>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground">{review.name}</h3>
-                    <p className="text-sm text-muted-foreground">{review.role} at {review.company}</p>
+                    <h3 className="text-xl font-bold text-text-main">{review.name}</h3>
+                    <p className="text-sm text-text-sub">{review.role} at {review.company}</p>
                     <div className="flex gap-1 mt-2">
                       {Array.from({ length: review.rating }).map((_, i) => (
                         <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -109,7 +109,7 @@ export default function ClientReviews() {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed italic">"{review.text}"</p>
+                <p className="text-text-sub leading-relaxed italic">"{review.text}"</p>
               </CardContent>
             </Card>
           ))}

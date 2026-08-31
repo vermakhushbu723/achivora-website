@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { SITE } from '@/constants/site';
 
 export default function PrivacyPolicyPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -90,9 +91,9 @@ export default function PrivacyPolicyPage() {
       title: '11. Contact Us',
       content: [
         'If you have any questions about this privacy policy or our privacy practices, please contact us at:',
-        'Email: privacy@Achivora',
-        'Phone: +91 9026170655',
-        'Address: India'
+        `Email: ${SITE.email}`,
+        `Phone: ${SITE.phone}`,
+        `Address: ${SITE.offices[0].address}`
       ]
     }
   ];
@@ -100,24 +101,25 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-light/25 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div
-            className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-2xl mb-6 shadow-xl shadow-blue-500/30">
-              <Shield className="h-10 w-10 text-blue-400" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl mb-6">
+              <Shield className="h-10 w-10 text-white" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Privacy <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Policy</span>
+            <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Legal</p>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+              Privacy <span className="text-primary-light">Policy</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
               Last Updated: January 16, 2026
             </p>
           </div>
@@ -125,15 +127,15 @@ export default function PrivacyPolicyPage() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-blue-500/20 bg-card/80 backdrop-blur-sm shadow-xl shadow-blue-500/10 mb-8">
+            <Card className="border border-border bg-surface shadow-card mb-8">
               <CardContent className="p-8 md:p-12">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                <p className="text-lg text-text-sub leading-relaxed mb-6">
                   At Achivora, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services. Please read this policy carefully to understand our practices regarding your personal data.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-text-sub leading-relaxed">
                   By using our services, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our services.
                 </p>
               </CardContent>
@@ -142,18 +144,18 @@ export default function PrivacyPolicyPage() {
             {sections.map((section, index) => (
               <Card
                 key={index}
-                className={`border-2 border-blue-500/20 bg-card/80 backdrop-blur-sm shadow-lg shadow-blue-500/10 mb-6 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                className={`border border-border bg-surface shadow-card mb-6 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                   }`}
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <CardContent className="p-8 md:p-10">
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-                    <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-cyan-400 rounded-full" />
+                  <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 flex items-center gap-3">
+                    <span className="w-2 h-8 bg-primary rounded-full" />
                     {section.title}
                   </h2>
                   <div className="space-y-4">
                     {section.content.map((paragraph, pIndex) => (
-                      <p key={pIndex} className="text-muted-foreground leading-relaxed">
+                      <p key={pIndex} className="text-text-sub leading-relaxed">
                         {paragraph}
                       </p>
                     ))}

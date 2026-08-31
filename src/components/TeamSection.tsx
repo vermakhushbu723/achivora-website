@@ -77,16 +77,16 @@ export default function TeamSection() {
   ];
 
   return (
-    <section id="team-section" className="py-20">
+    <section id="team-section" className="py-20 bg-surface">
       <div className="container mx-auto px-4">
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Expert Team</span>
+          <h2 className="section-title">
+            Meet Our <span className="text-gradient">Expert Team</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="section-subtitle mt-3">
             Talented professionals dedicated to bringing your vision to life
           </p>
         </div>
@@ -95,28 +95,28 @@ export default function TeamSection() {
           {team.map((member, index) => (
             <Card
               key={index}
-              className={`transition-all duration-1000 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 border-blue-500/20 bg-card/80 backdrop-blur-sm group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              className={`transition-all duration-1000 hover:-translate-y-1 hover:shadow-card-hover border-border bg-surface group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-6">
                 <div className="flex flex-col items-center text-center">
-                  <Avatar className="w-32 h-32 mb-4 border-4 border-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300">
+                  <Avatar className="w-32 h-32 mb-4 border-4 border-border group-hover:border-primary/40 transition-all duration-300">
                     <AvatarImage src={member.image} alt={member.name} className="object-cover" />
-                    <AvatarFallback className="bg-gradient-to-br from-blue-500/30 to-cyan-500/30 text-blue-400 text-2xl font-bold">
+                    <AvatarFallback className="bg-job-tag-bg text-primary text-2xl font-bold">
                       {member.name.split(' ').map(n => n[0]).join('')}
                     </AvatarFallback>
                   </Avatar>
-                  <h3 className="text-2xl font-bold text-foreground mb-1">{member.name}</h3>
-                  <p className="text-blue-400 font-medium mb-2">{member.role}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{member.experience} experience</p>
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{member.bio}</p>
+                  <h3 className="text-2xl font-bold text-text-main mb-1">{member.name}</h3>
+                  <p className="text-primary font-medium mb-2">{member.role}</p>
+                  <p className="text-sm text-text-sub mb-4">{member.experience} experience</p>
+                  <p className="text-sm text-text-sub mb-4 leading-relaxed">{member.bio}</p>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {member.expertise.map((skill, idx) => (
                       <Badge
                         key={idx}
                         variant="secondary"
-                        className="bg-blue-500/20 text-blue-400 border border-blue-500/30 hover:bg-blue-500/30"
+                        className="bg-job-tag-bg text-primary border border-border hover:bg-primary hover:text-white"
                       >
                         {skill}
                       </Badge>

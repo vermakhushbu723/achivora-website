@@ -1,198 +1,376 @@
-import { useState, useEffect } from 'react';
-import logo from '@/assets/logo.png';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState, useEffect, useRef } from 'react';
+import { ArrowRight, ChevronDown, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
+import { SiFacebook, SiInstagram, SiLinkedin, SiYoutube } from 'react-icons/si';
 import { useNavigate, useRouterState } from '@tanstack/react-router';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { SITE } from '@/constants/site';
+import { MEGA_MENUS, type MegaMenu } from '@/constants/megaMenu';
+import { icon } from '@/components/home/icons';
+import Logo from './Logo';
+
+const SOCIALS = [
+  { Icon: SiFacebook, href: SITE.social.facebook, label: 'Facebook' },
+  { Icon: SiYoutube, href: SITE.social.youtube, label: 'YouTube' },
+  { Icon: SiLinkedin, href: SITE.social.linkedin, label: 'LinkedIn' },
+  { Icon: SiInstagram, href: SITE.social.instagram, label: 'Instagram' },
+];
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [mobileSection, setMobileSection] = useState<string | null>(null);
+  const closeTimer = useRef<number | null>(null);
+
   const navigate = useNavigate();
-  const routerState = useRouterState();
-  const currentPath = routerState.location.pathname;
+  const currentPath = useRouterState().location.pathname;
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setIsScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/services', label: 'Services' },
-    { path: '/contact', label: 'Contact' }
-  ];
+  useEffect(() => {
+    setMobileOpen(false);
+    setOpenMenu(null);
+    setMobileSection(null);
+  }, [currentPath]);
 
-  const servicePages = [
-    { path: '/website-development', label: 'Website Development' },
-    { path: '/app-development', label: 'App Development' },
-    { path: '/software-solutions', label: 'Software Solutions' }
-  ];
+  // Close the panel on Escape, for keyboard users.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpenMenu(null);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
-  const handleNavigation = (path: string) => {
+  const go = (path: string) => {
     navigate({ to: path });
-    setIsMobileMenuOpen(false);
+    setMobileOpen(false);
+    setOpenMenu(null);
   };
 
-  const isServicePage = servicePages.some(page => currentPath === page.path);
+  /** Grace period so the pointer can cross the gap into the panel. */
+  const hoverOpen = (label: string) => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    setOpenMenu(label);
+  };
+  const hoverClose = () => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(() => setOpenMenu(null), 140);
+  };
+
+  const solid = isScrolled || mobileOpen || openMenu !== null;
+
+  const isActive = (menu: MegaMenu) =>
+    currentPath === menu.path || currentPath.startsWith(`${menu.path}/`);
+
+  const linkClass = (active: boolean) =>
+    `px-4 py-2 rounded-full text-sm font-semibold transition-colors duration-150 inline-flex items-center gap-1 ${
+      solid
+        ? active
+          ? 'text-primary bg-job-tag-bg'
+          : 'text-text-body hover:text-primary hover:bg-job-tag-bg'
+        : active
+          ? 'text-white bg-white/15'
+          : 'text-white/85 hover:text-white hover:bg-white/10'
+    }`;
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-        ? 'bg-background/95 backdrop-blur-md shadow-lg shadow-blue-500/10 border-b border-blue-500/20'
-        : 'bg-background/80 backdrop-blur-sm border-b border-blue-500/10'
+    <header className="fixed top-0 left-0 right-0 z-50">
+      {/* ── Top contact bar ── */}
+      <div
+        className={`hidden lg:block transition-all duration-300 overflow-hidden ${
+          solid ? 'max-h-0 opacity-0' : 'max-h-12 opacity-100 border-b border-white/10'
         }`}
-    >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <button
-            onClick={() => handleNavigation('/')}
-            className="flex items-center space-x-2 group"
-          >
-            <img src={logo} alt="Achivora" className="h-10 w-auto object-contain group-hover:scale-110 transition-all duration-300" />
-            <span className="text-2xl font-extrabold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 text-transparent bg-clip-text group-hover:from-blue-300 group-hover:via-cyan-200 group-hover:to-blue-400 transition-all duration-300 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">
-              Achivora
-            </span>
-          </button>
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-11 text-xs">
+            <div className="flex items-center gap-5 text-white/70">
+              <a
+                href={SITE.phoneHref}
+                className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <span>🇮🇳</span> {SITE.phone}
+              </a>
+              <a
+                href={SITE.emailHref}
+                className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Mail className="h-3.5 w-3.5" /> {SITE.email}
+              </a>
+              <span className="inline-flex items-center gap-1.5 text-white/50">
+                <MapPin className="h-3.5 w-3.5" /> {SITE.offices[0].address}
+              </span>
+            </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-2">
-            {navItems.map((item) => {
-              if (item.path === '/services') {
-                return (
-                  <DropdownMenu key={item.path}>
-                    <DropdownMenuTrigger asChild>
-                      <button
-                        className="relative px-5 py-2 text-white text-sm font-medium transition-all duration-300 group flex items-center gap-1"
-                      >
-                        <span className="relative z-10 group-hover:scale-105 inline-block transition-transform duration-300">
-                          {item.label}
-                        </span>
-                        <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
-
-                        <span className="absolute inset-0 bg-white/5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                        <span
-                          className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 rounded-full transition-all duration-300 ${currentPath === item.path || isServicePage
-                            ? 'w-full opacity-100'
-                            : 'w-0 opacity-0 group-hover:w-3/4 group-hover:opacity-100'
-                            }`}
-                        />
-                      </button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent className="bg-card/95 backdrop-blur-md border-blue-500/20">
-                      <DropdownMenuItem
-                        onClick={() => handleNavigation('/services')}
-                        className="text-white hover:text-blue-400 hover:bg-blue-500/10 cursor-pointer"
-                      >
-                        All Services
-                      </DropdownMenuItem>
-                      {servicePages.map((service) => (
-                        <DropdownMenuItem
-                          key={service.path}
-                          onClick={() => handleNavigation(service.path)}
-                          className="text-white hover:text-blue-400 hover:bg-blue-500/10 cursor-pointer"
-                        >
-                          {service.label}
-                        </DropdownMenuItem>
-                      ))}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                );
-              }
-
-              return (
-                <button
-                  key={item.path}
-                  onClick={() => handleNavigation(item.path)}
-                  className="relative px-5 py-2 text-white text-sm font-medium transition-all duration-300 group"
+            <div className="flex items-center gap-2">
+              {SOCIALS.map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-7 h-7 rounded-md bg-white/10 hover:bg-primary flex items-center justify-center text-white transition-colors"
                 >
-                  <span className="relative z-10 group-hover:scale-105 inline-block transition-transform duration-300">
-                    {item.label}
-                  </span>
-
-                  <span className="absolute inset-0 bg-white/5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                  <span
-                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 rounded-full transition-all duration-300 ${currentPath === item.path
-                      ? 'w-full opacity-100'
-                      : 'w-0 opacity-0 group-hover:w-3/4 group-hover:opacity-100'
-                      }`}
-                  />
-                </button>
-              );
-            })}
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden text-white hover:bg-white/10 hover:text-white transition-colors duration-300"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <nav className="md:hidden pb-4 animate-in slide-in-from-top-5 duration-300">
-            <div className="flex flex-col space-y-2">
-              {navItems.map((item) => (
-                <button
-                  key={item.path}
-                  onClick={() => handleNavigation(item.path)}
-                  className="relative px-4 py-3 text-white text-sm font-medium text-left rounded-md transition-all duration-300 group overflow-hidden"
-                >
-                  <span className="relative z-10">{item.label}</span>
-
-                  <span
-                    className={`absolute inset-0 transition-all duration-300 ${currentPath === item.path || (item.path === '/services' && isServicePage)
-                      ? 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20'
-                      : 'bg-white/5 opacity-0 group-hover:opacity-100'
-                      }`}
-                  />
-
-                  {(currentPath === item.path || (item.path === '/services' && isServicePage)) && (
-                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-gradient-to-b from-blue-400 to-cyan-400 rounded-r-full" />
-                  )}
-                </button>
+                  <Icon className="h-3.5 w-3.5" />
+                </a>
               ))}
+            </div>
+          </div>
+        </div>
+      </div>
 
-              {/* Mobile Service Submenu */}
-              <div className="pl-4 space-y-2 border-l-2 border-blue-500/20 ml-4">
-                {servicePages.map((service) => (
+      {/* ── Main bar ── */}
+      <div
+        className={`transition-all duration-300 ${
+          solid
+            ? 'bg-white/95 backdrop-blur-md shadow-card border-b border-border'
+            : 'bg-transparent'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            <button onClick={() => go('/')} className="group">
+              <Logo
+                onDark={!solid}
+                markClassName="h-10 w-10 group-hover:scale-105 transition-transform"
+              />
+            </button>
+
+            {/* Desktop nav */}
+            <nav className="hidden lg:flex items-center gap-1">
+              <button onClick={() => go('/')} className={linkClass(currentPath === '/')}>
+                Home
+              </button>
+
+              {MEGA_MENUS.map((menu) => (
+                <div
+                  key={menu.label}
+                  onMouseEnter={() => hoverOpen(menu.label)}
+                  onMouseLeave={hoverClose}
+                >
                   <button
-                    key={service.path}
-                    onClick={() => handleNavigation(service.path)}
-                    className="relative px-4 py-2 text-white text-sm text-left rounded-md transition-all duration-300 group overflow-hidden w-full"
+                    onClick={() => go(menu.path)}
+                    className={linkClass(isActive(menu))}
+                    aria-expanded={openMenu === menu.label}
+                    aria-haspopup="true"
                   >
-                    <span className="relative z-10">{service.label}</span>
-
-                    <span
-                      className={`absolute inset-0 transition-all duration-300 ${currentPath === service.path
-                        ? 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20'
-                        : 'bg-white/5 opacity-0 group-hover:opacity-100'
-                        }`}
+                    {menu.label}
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        openMenu === menu.label ? 'rotate-180' : ''
+                      }`}
                     />
                   </button>
-                ))}
+                </div>
+              ))}
+
+              <button
+                onClick={() => go('/contact')}
+                className={linkClass(currentPath === '/contact')}
+              >
+                Contact
+              </button>
+            </nav>
+
+            {/* CTA */}
+            <div className="hidden lg:flex items-center gap-3">
+              <a
+                href={SITE.phoneHref}
+                className={`text-sm font-bold px-4 py-2 rounded-full border-2 inline-flex items-center gap-2 transition-all duration-150 hover:-translate-y-0.5 ${
+                  solid
+                    ? 'border-primary text-primary hover:bg-primary hover:text-white'
+                    : 'border-white text-white hover:bg-white/10'
+                }`}
+              >
+                <Phone className="h-4 w-4" />
+                Talk To Experts
+              </a>
+              <button onClick={() => go('/contact')} className="btn-primary text-sm px-5 py-2">
+                Get a Quote
+              </button>
+            </div>
+
+            {/* Mobile toggle */}
+            <button
+              className={`lg:hidden p-2 rounded-lg transition-colors ${
+                solid ? 'text-text-main hover:bg-bg-soft' : 'text-white hover:bg-white/10'
+              }`}
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
+        </div>
+
+        {/* ── Mega menu panels ── */}
+        {MEGA_MENUS.map((menu) => (
+          <div
+            key={menu.label}
+            onMouseEnter={() => hoverOpen(menu.label)}
+            onMouseLeave={hoverClose}
+            className={`hidden lg:block absolute left-0 right-0 top-full origin-top transition-all duration-200 ${
+              openMenu === menu.label
+                ? 'opacity-100 visible translate-y-0'
+                : 'opacity-0 invisible -translate-y-2 pointer-events-none'
+            }`}
+          >
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-6">
+              <div className="bg-surface rounded-2xl border border-border shadow-card-hover overflow-hidden">
+                <div className="grid grid-cols-12">
+                  {/* Link columns */}
+                  <div className="col-span-9 p-7 grid grid-cols-3 gap-x-8 gap-y-7">
+                    {menu.columns.map((column) => {
+                      const ColIcon = icon(column.icon);
+                      return (
+                        <div key={column.title}>
+                          <button
+                            onClick={() => column.path && go(column.path)}
+                            className="flex items-center gap-2.5 mb-3 group text-left"
+                          >
+                            <span className="w-8 h-8 rounded-lg bg-job-tag-bg flex items-center justify-center shrink-0 transition-colors group-hover:bg-primary">
+                              <ColIcon className="h-4 w-4 text-primary transition-colors group-hover:text-white" />
+                            </span>
+                            <span className="font-extrabold text-text-main text-sm group-hover:text-primary transition-colors">
+                              {column.title}
+                            </span>
+                          </button>
+
+                          <ul className="space-y-1.5 pl-1">
+                            {column.links.map((link) => (
+                              <li key={link.label + link.path}>
+                                <button
+                                  onClick={() => go(link.path)}
+                                  className="text-text-sub text-sm hover:text-primary transition-colors text-left leading-snug"
+                                >
+                                  {link.label}
+                                </button>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {/* Promo panel */}
+                  <div className="col-span-3 bg-primary-gradient p-7 flex flex-col justify-center">
+                    <h3 className="font-extrabold text-white text-lg leading-snug mb-2">
+                      {menu.feature.title}
+                    </h3>
+                    <p className="text-white/80 text-sm leading-relaxed mb-5">
+                      {menu.feature.description}
+                    </p>
+                    <button
+                      onClick={() => go(menu.feature.ctaPath)}
+                      className="btn-white text-sm px-5 py-2.5 self-start"
+                    >
+                      {menu.feature.ctaLabel}
+                      <ArrowRight className="h-4 w-4" />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </nav>
-        )}
+          </div>
+        ))}
       </div>
+
+      {/* ── Mobile menu ── */}
+      {mobileOpen && (
+        <div className="lg:hidden bg-white border-t border-border shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto">
+          <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
+            <button
+              onClick={() => go('/')}
+              className={`text-left px-4 py-3 rounded-xl font-semibold transition-colors ${
+                currentPath === '/'
+                  ? 'text-primary bg-job-tag-bg'
+                  : 'text-text-body hover:text-primary hover:bg-job-tag-bg'
+              }`}
+            >
+              Home
+            </button>
+
+            {MEGA_MENUS.map((menu) => {
+              const open = mobileSection === menu.label;
+              return (
+                <div key={menu.label}>
+                  <button
+                    onClick={() => setMobileSection(open ? null : menu.label)}
+                    className={`w-full flex items-center justify-between px-4 py-3 rounded-xl font-semibold transition-colors ${
+                      isActive(menu)
+                        ? 'text-primary bg-job-tag-bg'
+                        : 'text-text-body hover:text-primary hover:bg-job-tag-bg'
+                    }`}
+                    aria-expanded={open}
+                  >
+                    {menu.label}
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        open ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+
+                  {open && (
+                    <div className="pl-3 ml-3 mt-1 mb-2 border-l-2 border-border flex flex-col gap-3">
+                      {menu.columns.map((column) => (
+                        <div key={column.title}>
+                          <button
+                            onClick={() => column.path && go(column.path)}
+                            className="block px-4 py-1.5 text-text-main font-bold text-sm text-left"
+                          >
+                            {column.title}
+                          </button>
+                          {column.links.map((link) => (
+                            <button
+                              key={link.label + link.path}
+                              onClick={() => go(link.path)}
+                              className="block w-full px-4 py-2 rounded-lg text-text-sub text-sm text-left hover:text-primary hover:bg-job-tag-bg transition-colors"
+                            >
+                              {link.label}
+                            </button>
+                          ))}
+                        </div>
+                      ))}
+                      <button
+                        onClick={() => go(menu.path)}
+                        className="mx-4 mb-1 text-primary text-sm font-bold text-left"
+                      >
+                        View all {menu.label} →
+                      </button>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
+            <button
+              onClick={() => go('/contact')}
+              className={`text-left px-4 py-3 rounded-xl font-semibold transition-colors ${
+                currentPath === '/contact'
+                  ? 'text-primary bg-job-tag-bg'
+                  : 'text-text-body hover:text-primary hover:bg-job-tag-bg'
+              }`}
+            >
+              Contact
+            </button>
+
+            <div className="flex flex-col gap-2 mt-3 pt-3 border-t border-border">
+              <a href={SITE.phoneHref} className="btn-secondary">
+                <Phone className="h-4 w-4" />
+                {SITE.phone}
+              </a>
+              <button onClick={() => go('/contact')} className="btn-primary">
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

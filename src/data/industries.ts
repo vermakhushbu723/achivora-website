@@ -1,0 +1,11709 @@
+import type { CatalogEntry } from './catalog-types';
+
+export const INDUSTRY_CATALOG: readonly CatalogEntry[] = [
+  {
+    "slug": "healthcare-web-development",
+    "label": "Healthcare Web Development",
+    "title": "Healthcare Web Development",
+    "icon": "HeartPulse",
+    "category": "Healthcare",
+    "tagline": "Achivora delivers healthcare web development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds healthcare web development work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our healthcare web development projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a Healthcare Web Development project take?",
+        "a": "Most Healthcare Web Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Healthcare Web Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "travel-web-development",
+    "label": "Travel Web Development",
+    "title": "Travel Web Development",
+    "icon": "Plane",
+    "category": "Travel",
+    "tagline": "Achivora delivers travel web development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our travel web development engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Travel Web Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "real-estate-web-development",
+    "label": "Real Estate Web Development",
+    "title": "Real Estate Web Development",
+    "icon": "Building",
+    "category": "Real Estate",
+    "tagline": "Achivora delivers real estate web development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat real estate web development as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "e-commerce-development",
+    "label": "E-commerce Development",
+    "title": "E-commerce Development",
+    "icon": "ShoppingCart",
+    "category": "Ecommerce",
+    "tagline": "Achivora delivers e-commerce development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered e-commerce development projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a E-commerce Development project take?",
+        "a": "Most E-commerce Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "transportation-logistics",
+    "label": "Transportation & Logistics",
+    "title": "Transportation & Logistics",
+    "icon": "Truck",
+    "category": "Logistics",
+    "tagline": "Achivora delivers transportation & logistics built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds transportation & logistics work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our transportation & logistics projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Transportation & Logistics project take?",
+        "a": "Most Transportation & Logistics engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Transportation & Logistics cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "e-learning-website-design",
+    "label": "E-Learning Website Design",
+    "title": "E-Learning Website Design",
+    "icon": "GraduationCap",
+    "category": "Education",
+    "tagline": "Achivora delivers e-learning website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our e-learning website design engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a E-Learning Website Design project take?",
+        "a": "Most E-Learning Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does E-Learning Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "media-entertainment",
+    "label": "Media & Entertainment",
+    "title": "Media & Entertainment",
+    "icon": "Clapperboard",
+    "category": "Media",
+    "tagline": "Achivora delivers media & entertainment built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat media & entertainment as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a Media & Entertainment project take?",
+        "a": "Most Media & Entertainment engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Media & Entertainment cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "finance-insurance",
+    "label": "Finance & Insurance",
+    "title": "Finance & Insurance",
+    "icon": "Landmark",
+    "category": "Finance",
+    "tagline": "Achivora delivers finance & insurance built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered finance & insurance projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Finance & Insurance cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "logistics-app-development",
+    "label": "Logistics App Development",
+    "title": "Logistics App Development",
+    "icon": "Truck",
+    "category": "Logistics",
+    "tagline": "Achivora delivers logistics app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds logistics app development work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our logistics app development projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "gaming-app-development",
+    "label": "Gaming App Development",
+    "title": "Gaming App Development",
+    "icon": "Gamepad2",
+    "category": "Gaming",
+    "tagline": "Achivora delivers gaming app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our gaming app development engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Gaming App Development project take?",
+        "a": "Most Gaming App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "sports-app-development",
+    "label": "Sports App Development",
+    "title": "Sports App Development",
+    "icon": "Trophy",
+    "category": "Sports",
+    "tagline": "Achivora delivers sports app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat sports app development as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Sports App Development project take?",
+        "a": "Most Sports App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Sports App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "grocery-app-development",
+    "label": "Grocery App Development",
+    "title": "Grocery App Development",
+    "icon": "ShoppingBasket",
+    "category": "Grocery",
+    "tagline": "Achivora delivers grocery app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered grocery app development projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Grocery App Development project take?",
+        "a": "Most Grocery App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Grocery App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "fintech-app-development",
+    "label": "FinTech App Development",
+    "title": "FinTech App Development",
+    "icon": "Landmark",
+    "category": "FinTech",
+    "tagline": "Achivora delivers fintech app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds fintech app development work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our fintech app development projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a FinTech App Development project take?",
+        "a": "Most FinTech App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does FinTech App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "dating-app-development",
+    "label": "Dating App Development",
+    "title": "Dating App Development",
+    "icon": "Heart",
+    "category": "Dating",
+    "tagline": "Achivora delivers dating app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our dating app development engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Dating App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "social-media-app-development",
+    "label": "Social Media App Development",
+    "title": "Social Media App Development",
+    "icon": "Share2",
+    "category": "Social",
+    "tagline": "Achivora delivers social media app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat social media app development as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "fitness-app-development",
+    "label": "Fitness App Development",
+    "title": "Fitness App Development",
+    "icon": "Dumbbell",
+    "category": "Fitness",
+    "tagline": "Achivora delivers fitness app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered fitness app development projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Fitness App Development project take?",
+        "a": "Most Fitness App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "food-delivery-app-development",
+    "label": "Food Delivery App Development",
+    "title": "Food Delivery App Development",
+    "icon": "UtensilsCrossed",
+    "category": "Food Delivery",
+    "tagline": "Achivora delivers food delivery app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds food delivery app development work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our food delivery app development projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Food Delivery App Development project take?",
+        "a": "Most Food Delivery App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Food Delivery App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "taxi-booking-app-development",
+    "label": "Taxi Booking App Development",
+    "title": "Taxi Booking App Development",
+    "icon": "Car",
+    "category": "Mobility",
+    "tagline": "Achivora delivers taxi booking app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our taxi booking app development engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Taxi Booking App Development project take?",
+        "a": "Most Taxi Booking App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Taxi Booking App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "laundry-app-development",
+    "label": "Laundry App Development",
+    "title": "Laundry App Development",
+    "icon": "Shirt",
+    "category": "On Demand",
+    "tagline": "Achivora delivers laundry app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat laundry app development as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a Laundry App Development project take?",
+        "a": "Most Laundry App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Laundry App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "medicine-delivery-app-development",
+    "label": "Medicine Delivery App Development",
+    "title": "Medicine Delivery App Development",
+    "icon": "Pill",
+    "category": "Healthcare",
+    "tagline": "Achivora delivers medicine delivery app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered medicine delivery app development projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Medicine Delivery App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "on-demand-app-development",
+    "label": "On-Demand App Development",
+    "title": "On-Demand App Development",
+    "icon": "Zap",
+    "category": "On Demand",
+    "tagline": "Achivora delivers on-demand app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds on-demand app development work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our on-demand app development projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "law-firm-website-design",
+    "label": "Law Firm Website Design",
+    "title": "Law Firm Website Design",
+    "icon": "Scale",
+    "category": "Legal",
+    "tagline": "Achivora delivers law firm website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our law firm website design engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Law Firm Website Design project take?",
+        "a": "Most Law Firm Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "matrimonial-website-design",
+    "label": "Matrimonial Website Design",
+    "title": "Matrimonial Website Design",
+    "icon": "Heart",
+    "category": "Matrimonial",
+    "tagline": "Achivora delivers matrimonial website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat matrimonial website design as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Matrimonial Website Design project take?",
+        "a": "Most Matrimonial Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Matrimonial Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "jewellery-website-design",
+    "label": "Jewellery Website Design",
+    "title": "Jewellery Website Design",
+    "icon": "Gem",
+    "category": "Retail",
+    "tagline": "Achivora delivers jewellery website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered jewellery website design projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Jewellery Website Design project take?",
+        "a": "Most Jewellery Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Jewellery Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "restaurant-website-design",
+    "label": "Restaurant Website Design",
+    "title": "Restaurant Website Design",
+    "icon": "UtensilsCrossed",
+    "category": "Hospitality",
+    "tagline": "Achivora delivers restaurant website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds restaurant website design work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our restaurant website design projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a Restaurant Website Design project take?",
+        "a": "Most Restaurant Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Restaurant Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "construction-website-design",
+    "label": "Construction Website Design",
+    "title": "Construction Website Design",
+    "icon": "HardHat",
+    "category": "Construction",
+    "tagline": "Achivora delivers construction website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our construction website design engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Construction Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "political-campaign-website",
+    "label": "Political Campaign Website",
+    "title": "Political Campaign Website",
+    "icon": "Megaphone",
+    "category": "Public",
+    "tagline": "Achivora delivers political campaign website built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat political campaign website as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "travel-website-design",
+    "label": "Travel Website Design",
+    "title": "Travel Website Design",
+    "icon": "Plane",
+    "category": "Travel",
+    "tagline": "Achivora delivers travel website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered travel website design projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Travel Website Design project take?",
+        "a": "Most Travel Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "dental-website-design",
+    "label": "Dental Website Design",
+    "title": "Dental Website Design",
+    "icon": "Stethoscope",
+    "category": "Healthcare",
+    "tagline": "Achivora delivers dental website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds dental website design work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our dental website design projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Dental Website Design project take?",
+        "a": "Most Dental Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Dental Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "medical-clinic-website-design",
+    "label": "Medical Clinic Website Design",
+    "title": "Medical Clinic Website Design",
+    "icon": "Stethoscope",
+    "category": "Healthcare",
+    "tagline": "Achivora delivers medical clinic website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our medical clinic website design engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Medical Clinic Website Design project take?",
+        "a": "Most Medical Clinic Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Medical Clinic Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "car-rental-website-design",
+    "label": "Car Rental Website Design",
+    "title": "Car Rental Website Design",
+    "icon": "Car",
+    "category": "Mobility",
+    "tagline": "Achivora delivers car rental website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat car rental website design as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a Car Rental Website Design project take?",
+        "a": "Most Car Rental Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Car Rental Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "astrology-website-design",
+    "label": "Astrology Website Design",
+    "title": "Astrology Website Design",
+    "icon": "Star",
+    "category": "Lifestyle",
+    "tagline": "Achivora delivers astrology website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered astrology website design projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Astrology Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "agriculture-website-design",
+    "label": "Agriculture Website Design",
+    "title": "Agriculture Website Design",
+    "icon": "Sprout",
+    "category": "Agriculture",
+    "tagline": "Achivora delivers agriculture website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds agriculture website design work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our agriculture website design projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "temple-trust-website-design",
+    "label": "Temple & Trust Website Design",
+    "title": "Temple & Trust Website Design",
+    "icon": "Landmark",
+    "category": "Non-profit",
+    "tagline": "Achivora delivers temple & trust website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our temple & trust website design engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Temple & Trust Website Design project take?",
+        "a": "Most Temple & Trust Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "nonprofit-web-design",
+    "label": "Nonprofit Web Design",
+    "title": "Nonprofit Web Design",
+    "icon": "HeartHandshake",
+    "category": "Non-profit",
+    "tagline": "Achivora delivers nonprofit web design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat nonprofit web design as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Nonprofit Web Design project take?",
+        "a": "Most Nonprofit Web Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Nonprofit Web Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "b2b-website-design",
+    "label": "B2B Website Design",
+    "title": "B2B Website Design",
+    "icon": "Briefcase",
+    "category": "B2B",
+    "tagline": "Achivora delivers b2b website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered b2b website design projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a B2B Website Design project take?",
+        "a": "Most B2B Website Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does B2B Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "gym-web-design",
+    "label": "Gym Web Design",
+    "title": "Gym Web Design",
+    "icon": "Dumbbell",
+    "category": "Fitness",
+    "tagline": "Achivora delivers gym web design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds gym web design work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our gym web design projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a Gym Web Design project take?",
+        "a": "Most Gym Web Design engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Gym Web Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "manufacturing-website-design",
+    "label": "Manufacturing Website Design",
+    "title": "Manufacturing Website Design",
+    "icon": "Factory",
+    "category": "Manufacturing",
+    "tagline": "Achivora delivers manufacturing website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our manufacturing website design engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Manufacturing Website Design cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "small-business-website-design",
+    "label": "Small Business Website Design",
+    "title": "Small Business Website Design",
+    "icon": "Store",
+    "category": "SMB",
+    "tagline": "Achivora delivers small business website design built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat small business website design as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "shopify-website-development",
+    "label": "Shopify Website Development",
+    "title": "Shopify Website Development",
+    "icon": "ShoppingCart",
+    "category": "Ecommerce",
+    "tagline": "Achivora delivers shopify website development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered shopify website development projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Shopify Website Development project take?",
+        "a": "Most Shopify Website Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "oil-and-gas-software",
+    "label": "Oil and Gas Software",
+    "title": "Oil and Gas Software",
+    "icon": "Fuel",
+    "category": "Energy",
+    "tagline": "Achivora delivers oil and gas software built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Achivora builds oil and gas software work that holds up in production. We start with the business outcome you need, map the workflow around it, and only then pick the stack, which is why our oil and gas software projects tend to survive contact with real users.",
+      "You own the code and the infrastructure from day one. No proprietary lock-in, no licence you have to keep paying to keep your own product running."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a Oil and Gas Software project take?",
+        "a": "Most Oil and Gas Software engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does Oil and Gas Software cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "iot-app-development",
+    "label": "IoT App Development",
+    "title": "IoT App Development",
+    "icon": "Radio",
+    "category": "IoT",
+    "tagline": "Achivora delivers iot app development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "Our iot app development engagements are run by senior engineers who have shipped this before. You get a clear scope, a fixed cadence of demos, and a build you can inspect at any point rather than a black box that appears at the end.",
+      "We work in your timezone, join your stand-ups if you want us to, and keep the whole roadmap visible so you always know what is shipping next and what it will cost."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      },
+      {
+        "title": "Post-launch support",
+        "description": "Monitoring, patching and improvements under an agreed response time."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "Can you take over an existing project?",
+        "a": "We do this often. We start with a short audit of the current codebase and infrastructure, then give you an honest view on whether to continue, refactor or rebuild."
+      },
+      {
+        "q": "How long does a IoT App Development project take?",
+        "a": "Most IoT App Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does IoT App Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ai-chatbot-development",
+    "label": "AI Chatbot Development",
+    "title": "AI Chatbot Development",
+    "icon": "Bot",
+    "category": "AI",
+    "tagline": "Achivora delivers ai chatbot development built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "We treat ai chatbot development as a product problem rather than a ticket queue. That means measuring what the work is supposed to move, shipping in small increments, and cutting anything that does not earn its place.",
+      "Pricing is transparent and scoped before we start. If something changes mid-project, you hear about the cost implication before the work happens, not on the invoice."
+    ],
+    "capabilities": [
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "Web Application Development",
+        "description": "End-to-end platforms that replace spreadsheets and manual process with something reliable."
+      },
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      }
+    ],
+    "features": [
+      {
+        "title": "Clean, documented codebase",
+        "description": "Readable code with real documentation, so any team can pick it up later without a rewrite."
+      },
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      },
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How long does a AI Chatbot Development project take?",
+        "a": "Most AI Chatbot Development engagements run between four and sixteen weeks depending on scope. After a short discovery call we give you a written timeline with milestones, so you know what lands when."
+      },
+      {
+        "q": "How much does AI Chatbot Development cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "utilities-on-demand",
+    "label": "Utilities & On Demand",
+    "title": "Utilities & On Demand",
+    "icon": "Zap",
+    "category": "Utilities",
+    "tagline": "Achivora delivers utilities & on demand built for Indian businesses that need it to work, not just to launch.",
+    "subheading": "Your Vision, Our Expertise",
+    "intro": [
+      "For over a decade we have delivered utilities & on demand projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
+    ],
+    "capabilities": [
+      {
+        "title": "Backend Development",
+        "description": "Node.js, Laravel and Python services designed for throughput, not just for the happy path."
+      },
+      {
+        "title": "Full Stack Development",
+        "description": "One team across the whole stack, so nothing falls between frontend and backend."
+      },
+      {
+        "title": "CMS Development",
+        "description": "WordPress, Shopify and headless CMS setups your marketing team can actually run alone."
+      },
+      {
+        "title": "Database Engineering",
+        "description": "PostgreSQL, MySQL and MongoDB schemas designed for the queries you will actually run."
+      },
+      {
+        "title": "DevOps Stack",
+        "description": "AWS, Docker and GitHub Actions wired up so deployment stops being a manual ritual."
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Intuitive interfaces built with HTML5, CSS3, TypeScript and React, tested on real devices."
+      }
+    ],
+    "subServices": [
+      {
+        "title": "E-commerce Development",
+        "description": "Fast, secure stores with a checkout designed around reducing abandonment."
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Built from your requirements and market research rather than a bought template."
+      },
+      {
+        "title": "Multi-vendor Marketplace",
+        "description": "Seller onboarding, commission handling and payouts built into the platform."
+      },
+      {
+        "title": "CMS Development",
+        "description": "Content platforms your marketing team can update without raising a ticket."
+      },
+      {
+        "title": "CRM Development",
+        "description": "Customer records, pipelines and automation shaped around how you actually sell."
+      },
+      {
+        "title": "WordPress Development",
+        "description": "Properly engineered WordPress builds, not a pile of conflicting plugins."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Updates, monitoring, security patching and small improvements on a monthly retainer."
+      },
+      {
+        "title": "Custom Portal Solutions",
+        "description": "Secure customer, partner or employee portals with role-based access throughout."
+      }
+    ],
+    "features": [
+      {
+        "title": "Performance budgets from day one",
+        "description": "Speed targets set before the first commit and enforced in CI, not retrofitted after launch."
+      },
+      {
+        "title": "Automated test coverage",
+        "description": "Unit, integration and end-to-end suites that catch regressions before your users do."
+      },
+      {
+        "title": "Secure by design",
+        "description": "Authentication, authorisation and data handling reviewed at design time, not bolted on later."
+      },
+      {
+        "title": "Scalable architecture",
+        "description": "Clean service boundaries so traffic, features and team size can all grow without a rebuild."
+      },
+      {
+        "title": "Third-party integrations",
+        "description": "Payments, CRMs, ERPs, analytics and messaging wired in through stable, tested connectors."
+      },
+      {
+        "title": "CI/CD pipeline included",
+        "description": "Every merge builds, tests and deploys automatically, so releases stop being an event."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Full ownership handover",
+        "description": "Code, designs, infrastructure and documentation are yours from the first day."
+      },
+      {
+        "title": "Senior engineers only",
+        "description": "No junior-heavy teams learning on your budget. The people scoping the work are the people building it."
+      },
+      {
+        "title": "Fixed, transparent pricing",
+        "description": "You approve scope and cost before work starts, and hear about any change before it happens."
+      },
+      {
+        "title": "Two-week demo cadence",
+        "description": "You see working software every fortnight, so direction is corrected early instead of at the end."
+      }
+    ],
+    "comparison": [
+      {
+        "aspect": "Uniqueness",
+        "custom": "Fully unique, built to your brief",
+        "template": "Pre-made theme, lightly modified"
+      },
+      {
+        "aspect": "Scalability",
+        "custom": "High, designed to grow with you",
+        "template": "Limited by the theme's assumptions"
+      },
+      {
+        "aspect": "Upfront cost",
+        "custom": "Higher initial investment",
+        "template": "Budget-friendly to start"
+      },
+      {
+        "aspect": "Launch speed",
+        "custom": "Longer, typically 6 to 16 weeks",
+        "template": "Faster, often 2 to 4 weeks"
+      },
+      {
+        "aspect": "Performance",
+        "custom": "Tuned, only the code you need",
+        "template": "Carries unused theme weight"
+      },
+      {
+        "aspect": "Best suited to",
+        "custom": "Complex sites and real products",
+        "template": "Small sites, MVPs and pilots"
+      }
+    ],
+    "performance": [
+      {
+        "title": "PageSpeed-optimised builds",
+        "description": "We set a Lighthouse target before starting and hold the build to it in CI."
+      },
+      {
+        "title": "Core Web Vitals compliance",
+        "description": "LCP, INP and CLS measured on real devices, not just on a fast laptop."
+      },
+      {
+        "title": "Technical SEO from day one",
+        "description": "Clean markup, sitemaps, canonicals and schema shipped with the first release."
+      },
+      {
+        "title": "Fully responsive design",
+        "description": "Tested on real phones and tablets across the browsers your audience actually uses."
+      },
+      {
+        "title": "Built for fast indexing",
+        "description": "Server-rendered where it matters, so search engines see the content immediately."
+      }
+    ],
+    "compliance": [
+      {
+        "title": "Accessibility (WCAG 2.1 AA)",
+        "description": "Contrast, keyboard navigation and screen-reader semantics checked before launch."
+      },
+      {
+        "title": "Security by default",
+        "description": "TLS everywhere, hardened headers, dependency scanning and least-privilege access."
+      },
+      {
+        "title": "Data protection (DPDP Act)",
+        "description": "Consent capture, retention rules and deletion flows aligned to Indian data law."
+      },
+      {
+        "title": "Payment & PCI readiness",
+        "description": "Card data handled by certified gateways, never stored on your own infrastructure."
+      }
+    ],
+    "industriesServed": [
+      {
+        "title": "E-commerce & Retail",
+        "description": "Catalogue structure, product pages and a checkout tuned for conversion."
+      },
+      {
+        "title": "Healthcare & Wellness",
+        "description": "Appointment platforms and patient portals that handle sensitive data properly."
+      },
+      {
+        "title": "Real Estate & Construction",
+        "description": "Listings, virtual tours and agent tooling in a single connected platform."
+      },
+      {
+        "title": "EdTech & SaaS Startups",
+        "description": "Cloud learning platforms and subscription products built to scale from day one."
+      },
+      {
+        "title": "Finance & Legal",
+        "description": "Secure portals with audit trails and compliance baked into the design."
+      },
+      {
+        "title": "Logistics & Manufacturing",
+        "description": "Tracking, telemetry and operations dashboards for teams running physical work."
+      }
+    ],
+    "achievements": [
+      {
+        "value": "1560",
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "120",
+        "suffix": "+",
+        "label": "Cities Served"
+      },
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Customer Retention"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "Years In Operation"
+      }
+    ],
+    "tech": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "faqs": [
+      {
+        "q": "How much does Utilities & On Demand cost?",
+        "a": "Cost depends on scope, integrations and how much design work is involved. Share a brief and you will have a written estimate within two working days, broken down so you can see what drives the number."
+      },
+      {
+        "q": "Do you provide support after the project ends?",
+        "a": "Yes. Support plans cover monitoring, bug fixes, security patches and small improvements, with response times agreed in advance. Most clients stay on a monthly retainer."
+      },
+      {
+        "q": "Will I own the code and assets?",
+        "a": "Completely. All source code, design files and infrastructure configuration are handed over and belong to you. There is no licence to keep paying and no lock-in."
+      },
+      {
+        "q": "Can you work with our existing team?",
+        "a": "Yes. We regularly extend in-house teams, plugging into your repos, tooling and rituals. Staff augmentation is one of our most common engagement models."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  }
+];
+

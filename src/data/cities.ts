@@ -1,0 +1,1978 @@
+export interface CityEntry {
+  slug: string;
+  city: string;
+  state: string;
+  service: string;
+  serviceSlug: string;
+  icon: string;
+  title: string;
+  tagline: string;
+  image: string;
+}
+
+export const CITY_LIST = [
+  {
+    "city": "Delhi",
+    "state": "Delhi"
+  },
+  {
+    "city": "Noida",
+    "state": "Uttar Pradesh"
+  },
+  {
+    "city": "Gurgaon",
+    "state": "Haryana"
+  },
+  {
+    "city": "Faridabad",
+    "state": "Haryana"
+  },
+  {
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh"
+  },
+  {
+    "city": "South Delhi",
+    "state": "Delhi"
+  },
+  {
+    "city": "Nehru Place",
+    "state": "Delhi"
+  },
+  {
+    "city": "Okhla",
+    "state": "Delhi"
+  },
+  {
+    "city": "Mumbai",
+    "state": "Maharashtra"
+  },
+  {
+    "city": "Pune",
+    "state": "Maharashtra"
+  },
+  {
+    "city": "Bangalore",
+    "state": "Karnataka"
+  },
+  {
+    "city": "Hyderabad",
+    "state": "Telangana"
+  },
+  {
+    "city": "Chennai",
+    "state": "Tamil Nadu"
+  },
+  {
+    "city": "Kolkata",
+    "state": "West Bengal"
+  },
+  {
+    "city": "Ahmedabad",
+    "state": "Gujarat"
+  },
+  {
+    "city": "Surat",
+    "state": "Gujarat"
+  },
+  {
+    "city": "Jaipur",
+    "state": "Rajasthan"
+  },
+  {
+    "city": "Lucknow",
+    "state": "Uttar Pradesh"
+  },
+  {
+    "city": "Kanpur",
+    "state": "Uttar Pradesh"
+  },
+  {
+    "city": "Chandigarh",
+    "state": "Punjab"
+  },
+  {
+    "city": "Indore",
+    "state": "Madhya Pradesh"
+  },
+  {
+    "city": "Bhopal",
+    "state": "Madhya Pradesh"
+  },
+  {
+    "city": "Nagpur",
+    "state": "Maharashtra"
+  },
+  {
+    "city": "Patna",
+    "state": "Bihar"
+  },
+  {
+    "city": "Kochi",
+    "state": "Kerala"
+  },
+  {
+    "city": "Coimbatore",
+    "state": "Tamil Nadu"
+  },
+  {
+    "city": "Vadodara",
+    "state": "Gujarat"
+  },
+  {
+    "city": "Dehradun",
+    "state": "Uttarakhand"
+  }
+] as const;
+
+export const CITY_CATALOG: readonly CityEntry[] = [
+  {
+    "slug": "web-development-company-in-delhi",
+    "city": "Delhi",
+    "state": "Delhi",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Delhi",
+    "tagline": "Achivora works with businesses across Delhi, Delhi, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-delhi",
+    "city": "Delhi",
+    "state": "Delhi",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Delhi",
+    "tagline": "Achivora works with businesses across Delhi, Delhi, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-delhi",
+    "city": "Delhi",
+    "state": "Delhi",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Delhi",
+    "tagline": "Achivora works with businesses across Delhi, Delhi, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-delhi",
+    "city": "Delhi",
+    "state": "Delhi",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Delhi",
+    "tagline": "Achivora works with businesses across Delhi, Delhi, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-delhi",
+    "city": "Delhi",
+    "state": "Delhi",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Delhi",
+    "tagline": "Achivora works with businesses across Delhi, Delhi, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-delhi",
+    "city": "Delhi",
+    "state": "Delhi",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Delhi",
+    "tagline": "Achivora works with businesses across Delhi, Delhi, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Noida",
+    "tagline": "Achivora works with businesses across Noida, Uttar Pradesh, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Noida",
+    "tagline": "Achivora works with businesses across Noida, Uttar Pradesh, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Noida",
+    "tagline": "Achivora works with businesses across Noida, Uttar Pradesh, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Noida",
+    "tagline": "Achivora works with businesses across Noida, Uttar Pradesh, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Noida",
+    "tagline": "Achivora works with businesses across Noida, Uttar Pradesh, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Noida",
+    "tagline": "Achivora works with businesses across Noida, Uttar Pradesh, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-gurgaon",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Gurgaon",
+    "tagline": "Achivora works with businesses across Gurgaon, Haryana, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-gurgaon",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Gurgaon",
+    "tagline": "Achivora works with businesses across Gurgaon, Haryana, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-gurgaon",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Gurgaon",
+    "tagline": "Achivora works with businesses across Gurgaon, Haryana, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-gurgaon",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Gurgaon",
+    "tagline": "Achivora works with businesses across Gurgaon, Haryana, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-gurgaon",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Gurgaon",
+    "tagline": "Achivora works with businesses across Gurgaon, Haryana, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-gurgaon",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Gurgaon",
+    "tagline": "Achivora works with businesses across Gurgaon, Haryana, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-faridabad",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Faridabad",
+    "tagline": "Achivora works with businesses across Faridabad, Haryana, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-faridabad",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Faridabad",
+    "tagline": "Achivora works with businesses across Faridabad, Haryana, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-faridabad",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Faridabad",
+    "tagline": "Achivora works with businesses across Faridabad, Haryana, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-faridabad",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Faridabad",
+    "tagline": "Achivora works with businesses across Faridabad, Haryana, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-faridabad",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Faridabad",
+    "tagline": "Achivora works with businesses across Faridabad, Haryana, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-faridabad",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Faridabad",
+    "tagline": "Achivora works with businesses across Faridabad, Haryana, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-ghaziabad",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Ghaziabad",
+    "tagline": "Achivora works with businesses across Ghaziabad, Uttar Pradesh, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-ghaziabad",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Ghaziabad",
+    "tagline": "Achivora works with businesses across Ghaziabad, Uttar Pradesh, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-ghaziabad",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Ghaziabad",
+    "tagline": "Achivora works with businesses across Ghaziabad, Uttar Pradesh, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-ghaziabad",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Ghaziabad",
+    "tagline": "Achivora works with businesses across Ghaziabad, Uttar Pradesh, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-ghaziabad",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Ghaziabad",
+    "tagline": "Achivora works with businesses across Ghaziabad, Uttar Pradesh, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-ghaziabad",
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Ghaziabad",
+    "tagline": "Achivora works with businesses across Ghaziabad, Uttar Pradesh, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-south-delhi",
+    "city": "South Delhi",
+    "state": "Delhi",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in South Delhi",
+    "tagline": "Achivora works with businesses across South Delhi, Delhi, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-south-delhi",
+    "city": "South Delhi",
+    "state": "Delhi",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in South Delhi",
+    "tagline": "Achivora works with businesses across South Delhi, Delhi, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-south-delhi",
+    "city": "South Delhi",
+    "state": "Delhi",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in South Delhi",
+    "tagline": "Achivora works with businesses across South Delhi, Delhi, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-south-delhi",
+    "city": "South Delhi",
+    "state": "Delhi",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in South Delhi",
+    "tagline": "Achivora works with businesses across South Delhi, Delhi, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-south-delhi",
+    "city": "South Delhi",
+    "state": "Delhi",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in South Delhi",
+    "tagline": "Achivora works with businesses across South Delhi, Delhi, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-south-delhi",
+    "city": "South Delhi",
+    "state": "Delhi",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in South Delhi",
+    "tagline": "Achivora works with businesses across South Delhi, Delhi, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-nehru-place",
+    "city": "Nehru Place",
+    "state": "Delhi",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Nehru Place",
+    "tagline": "Achivora works with businesses across Nehru Place, Delhi, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-nehru-place",
+    "city": "Nehru Place",
+    "state": "Delhi",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Nehru Place",
+    "tagline": "Achivora works with businesses across Nehru Place, Delhi, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-nehru-place",
+    "city": "Nehru Place",
+    "state": "Delhi",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Nehru Place",
+    "tagline": "Achivora works with businesses across Nehru Place, Delhi, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-nehru-place",
+    "city": "Nehru Place",
+    "state": "Delhi",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Nehru Place",
+    "tagline": "Achivora works with businesses across Nehru Place, Delhi, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-nehru-place",
+    "city": "Nehru Place",
+    "state": "Delhi",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Nehru Place",
+    "tagline": "Achivora works with businesses across Nehru Place, Delhi, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-nehru-place",
+    "city": "Nehru Place",
+    "state": "Delhi",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Nehru Place",
+    "tagline": "Achivora works with businesses across Nehru Place, Delhi, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-okhla",
+    "city": "Okhla",
+    "state": "Delhi",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Okhla",
+    "tagline": "Achivora works with businesses across Okhla, Delhi, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-okhla",
+    "city": "Okhla",
+    "state": "Delhi",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Okhla",
+    "tagline": "Achivora works with businesses across Okhla, Delhi, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-okhla",
+    "city": "Okhla",
+    "state": "Delhi",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Okhla",
+    "tagline": "Achivora works with businesses across Okhla, Delhi, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-okhla",
+    "city": "Okhla",
+    "state": "Delhi",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Okhla",
+    "tagline": "Achivora works with businesses across Okhla, Delhi, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-okhla",
+    "city": "Okhla",
+    "state": "Delhi",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Okhla",
+    "tagline": "Achivora works with businesses across Okhla, Delhi, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-okhla",
+    "city": "Okhla",
+    "state": "Delhi",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Okhla",
+    "tagline": "Achivora works with businesses across Okhla, Delhi, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Mumbai",
+    "tagline": "Achivora works with businesses across Mumbai, Maharashtra, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Mumbai",
+    "tagline": "Achivora works with businesses across Mumbai, Maharashtra, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Mumbai",
+    "tagline": "Achivora works with businesses across Mumbai, Maharashtra, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Mumbai",
+    "tagline": "Achivora works with businesses across Mumbai, Maharashtra, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Mumbai",
+    "tagline": "Achivora works with businesses across Mumbai, Maharashtra, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Mumbai",
+    "tagline": "Achivora works with businesses across Mumbai, Maharashtra, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Pune",
+    "tagline": "Achivora works with businesses across Pune, Maharashtra, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Pune",
+    "tagline": "Achivora works with businesses across Pune, Maharashtra, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Pune",
+    "tagline": "Achivora works with businesses across Pune, Maharashtra, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Pune",
+    "tagline": "Achivora works with businesses across Pune, Maharashtra, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Pune",
+    "tagline": "Achivora works with businesses across Pune, Maharashtra, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Pune",
+    "tagline": "Achivora works with businesses across Pune, Maharashtra, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Bangalore",
+    "tagline": "Achivora works with businesses across Bangalore, Karnataka, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Bangalore",
+    "tagline": "Achivora works with businesses across Bangalore, Karnataka, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Bangalore",
+    "tagline": "Achivora works with businesses across Bangalore, Karnataka, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Bangalore",
+    "tagline": "Achivora works with businesses across Bangalore, Karnataka, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Bangalore",
+    "tagline": "Achivora works with businesses across Bangalore, Karnataka, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Bangalore",
+    "tagline": "Achivora works with businesses across Bangalore, Karnataka, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Hyderabad",
+    "tagline": "Achivora works with businesses across Hyderabad, Telangana, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Hyderabad",
+    "tagline": "Achivora works with businesses across Hyderabad, Telangana, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Hyderabad",
+    "tagline": "Achivora works with businesses across Hyderabad, Telangana, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Hyderabad",
+    "tagline": "Achivora works with businesses across Hyderabad, Telangana, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Hyderabad",
+    "tagline": "Achivora works with businesses across Hyderabad, Telangana, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Hyderabad",
+    "tagline": "Achivora works with businesses across Hyderabad, Telangana, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Chennai",
+    "tagline": "Achivora works with businesses across Chennai, Tamil Nadu, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Chennai",
+    "tagline": "Achivora works with businesses across Chennai, Tamil Nadu, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Chennai",
+    "tagline": "Achivora works with businesses across Chennai, Tamil Nadu, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Chennai",
+    "tagline": "Achivora works with businesses across Chennai, Tamil Nadu, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Chennai",
+    "tagline": "Achivora works with businesses across Chennai, Tamil Nadu, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Chennai",
+    "tagline": "Achivora works with businesses across Chennai, Tamil Nadu, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Kolkata",
+    "tagline": "Achivora works with businesses across Kolkata, West Bengal, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Kolkata",
+    "tagline": "Achivora works with businesses across Kolkata, West Bengal, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Kolkata",
+    "tagline": "Achivora works with businesses across Kolkata, West Bengal, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Kolkata",
+    "tagline": "Achivora works with businesses across Kolkata, West Bengal, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Kolkata",
+    "tagline": "Achivora works with businesses across Kolkata, West Bengal, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Kolkata",
+    "tagline": "Achivora works with businesses across Kolkata, West Bengal, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Ahmedabad",
+    "tagline": "Achivora works with businesses across Ahmedabad, Gujarat, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Ahmedabad",
+    "tagline": "Achivora works with businesses across Ahmedabad, Gujarat, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Ahmedabad",
+    "tagline": "Achivora works with businesses across Ahmedabad, Gujarat, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Ahmedabad",
+    "tagline": "Achivora works with businesses across Ahmedabad, Gujarat, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Ahmedabad",
+    "tagline": "Achivora works with businesses across Ahmedabad, Gujarat, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Ahmedabad",
+    "tagline": "Achivora works with businesses across Ahmedabad, Gujarat, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-surat",
+    "city": "Surat",
+    "state": "Gujarat",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Surat",
+    "tagline": "Achivora works with businesses across Surat, Gujarat, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-surat",
+    "city": "Surat",
+    "state": "Gujarat",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Surat",
+    "tagline": "Achivora works with businesses across Surat, Gujarat, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-surat",
+    "city": "Surat",
+    "state": "Gujarat",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Surat",
+    "tagline": "Achivora works with businesses across Surat, Gujarat, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-surat",
+    "city": "Surat",
+    "state": "Gujarat",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Surat",
+    "tagline": "Achivora works with businesses across Surat, Gujarat, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-surat",
+    "city": "Surat",
+    "state": "Gujarat",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Surat",
+    "tagline": "Achivora works with businesses across Surat, Gujarat, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-surat",
+    "city": "Surat",
+    "state": "Gujarat",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Surat",
+    "tagline": "Achivora works with businesses across Surat, Gujarat, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-jaipur",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Jaipur",
+    "tagline": "Achivora works with businesses across Jaipur, Rajasthan, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-jaipur",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Jaipur",
+    "tagline": "Achivora works with businesses across Jaipur, Rajasthan, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-jaipur",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Jaipur",
+    "tagline": "Achivora works with businesses across Jaipur, Rajasthan, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-jaipur",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Jaipur",
+    "tagline": "Achivora works with businesses across Jaipur, Rajasthan, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-jaipur",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Jaipur",
+    "tagline": "Achivora works with businesses across Jaipur, Rajasthan, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-jaipur",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Jaipur",
+    "tagline": "Achivora works with businesses across Jaipur, Rajasthan, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Lucknow",
+    "tagline": "Achivora works with businesses across Lucknow, Uttar Pradesh, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Lucknow",
+    "tagline": "Achivora works with businesses across Lucknow, Uttar Pradesh, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Lucknow",
+    "tagline": "Achivora works with businesses across Lucknow, Uttar Pradesh, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Lucknow",
+    "tagline": "Achivora works with businesses across Lucknow, Uttar Pradesh, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Lucknow",
+    "tagline": "Achivora works with businesses across Lucknow, Uttar Pradesh, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Lucknow",
+    "tagline": "Achivora works with businesses across Lucknow, Uttar Pradesh, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-kanpur",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Kanpur",
+    "tagline": "Achivora works with businesses across Kanpur, Uttar Pradesh, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-kanpur",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Kanpur",
+    "tagline": "Achivora works with businesses across Kanpur, Uttar Pradesh, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-kanpur",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Kanpur",
+    "tagline": "Achivora works with businesses across Kanpur, Uttar Pradesh, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-kanpur",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Kanpur",
+    "tagline": "Achivora works with businesses across Kanpur, Uttar Pradesh, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-kanpur",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Kanpur",
+    "tagline": "Achivora works with businesses across Kanpur, Uttar Pradesh, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-kanpur",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Kanpur",
+    "tagline": "Achivora works with businesses across Kanpur, Uttar Pradesh, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-chandigarh",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Chandigarh",
+    "tagline": "Achivora works with businesses across Chandigarh, Punjab, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-chandigarh",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Chandigarh",
+    "tagline": "Achivora works with businesses across Chandigarh, Punjab, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-chandigarh",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Chandigarh",
+    "tagline": "Achivora works with businesses across Chandigarh, Punjab, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-chandigarh",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Chandigarh",
+    "tagline": "Achivora works with businesses across Chandigarh, Punjab, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-chandigarh",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Chandigarh",
+    "tagline": "Achivora works with businesses across Chandigarh, Punjab, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-chandigarh",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Chandigarh",
+    "tagline": "Achivora works with businesses across Chandigarh, Punjab, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-indore",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Indore",
+    "tagline": "Achivora works with businesses across Indore, Madhya Pradesh, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-indore",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Indore",
+    "tagline": "Achivora works with businesses across Indore, Madhya Pradesh, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-indore",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Indore",
+    "tagline": "Achivora works with businesses across Indore, Madhya Pradesh, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-indore",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Indore",
+    "tagline": "Achivora works with businesses across Indore, Madhya Pradesh, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-indore",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Indore",
+    "tagline": "Achivora works with businesses across Indore, Madhya Pradesh, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-indore",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Indore",
+    "tagline": "Achivora works with businesses across Indore, Madhya Pradesh, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-bhopal",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Bhopal",
+    "tagline": "Achivora works with businesses across Bhopal, Madhya Pradesh, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-bhopal",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Bhopal",
+    "tagline": "Achivora works with businesses across Bhopal, Madhya Pradesh, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-bhopal",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Bhopal",
+    "tagline": "Achivora works with businesses across Bhopal, Madhya Pradesh, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-bhopal",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Bhopal",
+    "tagline": "Achivora works with businesses across Bhopal, Madhya Pradesh, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-bhopal",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Bhopal",
+    "tagline": "Achivora works with businesses across Bhopal, Madhya Pradesh, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-bhopal",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Bhopal",
+    "tagline": "Achivora works with businesses across Bhopal, Madhya Pradesh, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-nagpur",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Nagpur",
+    "tagline": "Achivora works with businesses across Nagpur, Maharashtra, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-nagpur",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Nagpur",
+    "tagline": "Achivora works with businesses across Nagpur, Maharashtra, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-nagpur",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Nagpur",
+    "tagline": "Achivora works with businesses across Nagpur, Maharashtra, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-nagpur",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Nagpur",
+    "tagline": "Achivora works with businesses across Nagpur, Maharashtra, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-nagpur",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Nagpur",
+    "tagline": "Achivora works with businesses across Nagpur, Maharashtra, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-nagpur",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Nagpur",
+    "tagline": "Achivora works with businesses across Nagpur, Maharashtra, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-patna",
+    "city": "Patna",
+    "state": "Bihar",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Patna",
+    "tagline": "Achivora works with businesses across Patna, Bihar, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-patna",
+    "city": "Patna",
+    "state": "Bihar",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Patna",
+    "tagline": "Achivora works with businesses across Patna, Bihar, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-patna",
+    "city": "Patna",
+    "state": "Bihar",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Patna",
+    "tagline": "Achivora works with businesses across Patna, Bihar, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-patna",
+    "city": "Patna",
+    "state": "Bihar",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Patna",
+    "tagline": "Achivora works with businesses across Patna, Bihar, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-patna",
+    "city": "Patna",
+    "state": "Bihar",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Patna",
+    "tagline": "Achivora works with businesses across Patna, Bihar, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-patna",
+    "city": "Patna",
+    "state": "Bihar",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Patna",
+    "tagline": "Achivora works with businesses across Patna, Bihar, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-kochi",
+    "city": "Kochi",
+    "state": "Kerala",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Kochi",
+    "tagline": "Achivora works with businesses across Kochi, Kerala, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-kochi",
+    "city": "Kochi",
+    "state": "Kerala",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Kochi",
+    "tagline": "Achivora works with businesses across Kochi, Kerala, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-kochi",
+    "city": "Kochi",
+    "state": "Kerala",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Kochi",
+    "tagline": "Achivora works with businesses across Kochi, Kerala, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-kochi",
+    "city": "Kochi",
+    "state": "Kerala",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Kochi",
+    "tagline": "Achivora works with businesses across Kochi, Kerala, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-kochi",
+    "city": "Kochi",
+    "state": "Kerala",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Kochi",
+    "tagline": "Achivora works with businesses across Kochi, Kerala, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-kochi",
+    "city": "Kochi",
+    "state": "Kerala",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Kochi",
+    "tagline": "Achivora works with businesses across Kochi, Kerala, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Coimbatore",
+    "tagline": "Achivora works with businesses across Coimbatore, Tamil Nadu, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Coimbatore",
+    "tagline": "Achivora works with businesses across Coimbatore, Tamil Nadu, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Coimbatore",
+    "tagline": "Achivora works with businesses across Coimbatore, Tamil Nadu, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Coimbatore",
+    "tagline": "Achivora works with businesses across Coimbatore, Tamil Nadu, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Coimbatore",
+    "tagline": "Achivora works with businesses across Coimbatore, Tamil Nadu, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Coimbatore",
+    "tagline": "Achivora works with businesses across Coimbatore, Tamil Nadu, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-vadodara",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Vadodara",
+    "tagline": "Achivora works with businesses across Vadodara, Gujarat, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-vadodara",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Vadodara",
+    "tagline": "Achivora works with businesses across Vadodara, Gujarat, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-vadodara",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Vadodara",
+    "tagline": "Achivora works with businesses across Vadodara, Gujarat, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-vadodara",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Vadodara",
+    "tagline": "Achivora works with businesses across Vadodara, Gujarat, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-vadodara",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Vadodara",
+    "tagline": "Achivora works with businesses across Vadodara, Gujarat, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-vadodara",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Vadodara",
+    "tagline": "Achivora works with businesses across Vadodara, Gujarat, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "web-development-company-in-dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "service": "Web Development Company",
+    "serviceSlug": "web-development-company",
+    "icon": "Globe",
+    "title": "Web Development Company in Dehradun",
+    "tagline": "Achivora works with businesses across Dehradun, Uttarakhand, delivering web development that performs.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "website-designing-company-in-dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "service": "Website Designing Company",
+    "serviceSlug": "website-designing-company",
+    "icon": "Palette",
+    "title": "Website Designing Company in Dehradun",
+    "tagline": "Achivora works with businesses across Dehradun, Uttarakhand, delivering website designing that performs.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "mobile-app-development-company-in-dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "service": "Mobile App Development Company",
+    "serviceSlug": "mobile-app-development-company",
+    "icon": "Smartphone",
+    "title": "Mobile App Development Company in Dehradun",
+    "tagline": "Achivora works with businesses across Dehradun, Uttarakhand, delivering mobile app development that performs.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "seo-company-in-dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "service": "SEO Company",
+    "serviceSlug": "seo-company",
+    "icon": "TrendingUp",
+    "title": "SEO Company in Dehradun",
+    "tagline": "Achivora works with businesses across Dehradun, Uttarakhand, delivering seo that performs.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "digital-marketing-agency-in-dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "service": "Digital Marketing Agency",
+    "serviceSlug": "digital-marketing-agency",
+    "icon": "Megaphone",
+    "title": "Digital Marketing Agency in Dehradun",
+    "tagline": "Achivora works with businesses across Dehradun, Uttarakhand, delivering digital marketing that performs.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "slug": "ecommerce-development-company-in-dehradun",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "service": "E-commerce Development Company",
+    "serviceSlug": "ecommerce-development-company",
+    "icon": "ShoppingCart",
+    "title": "E-commerce Development Company in Dehradun",
+    "tagline": "Achivora works with businesses across Dehradun, Uttarakhand, delivering e-commerce development that performs.",
+    "image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=1400&auto=format&fit=crop"
+  }
+];
+

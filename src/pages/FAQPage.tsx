@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { HelpCircle, Search } from 'lucide-react';
+import { useNavigate } from '@tanstack/react-router';
+import { ArrowRight, HelpCircle, Search } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import {
@@ -10,6 +11,7 @@ import {
 } from '@/components/ui/accordion';
 
 export default function FAQPage() {
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -126,25 +128,26 @@ export default function FAQPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-light/25 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div
-            className={`text-center mb-16 transition-all duration-1000 ${
+            className={`text-center transition-all duration-1000 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-2xl mb-6 shadow-xl shadow-blue-500/30">
-              <HelpCircle className="h-10 w-10 text-blue-400" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl mb-6">
+              <HelpCircle className="h-10 w-10 text-white" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Questions</span>
+            <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Help Centre</p>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+              Frequently Asked <span className="text-primary-light">Questions</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
               Find answers to common questions about our services, pricing, and development process
             </p>
           </div>
@@ -152,13 +155,13 @@ export default function FAQPage() {
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto mb-12">
             <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-text-sub" />
               <Input
                 type="text"
                 placeholder="Search for questions..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-12 h-14 text-lg bg-card/80 backdrop-blur-sm border-2 border-blue-500/20 focus:border-blue-400/50 transition-colors"
+                className="pl-12 h-14 text-lg bg-surface border border-border focus:border-primary/40 transition-colors"
               />
             </div>
           </div>
@@ -166,21 +169,21 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ Content */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-8">
             {filteredCategories.length > 0 ? (
               filteredCategories.map((category, categoryIndex) => (
                 <Card
                   key={categoryIndex}
-                  className={`border-2 border-blue-500/20 bg-card/80 backdrop-blur-sm shadow-lg shadow-blue-500/10 transition-all duration-500 ${
+                  className={`border border-border bg-surface shadow-card transition-all duration-500 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                   }`}
                   style={{ animationDelay: `${categoryIndex * 100}ms` }}
                 >
                   <CardContent className="p-6 md:p-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-                      <span className="w-2 h-8 bg-gradient-to-b from-blue-400 to-cyan-400 rounded-full" />
+                    <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 flex items-center gap-3">
+                      <span className="w-2 h-8 bg-primary rounded-full" />
                       {category.category}
                     </h2>
                     
@@ -189,12 +192,12 @@ export default function FAQPage() {
                         <AccordionItem
                           key={index}
                           value={`item-${categoryIndex}-${index}`}
-                          className="border-2 border-blue-500/20 rounded-lg px-6 hover:border-blue-400/50 transition-colors bg-muted/30"
+                          className="border border-border rounded-lg px-6 hover:border-primary/40 transition-colors bg-surface"
                         >
-                          <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-blue-400 transition-colors py-4">
+                          <AccordionTrigger className="text-left text-lg font-semibold text-text-main hover:text-primary transition-colors py-4">
                             {item.q}
                           </AccordionTrigger>
-                          <AccordionContent className="text-muted-foreground leading-relaxed pb-4">
+                          <AccordionContent className="text-text-sub leading-relaxed pb-4">
                             {item.a}
                           </AccordionContent>
                         </AccordionItem>
@@ -204,9 +207,9 @@ export default function FAQPage() {
                 </Card>
               ))
             ) : (
-              <Card className="border-2 border-blue-500/20 bg-card/80 backdrop-blur-sm shadow-lg shadow-blue-500/10">
+              <Card className="border border-border bg-surface shadow-card">
                 <CardContent className="p-12 text-center">
-                  <p className="text-xl text-muted-foreground">
+                  <p className="text-xl text-text-sub">
                     No questions found matching "{searchQuery}". Try a different search term.
                   </p>
                 </CardContent>
@@ -217,18 +220,27 @@ export default function FAQPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <Card className="border-2 border-blue-500/30 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 backdrop-blur-sm shadow-2xl shadow-blue-500/20">
-            <CardContent className="p-12 text-center">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Still Have Questions?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Our team is here to help. Get in touch and we'll answer any questions you have about our services.
-              </p>
-            </CardContent>
-          </Card>
+      <section className="py-20 bg-primary-gradient relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+              Still Have Questions?
+            </h2>
+            <p className="text-lg text-white/75 mb-8 max-w-2xl mx-auto">
+              Our team is here to help. Get in touch and we'll answer any questions you have about our services.
+            </p>
+            <button
+              onClick={() => navigate({ to: '/contact' })}
+              className="btn-white text-base px-8 py-3.5"
+            >
+              Contact Us
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          </div>
         </div>
       </section>
     </div>
