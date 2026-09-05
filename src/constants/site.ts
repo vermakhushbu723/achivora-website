@@ -176,8 +176,8 @@ export const SERVICES = [
       'Enterprise App Development',
       'Custom API Development',
     ],
-    accent: '#F5A623',
-    bg: '#FEF6E7',
+    accent: '#2f9e6f',
+    bg: '#e9f9f0',
   },
   {
     icon: 'Cloud',

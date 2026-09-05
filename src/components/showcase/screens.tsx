@@ -265,14 +265,14 @@ function Map(s: Extract<ScreenSpec, { kind: 'map' }>) {
           <path d="M0 110 H50 V20 H120 V70 H200" stroke="#e7e7e7" strokeWidth="8" fill="none" />
           <path
             d="M30 130 Q80 120 100 80 T170 30"
-            stroke="#f79b1f"
+            stroke="#2f9e6f"
             strokeWidth="4"
             fill="none"
             strokeLinecap="round"
             strokeDasharray="7 5"
           />
           <circle cx="30" cy="130" r="6" fill="#29abe2" />
-          <circle cx="170" cy="30" r="6" fill="#f79b1f" />
+          <circle cx="170" cy="30" r="6" fill="#2f9e6f" />
         </svg>
         <span className="absolute top-3 left-3 px-2 py-1 rounded-full bg-white text-[8px] font-black text-text-main shadow-card">
           {s.status}

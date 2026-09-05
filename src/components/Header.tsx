@@ -182,7 +182,7 @@ export default function Header() {
                 className={`text-sm font-bold px-4 py-2 rounded-full border-2 inline-flex items-center gap-2 transition-all duration-150 hover:-translate-y-0.5 ${
                   solid
                     ? 'border-primary text-primary hover:bg-primary hover:text-white'
-                    : 'border-white text-white hover:bg-white/10'
+                    : 'border-primary text-white hover:bg-primary hover:text-white'
                 }`}
               >
                 <Phone className="h-4 w-4" />

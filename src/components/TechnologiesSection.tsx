@@ -53,7 +53,7 @@ export default function TechnologiesSection() {
     {
       title: 'DevOps & Cloud',
       technologies: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Terraform', 'Azure', 'Google Cloud'],
-      color: '#F5A623'
+      color: '#4fb587'
     },
     {
       title: 'Blockchain',

@@ -17,7 +17,7 @@ export function LogoMark({
   variant = 'brand',
 }: {
   className?: string;
-  /** `brand` = orange gradient tile · `white` = flat white on a dark ground */
+  /** `brand` = silk-green gradient tile · `white` = flat white on a dark ground */
   variant?: 'brand' | 'white';
 }) {
   // Unique gradient ids so multiple marks on one page never collide.
@@ -35,8 +35,8 @@ export function LogoMark({
     >
       <defs>
         <linearGradient id={`${id}-tile`} x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#f79b1f" />
-          <stop offset="1" stopColor="#f16b22" />
+          <stop stopColor="#2f9e6f" />
+          <stop offset="1" stopColor="#1c7a55" />
         </linearGradient>
       </defs>
 
@@ -51,7 +51,7 @@ export function LogoMark({
       {/* Left stroke of the A */}
       <path
         d="M13 35.5 22.4 13.6a1.8 1.8 0 0 1 3.3 0l2.4 5.6"
-        stroke={white ? '#f79b1f' : '#ffffff'}
+        stroke={white ? '#2f9e6f' : '#ffffff'}
         strokeWidth="3.4"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -60,7 +60,7 @@ export function LogoMark({
       {/* Right stroke, continuing past the apex as an arrow */}
       <path
         d="M24 35.5 31.4 18.4 38 24.8"
-        stroke={white ? '#f79b1f' : '#ffffff'}
+        stroke={white ? '#2f9e6f' : '#ffffff'}
         strokeWidth="3.4"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -69,7 +69,7 @@ export function LogoMark({
       {/* Crossbar, deliberately short on the right */}
       <path
         d="M18.4 28.4h8.2"
-        stroke={white ? '#f79b1f' : '#ffffff'}
+        stroke={white ? '#2f9e6f' : '#ffffff'}
         strokeWidth="3.4"
         strokeLinecap="round"
         opacity="0.9"

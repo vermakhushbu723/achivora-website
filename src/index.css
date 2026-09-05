@@ -7,7 +7,7 @@
         --radius: 0.75rem;
 
         /* ── Achivora light theme ────────────────────────────────────────
-           Orange #f79b1f -> #f16b22 · sky #29abe2 · white surfaces        */
+           Silk green #2f9e6f -> #1c7a55 · light green #7fd1a4 · white surfaces        */
         --background: 1 0 0;                    /* #FFFFFF */
         --foreground: 0.2303 0.0083 264.40;     /* #1b1d21 */
         --card: 1 0 0;
@@ -15,10 +15,10 @@
         --popover: 1 0 0;
         --popover-foreground: 0.2303 0.0083 264.40;
 
-        --primary: 0.7663 0.1627 66.45;         /* #f79b1f */
+        --primary: 0.6252 0.1224 160.90;        /* #2f9e6f silk green */
         --primary-foreground: 1 0 0;
-        --primary-dark: 0.6825 0.1829 44.41;    /* #f16b22 */
-        --primary-light: 0.8037 0.1634 76.10;   /* #faae1c */
+        --primary-dark: 0.5167 0.1036 161.76;   /* #1c7a55 deep silk green */
+        --primary-light: 0.7957 0.1037 158.85;  /* #7fd1a4 light green */
 
         --secondary: 0.9776 0.0144 224.49;      /* #eefaff */
         --secondary-foreground: 0.5936 0.1373 241.64;
@@ -26,41 +26,41 @@
         --muted: 0.9642 0 0;                    /* #f3f3f3 */
         --muted-foreground: 0.5348 0 0;         /* #6d6d6d */
 
-        --accent: 0.9720 0.0220 74.10;          /* #fff4e6 */
-        --accent-foreground: 0.7663 0.1627 66.45;
+        --accent: 0.9678 0.0206 161.48;         /* #e9f9f0 */
+        --accent-foreground: 0.6252 0.1224 160.90;
 
         --destructive: 0.6122 0.2082 22.24;     /* #e63946 */
         --destructive-foreground: 1 0 0;
 
         --border: 0.9280 0 0;                   /* #e7e7e7 */
         --input: 0.9280 0 0;
-        --ring: 0.7663 0.1627 66.45;
+        --ring: 0.6252 0.1224 160.90;
 
-        --button-default: 0.7663 0.1627 66.45;
-        --button-primary: 0.7663 0.1627 66.45;
-        --button-hover: 0.6825 0.1829 44.41;
+        --button-default: 0.6252 0.1224 160.90;
+        --button-primary: 0.6252 0.1224 160.90;
+        --button-hover: 0.5167 0.1036 161.76;
 
-        --chart-1: 0.7663 0.1627 66.45;         /* orange     */
+        --chart-1: 0.6252 0.1224 160.90;        /* silk green */
         --chart-2: 0.6985 0.1327 232.37;        /* sky        */
         --chart-3: 0.5936 0.1373 241.64;        /* deep blue  */
-        --chart-4: 0.8037 0.1634 76.10;         /* amber      */
+        --chart-4: 0.7957 0.1037 158.85;        /* light green*/
         --chart-5: 0.6347 0.1513 153.41;        /* green      */
 
         --sidebar: 1 0 0;
         --sidebar-foreground: 0.2303 0.0083 264.40;
-        --sidebar-primary: 0.7663 0.1627 66.45;
+        --sidebar-primary: 0.6252 0.1224 160.90;
         --sidebar-primary-foreground: 1 0 0;
-        --sidebar-accent: 0.9720 0.0220 74.10;
-        --sidebar-accent-foreground: 0.7663 0.1627 66.45;
+        --sidebar-accent: 0.9678 0.0206 161.48;
+        --sidebar-accent-foreground: 0.6252 0.1224 160.90;
         --sidebar-border: 0.9280 0 0;
-        --sidebar-ring: 0.7663 0.1627 66.45;
+        --sidebar-ring: 0.6252 0.1224 160.90;
     }
 
     /* The site is light-only; `.dark` mirrors `:root` so any stray
        dark-class markup keeps rendering in the Growork palette. */
     .dark {
         /* ── Achivora light theme ────────────────────────────────────────
-           Orange #f79b1f -> #f16b22 · sky #29abe2 · white surfaces        */
+           Silk green #2f9e6f -> #1c7a55 · light green #7fd1a4 · white surfaces        */
         --background: 1 0 0;                    /* #FFFFFF */
         --foreground: 0.2303 0.0083 264.40;     /* #1b1d21 */
         --card: 1 0 0;
@@ -68,10 +68,10 @@
         --popover: 1 0 0;
         --popover-foreground: 0.2303 0.0083 264.40;
 
-        --primary: 0.7663 0.1627 66.45;         /* #f79b1f */
+        --primary: 0.6252 0.1224 160.90;        /* #2f9e6f silk green */
         --primary-foreground: 1 0 0;
-        --primary-dark: 0.6825 0.1829 44.41;    /* #f16b22 */
-        --primary-light: 0.8037 0.1634 76.10;   /* #faae1c */
+        --primary-dark: 0.5167 0.1036 161.76;   /* #1c7a55 deep silk green */
+        --primary-light: 0.7957 0.1037 158.85;  /* #7fd1a4 light green */
 
         --secondary: 0.9776 0.0144 224.49;      /* #eefaff */
         --secondary-foreground: 0.5936 0.1373 241.64;
@@ -79,34 +79,34 @@
         --muted: 0.9642 0 0;                    /* #f3f3f3 */
         --muted-foreground: 0.5348 0 0;         /* #6d6d6d */
 
-        --accent: 0.9720 0.0220 74.10;          /* #fff4e6 */
-        --accent-foreground: 0.7663 0.1627 66.45;
+        --accent: 0.9678 0.0206 161.48;         /* #e9f9f0 */
+        --accent-foreground: 0.6252 0.1224 160.90;
 
         --destructive: 0.6122 0.2082 22.24;     /* #e63946 */
         --destructive-foreground: 1 0 0;
 
         --border: 0.9280 0 0;                   /* #e7e7e7 */
         --input: 0.9280 0 0;
-        --ring: 0.7663 0.1627 66.45;
+        --ring: 0.6252 0.1224 160.90;
 
-        --button-default: 0.7663 0.1627 66.45;
-        --button-primary: 0.7663 0.1627 66.45;
-        --button-hover: 0.6825 0.1829 44.41;
+        --button-default: 0.6252 0.1224 160.90;
+        --button-primary: 0.6252 0.1224 160.90;
+        --button-hover: 0.5167 0.1036 161.76;
 
-        --chart-1: 0.7663 0.1627 66.45;         /* orange     */
+        --chart-1: 0.6252 0.1224 160.90;        /* silk green */
         --chart-2: 0.6985 0.1327 232.37;        /* sky        */
         --chart-3: 0.5936 0.1373 241.64;        /* deep blue  */
-        --chart-4: 0.8037 0.1634 76.10;         /* amber      */
+        --chart-4: 0.7957 0.1037 158.85;        /* light green*/
         --chart-5: 0.6347 0.1513 153.41;        /* green      */
 
         --sidebar: 1 0 0;
         --sidebar-foreground: 0.2303 0.0083 264.40;
-        --sidebar-primary: 0.7663 0.1627 66.45;
+        --sidebar-primary: 0.6252 0.1224 160.90;
         --sidebar-primary-foreground: 1 0 0;
-        --sidebar-accent: 0.9720 0.0220 74.10;
-        --sidebar-accent-foreground: 0.7663 0.1627 66.45;
+        --sidebar-accent: 0.9678 0.0206 161.48;
+        --sidebar-accent-foreground: 0.6252 0.1224 160.90;
         --sidebar-border: 0.9280 0 0;
-        --sidebar-ring: 0.7663 0.1627 66.45;
+        --sidebar-ring: 0.6252 0.1224 160.90;
     }
 
     * {
@@ -154,7 +154,7 @@
     .btn-white {
         @apply inline-flex items-center justify-center gap-2 px-6 py-3
                bg-white text-primary font-bold rounded-full
-               hover:bg-tint-orange
+               hover:bg-tint-green
                transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0;
     }
 
@@ -179,7 +179,7 @@
 
 @layer utilities {
     .text-gradient {
-        background: linear-gradient(90deg, #f79b1f 0%, #f16b22 100%);
+        background: linear-gradient(90deg, #2f9e6f 0%, #1c7a55 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -399,5 +399,122 @@
     .eyebrow {
         @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs
                font-bold uppercase tracking-widest bg-job-tag-bg text-job-tag-txt;
+    }
+}
+
+/* ── Hero orbit ────────────────────────────────────────────────────────────
+   Two counter-rotating rings of capability chips. The ring spins, each chip
+   spins back at the same rate so its label stays upright, and the core mark
+   breathes. Motion is transform/opacity only, and stops entirely for readers
+   who ask for reduced motion.                                              */
+@keyframes orbitSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbitSpinReverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes orbitPulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.9);
+        opacity: 0.45;
+    }
+}
+
+.orbit {
+    animation: orbitSpin var(--orbit-duration, 30s) linear infinite;
+}
+
+.orbit--reverse {
+    animation-name: orbitSpinReverse;
+}
+
+/* Counter-rotation keeps every chip's text horizontal while it travels. */
+.orbit__chip {
+    animation: orbitSpinReverse var(--orbit-duration, 30s) linear infinite;
+}
+
+.orbit__chip--reverse {
+    animation-name: orbitSpin;
+}
+
+.orbit__pulse {
+    animation: orbitPulse 2.4s ease-in-out infinite;
+}
+
+
+/* Core badge: a soft 3D flip in, not a pop — the icon turns into place. */
+@keyframes orbitBadgeIn {
+    from {
+        transform: rotateY(-90deg) scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Copy underneath rises and settles as the step changes. */
+@keyframes orbitSwapIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Dwell ring: drawn from empty to full across one step. */
+@keyframes orbitDwell {
+    from {
+        stroke-dashoffset: var(--dwell-circumference);
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.orbit__badge {
+    animation: orbitBadgeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    transform-style: preserve-3d;
+}
+
+.orbit__swap {
+    animation: orbitSwapIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.orbit__dwell {
+    animation: orbitDwell var(--dwell-duration, 3600ms) linear forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orbit,
+    .orbit__chip,
+    .orbit__pulse,
+    .orbit__badge,
+    .orbit__swap,
+    .orbit__dwell {
+        animation: none;
     }
 }

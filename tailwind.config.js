@@ -78,8 +78,8 @@ export default {
                 },
 
                 /* ── Invoidea brand palette ───────────────────────────────── */
-                'primary-dark': '#f16b22',
-                'primary-light': '#faae1c',
+                'primary-dark': '#1c7a55',
+                'primary-light': '#7fd1a4',
 
                 /* Secondary sky-blue family */
                 sky: {
@@ -96,7 +96,8 @@ export default {
                 'input-bg': '#f7f7f7',
                 'tint-blue': '#eefaff',
                 'tint-blue-2': '#f1fbff',
-                'tint-orange': '#fff4e6',
+                'tint-green': '#e9f9f0',
+                'tint-green-2': '#d8f3e5',
 
                 /* Text */
                 'text-main': '#1b1d21',
@@ -105,8 +106,8 @@ export default {
                 'text-hint': '#999999',
 
                 /* Status / Tag */
-                'job-tag-bg': '#fff4e6',
-                'job-tag-txt': '#f79b1f',
+                'job-tag-bg': '#e9f9f0',
+                'job-tag-txt': '#2f9e6f',
                 'remote-bg': '#eefaff',
                 'remote-txt': '#0b86c8',
                 'urgent-bg': '#FFEBEB',
@@ -117,14 +118,14 @@ export default {
                 /* Semantic */
                 success: '#22a45d',
                 error: '#e63946',
-                warning: '#faae1c',
+                warning: '#7fd1a4',
                 info: '#29abe2'
             },
             fontFamily: {
                 sans: ['"Mulish"', '"Segoe UI"', 'system-ui', 'sans-serif']
             },
             backgroundImage: {
-                'primary-gradient': 'linear-gradient(90deg, #f79b1f 0%, #f16b22 100%)',
+                'primary-gradient': 'linear-gradient(90deg, #2f9e6f 0%, #1c7a55 100%)',
                 'hero-gradient': 'linear-gradient(135deg, #1b1d21 0%, #0c77bd 55%, #29abe2 100%)',
                 'sky-gradient': 'linear-gradient(135deg, #0b86c8 0%, #29abe2 100%)',
                 'dark-gradient': 'linear-gradient(135deg, #1b1d21 0%, #1e1d28 100%)'
@@ -137,8 +138,8 @@ export default {
             boxShadow: {
                 xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
                 card: '0 2px 12px rgba(0,0,0,0.07)',
-                'card-hover': '0 8px 32px rgba(247,155,31,0.18)',
-                cta: '0 4px 20px rgba(247,155,31,0.38)',
+                'card-hover': '0 8px 32px rgba(47,158,111,0.18)',
+                cta: '0 4px 20px rgba(47,158,111,0.38)',
                 sky: '0 4px 20px rgba(41,171,226,0.32)'
             },
             keyframes: {

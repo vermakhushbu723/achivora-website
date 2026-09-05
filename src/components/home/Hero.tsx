@@ -1,6 +1,6 @@
 import { useNavigate } from '@tanstack/react-router';
 import { CLIENTS, HERO, SITE } from '@/constants/site';
-import HeroPhones from './HeroPhones';
+import HeroVisual from './HeroVisual';
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -76,8 +76,8 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Rotating product screens */}
-            <HeroPhones />
+            {/* Capability orbit */}
+            <HeroVisual />
           </div>
         </div>
       </section>
