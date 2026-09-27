@@ -5,13 +5,24 @@ import { requireAdmin, signToken } from '../middleware/auth.js';
 
 export const authRouter = Router();
 
-/* Slow down credential guessing without locking the real admin out. */
+/*
+ * Slow down credential guessing without locking the real admin out.
+ *
+ * Only failed attempts count: a successful sign-in should never bring the
+ * operator closer to a lockout, and it is the failures that indicate
+ * guessing. The window is also stated in the error so someone who does hit
+ * it knows how long to wait rather than guessing at that too.
+ */
 const loginLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 10,
+  max: 20,
+  skipSuccessfulRequests: true,
   standardHeaders: true,
   legacyHeaders: false,
-  message: { ok: false, error: 'Too many attempts. Try again in a few minutes.' },
+  message: {
+    ok: false,
+    error: 'Too many failed attempts. Please wait 15 minutes and try again.',
+  },
 });
 
 /**
