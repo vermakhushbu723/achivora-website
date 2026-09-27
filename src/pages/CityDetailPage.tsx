@@ -9,6 +9,7 @@ import ProcessSteps from '@/components/home/ProcessSteps';
 import Recognition from '@/components/home/Recognition';
 import BuildTogether from '@/components/home/BuildTogether';
 import NotFoundPage from './NotFoundPage';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function CityDetailPage() {
   const { slug } = useParams({ strict: false }) as { slug?: string };
@@ -53,7 +54,8 @@ export default function CityDetailPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="cityNight" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src={entry.image}
@@ -87,7 +89,7 @@ export default function CityDetailPage() {
               <span className="hidden sm:flex w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 items-center justify-center shrink-0">
                 <Icon className="h-8 w-8 text-white" />
               </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1]">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1]">
                 {entry.service} in <span className="text-primary">{entry.city}</span>
               </h1>
             </div>
@@ -122,7 +124,7 @@ export default function CityDetailPage() {
         <div className="grid sm:grid-cols-2 gap-6">
           {reasons.map((reason, i) => (
             <Reveal key={reason.title} delay={i * 80}>
-              <div className="surface-card h-full p-7 flex gap-4">
+              <div className="surface-card h-full p-5 flex gap-4">
                 <span className="w-11 h-11 rounded-xl bg-job-tag-bg flex items-center justify-center shrink-0">
                   <Check className="h-5 w-5 text-primary" />
                 </span>

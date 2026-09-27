@@ -61,14 +61,17 @@ export default function CatalogDetail({
   return (
     <div className="animate-fade-in">
       {/* ── 1. Hero ───────────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src={entry.image}
             alt=""
             aria-hidden="true"
-            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+            className="hero-pan absolute inset-0 w-full h-full object-cover"
           />
+          {/* Scrim first, brand wash second: the headline has to stay readable */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/88 via-black/72 to-black/82" />
+          <div className="absolute inset-0 bg-primary/15 mix-blend-overlay" />
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
         </div>
@@ -96,7 +99,7 @@ export default function CatalogDetail({
                 <Icon className="h-8 w-8 text-white" />
               </span>
               <div>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.1]">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1]">
                   {entry.title}
                 </h1>
                 <p className="mt-3 text-primary font-bold text-lg">{entry.subheading}</p>
@@ -123,10 +126,10 @@ export default function CatalogDetail({
 
       {/* ── 2. Overview + capability cards ────────────────────────────── */}
       <Section band="surface">
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-14">
+        <div className="grid lg:grid-cols-2 gap-8 items-center mb-9">
           <Reveal variant="left">
             <span className="eyebrow">Best in India</span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-text-main leading-tight">
+            <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-text-main leading-tight">
               Why teams choose Achivora for {entry.label}
             </h2>
             {entry.intro.map((p) => (
@@ -159,7 +162,7 @@ export default function CatalogDetail({
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {entry.capabilities.map((cap, i) => (
             <Reveal key={cap.title} delay={i * 70}>
-              <div className="surface-card h-full p-7 hover:-translate-y-1.5 transition-all duration-300">
+              <div className="surface-card h-full p-5 hover:-translate-y-1.5 transition-all duration-300">
                 <span className="block text-primary font-black text-2xl tabular-nums mb-3">
                   {String(i + 1).padStart(2, '0')}
                 </span>
@@ -234,7 +237,7 @@ export default function CatalogDetail({
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {entry.features.map((feature, i) => (
             <Reveal key={feature.title} delay={i * 70}>
-              <div className="surface-card h-full p-7 hover:-translate-y-1.5 transition-all duration-300">
+              <div className="surface-card h-full p-5 hover:-translate-y-1.5 transition-all duration-300">
                 <span className="w-11 h-11 rounded-xl bg-job-tag-bg flex items-center justify-center mb-4">
                   <Check className="h-5 w-5 text-primary" />
                 </span>
@@ -330,7 +333,7 @@ export default function CatalogDetail({
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {entry.performance.map((item, i) => (
             <Reveal key={item.title} delay={i * 70}>
-              <div className="surface-card h-full p-7 hover:-translate-y-1.5 transition-all duration-300">
+              <div className="surface-card h-full p-5 hover:-translate-y-1.5 transition-all duration-300">
                 <span className="w-11 h-11 rounded-xl bg-remote-bg flex items-center justify-center mb-4">
                   <Check className="h-5 w-5 text-remote-txt" />
                 </span>
@@ -353,7 +356,7 @@ export default function CatalogDetail({
         <div className="grid sm:grid-cols-2 gap-6">
           {entry.compliance.map((item, i) => (
             <Reveal key={item.title} delay={i * 80}>
-              <div className="surface-card h-full p-7 flex gap-4">
+              <div className="surface-card h-full p-5 flex gap-4">
                 <span className="w-11 h-11 rounded-xl bg-job-tag-bg flex items-center justify-center shrink-0">
                   <Check className="h-5 w-5 text-primary" />
                 </span>
@@ -368,7 +371,7 @@ export default function CatalogDetail({
       </Section>
 
       {/* ── 11. Mid-page consultation CTA ─────────────────────────────── */}
-      <section className="relative py-16 bg-primary-gradient overflow-hidden">
+      <section className="relative py-10 bg-primary-gradient overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
@@ -400,7 +403,7 @@ export default function CatalogDetail({
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {entry.industriesServed.map((item, i) => (
             <Reveal key={item.title} delay={i * 70}>
-              <div className="surface-card h-full p-7 hover:-translate-y-1.5 transition-all duration-300">
+              <div className="surface-card h-full p-5 hover:-translate-y-1.5 transition-all duration-300">
                 <h3 className="font-bold text-text-main text-base mb-2">{item.title}</h3>
                 <p className="text-text-sub text-sm leading-relaxed">{item.description}</p>
               </div>
@@ -410,11 +413,11 @@ export default function CatalogDetail({
       </Section>
 
       {/* ── 13. Achievements ──────────────────────────────────────────── */}
-      <section className="py-16 bg-surface">
+      <section className="py-10 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <span className="eyebrow">Our Ratings and Recognition</span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-text-main leading-tight">
+            <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-text-main leading-tight">
               Achievements & Recognitions
             </h2>
           </div>

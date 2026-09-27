@@ -7,6 +7,7 @@ import { INDUSTRY_CATALOG } from '@/data/industries';
 import { CITY_CATALOG } from '@/data/cities';
 import { BLOG_POSTS } from '@/data/blog';
 import { Reveal, Section } from '@/components/home/Section';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 const CORE = [
   { label: 'Home', path: '/' },
@@ -60,7 +61,8 @@ export default function SitemapPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="network" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
         </div>
@@ -69,7 +71,7 @@ export default function SitemapPage() {
           <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
             Sitemap
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
             Every Page on <span className="text-primary">Achivora</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -82,7 +84,7 @@ export default function SitemapPage() {
         <div className="space-y-10">
           {groups.map((group, gi) => (
             <Reveal key={group.title} delay={gi * 60}>
-              <div className="surface-card p-7">
+              <div className="surface-card p-5">
                 <h2 className="font-extrabold text-text-main text-xl mb-5 pb-3 border-b border-border">
                   {group.title}
                 </h2>

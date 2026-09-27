@@ -77,57 +77,61 @@ export default {
                     ring: 'oklch(var(--sidebar-ring))'
                 },
 
-                /* ── Invoidea brand palette ───────────────────────────────── */
-                'primary-dark': '#1c7a55',
-                'primary-light': '#7fd1a4',
+                /* ── Brand palette ────────────────────────────────────────
+                   Every surface/ink token is a CSS variable so the whole
+                   site repaints for the dark theme without a single
+                   `dark:` class in the markup. Values live in index.css. */
+                'primary-dark': 'rgb(var(--c-primary-dark) / <alpha-value>)',
+                'primary-light': 'rgb(var(--c-primary-light) / <alpha-value>)',
 
                 /* Secondary sky-blue family */
                 sky: {
-                    DEFAULT: '#29abe2',
-                    dark: '#0b86c8',
-                    deep: '#0c77bd',
-                    bright: '#0ba0db'
+                    DEFAULT: 'rgb(var(--c-sky) / <alpha-value>)',
+                    dark: 'rgb(var(--c-sky-dark) / <alpha-value>)',
+                    deep: 'rgb(var(--c-sky-deep) / <alpha-value>)',
+                    bright: 'rgb(var(--c-sky-bright) / <alpha-value>)'
                 },
 
                 /* Backgrounds / Surfaces */
-                bg: '#FFFFFF',
-                surface: '#FFFFFF',
-                'bg-soft': '#f3f3f3',
-                'input-bg': '#f7f7f7',
-                'tint-blue': '#eefaff',
-                'tint-blue-2': '#f1fbff',
-                'tint-green': '#e9f9f0',
-                'tint-green-2': '#d8f3e5',
+                bg: 'rgb(var(--c-bg) / <alpha-value>)',
+                surface: 'rgb(var(--c-surface) / <alpha-value>)',
+                'surface-2': 'rgb(var(--c-surface-2) / <alpha-value>)',
+                'bg-soft': 'rgb(var(--c-bg-soft) / <alpha-value>)',
+                'input-bg': 'rgb(var(--c-input-bg) / <alpha-value>)',
+                'tint-blue': 'rgb(var(--c-tint-blue) / <alpha-value>)',
+                'tint-blue-2': 'rgb(var(--c-tint-blue-2) / <alpha-value>)',
+                'tint-green': 'rgb(var(--c-tint-green) / <alpha-value>)',
+                'tint-green-2': 'rgb(var(--c-tint-green-2) / <alpha-value>)',
 
                 /* Text */
-                'text-main': '#1b1d21',
-                'text-body': '#4e4e4e',
-                'text-sub': '#6d6d6d',
-                'text-hint': '#999999',
+                'text-main': 'rgb(var(--c-text-main) / <alpha-value>)',
+                'text-body': 'rgb(var(--c-text-body) / <alpha-value>)',
+                'text-sub': 'rgb(var(--c-text-sub) / <alpha-value>)',
+                'text-hint': 'rgb(var(--c-text-hint) / <alpha-value>)',
 
                 /* Status / Tag */
-                'job-tag-bg': '#e9f9f0',
-                'job-tag-txt': '#2f9e6f',
-                'remote-bg': '#eefaff',
-                'remote-txt': '#0b86c8',
-                'urgent-bg': '#FFEBEB',
-                'urgent-txt': '#e63946',
-                'course-clr': '#9B59B6',
-                'course-bg': '#F5EEFB',
+                'job-tag-bg': 'rgb(var(--c-job-tag-bg) / <alpha-value>)',
+                'job-tag-txt': 'rgb(var(--c-job-tag-txt) / <alpha-value>)',
+                'remote-bg': 'rgb(var(--c-remote-bg) / <alpha-value>)',
+                'remote-txt': 'rgb(var(--c-remote-txt) / <alpha-value>)',
+                'urgent-bg': 'rgb(var(--c-urgent-bg) / <alpha-value>)',
+                'urgent-txt': 'rgb(var(--c-urgent-txt) / <alpha-value>)',
+                'course-clr': 'rgb(var(--c-course-clr) / <alpha-value>)',
+                'course-bg': 'rgb(var(--c-course-bg) / <alpha-value>)',
 
                 /* Semantic */
-                success: '#22a45d',
-                error: '#e63946',
-                warning: '#7fd1a4',
-                info: '#29abe2'
+                success: 'rgb(var(--c-success) / <alpha-value>)',
+                error: 'rgb(var(--c-error) / <alpha-value>)',
+                warning: 'rgb(var(--c-warning) / <alpha-value>)',
+                info: 'rgb(var(--c-sky) / <alpha-value>)'
             },
             fontFamily: {
                 sans: ['"Mulish"', '"Segoe UI"', 'system-ui', 'sans-serif']
             },
             backgroundImage: {
-                'primary-gradient': 'linear-gradient(90deg, #2f9e6f 0%, #1c7a55 100%)',
-                'hero-gradient': 'linear-gradient(135deg, #1b1d21 0%, #0c77bd 55%, #29abe2 100%)',
-                'sky-gradient': 'linear-gradient(135deg, #0b86c8 0%, #29abe2 100%)',
+                'primary-gradient': 'linear-gradient(90deg, rgb(var(--c-primary)) 0%, rgb(var(--c-primary-dark)) 100%)',
+                'hero-gradient': 'linear-gradient(135deg, rgb(var(--c-hero-a)) 0%, rgb(var(--c-hero-b)) 55%, rgb(var(--c-hero-c)) 100%)',
+                'sky-gradient': 'linear-gradient(135deg, rgb(var(--c-sky-dark)) 0%, rgb(var(--c-sky)) 100%)',
                 'dark-gradient': 'linear-gradient(135deg, #1b1d21 0%, #1e1d28 100%)'
             },
             borderRadius: {
@@ -137,8 +141,8 @@ export default {
             },
             boxShadow: {
                 xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
-                card: '0 2px 12px rgba(0,0,0,0.07)',
-                'card-hover': '0 8px 32px rgba(47,158,111,0.18)',
+                card: 'var(--shadow-card)',
+                'card-hover': 'var(--shadow-card-hover)',
                 cta: '0 4px 20px rgba(47,158,111,0.38)',
                 sky: '0 4px 20px rgba(41,171,226,0.32)'
             },

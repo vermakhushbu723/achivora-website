@@ -4,6 +4,7 @@ import { PORTFOLIO } from '@/constants/site';
 import { Reveal, Section } from '@/components/home/Section';
 import Recognition from '@/components/home/Recognition';
 import BuildTogether from '@/components/home/BuildTogether';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function PortfolioPage() {
   const [filter, setFilter] = useState('All');
@@ -29,7 +30,8 @@ export default function PortfolioPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="designReview" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
@@ -39,7 +41,7 @@ export default function PortfolioPage() {
           <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
             Our Diverse Portfolio
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
             Work We Are <span className="text-primary">Proud Of</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">

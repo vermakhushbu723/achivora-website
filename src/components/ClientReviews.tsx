@@ -69,10 +69,10 @@ export default function ClientReviews() {
   ];
 
   return (
-    <section id="client-reviews" className="py-20 bg-surface">
+    <section id="client-reviews" className="py-12 bg-surface">
       <div className="container mx-auto px-4">
         <div
-          className={`text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`text-center mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
           <h2 className="section-title">
@@ -91,7 +91,7 @@ export default function ClientReviews() {
                 }`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <CardContent className="p-8">
+              <CardContent className="p-6">
                 <div className="flex items-start gap-4 mb-6">
                   <Avatar className="w-16 h-16 border border-border">
                     <AvatarImage src={review.image} alt={review.name} />

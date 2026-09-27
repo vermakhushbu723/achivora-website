@@ -28,7 +28,9 @@ export default function PhoneMockup({
       <span className="absolute -left-[2px] top-24 w-[3px] h-8 rounded-l bg-[#1b1d21]" />
       <span className="absolute -right-[2px] top-20 w-[3px] h-12 rounded-r bg-[#1b1d21]" />
 
-      <div className="relative h-[470px] rounded-[1.7rem] bg-white overflow-hidden">
+      {/* `light` pins the mock app UI to the light palette: this is a picture
+          of a phone screen, so it should not repaint with the site theme. */}
+      <div className="light relative h-[470px] rounded-[1.7rem] bg-white overflow-hidden">
         {/* Notch */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-4 bg-[#1b1d21] rounded-b-xl z-20" />
 

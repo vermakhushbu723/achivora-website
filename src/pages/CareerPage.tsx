@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import {
   ArrowRight,
   Briefcase,
@@ -12,6 +12,8 @@ import {
 import { SITE } from '@/constants/site';
 import { Reveal, Section, SectionHeading } from '@/components/home/Section';
 import BuildTogether from '@/components/home/BuildTogether';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
+import ApplyDialog from '@/components/career/ApplyDialog';
 
 const OPENINGS = [
   { role: 'Senior React Developer', team: 'Engineering', type: 'Full-time', location: 'Noida / Hybrid', exp: '4-7 years' },
@@ -36,6 +38,9 @@ const PERKS = [
 ];
 
 export default function CareerPage() {
+  /** The opening whose application dialog is on screen, if any. */
+  const [applyingTo, setApplyingTo] = useState<string | null>(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,7 +48,8 @@ export default function CareerPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="career" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
@@ -53,7 +59,7 @@ export default function CareerPage() {
           <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
             Careers at Achivora
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
             Build Things That <span className="text-primary">Actually Ship</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -74,7 +80,7 @@ export default function CareerPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {PERKS.map((perk, i) => (
             <Reveal key={perk.title} delay={i * 70}>
-              <div className="surface-card h-full p-7 hover:-translate-y-1.5 transition-all duration-300">
+              <div className="surface-card h-full p-5 hover:-translate-y-1.5 transition-all duration-300">
                 <span className="w-14 h-14 rounded-2xl bg-job-tag-bg flex items-center justify-center mb-5">
                   <perk.icon className="h-7 w-7 text-primary" />
                 </span>
@@ -122,15 +128,13 @@ export default function CareerPage() {
                   </div>
                 </div>
 
-                <a
-                  href={`mailto:${SITE.careerEmail}?subject=${encodeURIComponent(
-                    `Application: ${job.role}`,
-                  )}`}
+                <button
+                  onClick={() => setApplyingTo(job.role)}
                   className="btn-primary px-6 py-2.5 text-sm shrink-0"
                 >
                   Apply Now
                   <ArrowRight className="h-4 w-4" />
-                </a>
+                </button>
               </div>
             </Reveal>
           ))}
@@ -146,6 +150,12 @@ export default function CareerPage() {
           </a>
         </div>
       </Section>
+
+      <ApplyDialog
+        role={applyingTo ?? ''}
+        open={applyingTo !== null}
+        onOpenChange={(open) => !open && setApplyingTo(null)}
+      />
 
       <BuildTogether />
     </div>

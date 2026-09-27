@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { ArrowRight, Home, Search } from 'lucide-react';
 import { useNavigate } from '@tanstack/react-router';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function NotFoundPage() {
   const navigate = useNavigate();
@@ -19,7 +20,8 @@ export default function NotFoundPage() {
 
   return (
     <div className="animate-fade-in">
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-hero-gradient pt-32 pb-20">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-hero-gradient pt-12 pb-12">
+        <HeroBackdrop image="codeDark" intensity="medium" />
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary/25 blur-3xl" />
           <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-white/10 blur-3xl" />

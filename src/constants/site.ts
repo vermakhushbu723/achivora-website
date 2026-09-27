@@ -41,7 +41,7 @@ export const SITE = {
   offices: [
     {
       country: 'Head Office',
-      flag: '🇮🇳',
+      icon: 'MapPin',
       address: 'Noida Sector 62, A Block, Uttar Pradesh, India',
     },
   ],
@@ -253,7 +253,7 @@ export const PORTFOLIO = [
     description:
       'An institute portal handling admissions, fee collection, attendance and parent communication end to end.',
     image:
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop',
   },
   {
     name: 'Aurelia',

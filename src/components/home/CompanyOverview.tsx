@@ -11,7 +11,7 @@ export default function CompanyOverview() {
       <Reveal>
         <div className="max-w-4xl">
           <span className="eyebrow">About Achivora</span>
-          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-text-main leading-tight">
+          <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-text-main leading-tight">
             {OVERVIEW.title}
           </h2>
           {OVERVIEW.paragraphs.map((p) => (
@@ -31,7 +31,7 @@ export default function CompanyOverview() {
         <div className="grid md:grid-cols-2 gap-6">
           {OVERVIEW.blocks.map((block, i) => (
             <Reveal key={block.title} delay={i * 80}>
-              <div className="surface-card h-full p-7">
+              <div className="surface-card h-full p-5">
                 <h3 className="font-bold text-text-main text-lg mb-3 leading-snug">
                   {block.title}
                 </h3>
@@ -41,7 +41,7 @@ export default function CompanyOverview() {
           ))}
         </div>
 
-        <div className="surface-card p-7 mt-6">
+        <div className="surface-card p-5 mt-6">
           <h3 className="font-bold text-text-main text-lg mb-5">
             Features & Integrations We Build In
           </h3>

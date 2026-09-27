@@ -1,10 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/logo-mark.png" />
     <meta name="theme-color" content="#2f9e6f" />
+
+    <!--
+      Theme is applied before the first paint. React mounts a frame or two
+      after the document is parsed, so without this the page would render in
+      the default palette and then visibly repaint once next-themes catches
+      up. Reading the same `theme` key it uses keeps the two in step.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.classList.toggle('light', theme === 'light');
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {
+          /* private mode: the dark default already on <html> stands */
+        }
+      })();
+    </script>
+
+    <!-- Painted before the stylesheet loads, so the first frame is never white. -->
+    <style>
+      html.dark,
+      html.dark body {
+        background-color: #0b0f0e;
+      }
+      html.light,
+      html.light body {
+        background-color: #ffffff;
+      }
+    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

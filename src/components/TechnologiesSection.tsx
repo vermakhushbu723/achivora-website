@@ -63,10 +63,10 @@ export default function TechnologiesSection() {
   ];
 
   return (
-    <section id="technologies-section" className="py-20 bg-tint-blue">
+    <section id="technologies-section" className="py-12 bg-tint-blue">
       <div className="container mx-auto px-4">
         <div
-          className={`text-center mb-12 transition-all duration-1000 ${
+          className={`text-center mb-8 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
@@ -87,7 +87,7 @@ export default function TechnologiesSection() {
               }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <CardContent className="p-8">
+              <CardContent className="p-6">
                 <div className="w-full h-2 rounded-full mb-6" style={{ backgroundColor: category.color }} />
                 <h3 className="text-2xl font-bold text-text-main mb-6">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">

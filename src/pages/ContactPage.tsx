@@ -7,6 +7,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import { SITE } from '@/constants/site';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
+import { submitForm, type ApiError } from '@/lib/api';
 
 export default function ContactPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,27 +30,9 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      // Send to WhatsApp
-      const whatsappMessage = encodeURIComponent(
-        `*New Contact Form Submission*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Phone:* ${formData.phone}\n*Message:* ${formData.message}`
-      );
-      const whatsappUrl = `${SITE.whatsapp}?text=${whatsappMessage}`;
-
-      // Open WhatsApp in new tab
-      window.open(whatsappUrl, '_blank');
-
-      // Send to Email using mailto
-      const emailSubject = encodeURIComponent('New Contact Form Submission from ' + formData.name);
-      const emailBody = encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
-      );
-      const mailtoUrl = `${SITE.emailHref}?subject=${emailSubject}&body=${emailBody}`;
-
-      // Open email client
-      window.location.href = mailtoUrl;
-
-      // Wait a bit before showing success
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // The message is stored server-side and read from the admin panel;
+      // it no longer depends on the visitor having a mail client set up.
+      await submitForm('contact', formData);
 
       toast.success('Message sent successfully!', {
         description: 'We will contact you soon.'
@@ -56,8 +40,9 @@ export default function ContactPage() {
 
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
+      const { message, fields } = error as ApiError;
       toast.error('Failed to send message', {
-        description: 'Please try again later.'
+        description: fields ? Object.values(fields)[0] : message
       });
     } finally {
       setIsSubmitting(false);
@@ -105,7 +90,8 @@ export default function ContactPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-primary-gradient">
+        <HeroBackdrop image="officeMeeting" intensity="strong" />
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop"
@@ -119,7 +105,7 @@ export default function ContactPage() {
               }`}
           >
             <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Let's Talk</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
               Get in <span className="text-primary-light">Touch</span>
             </h1>
             <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -130,16 +116,16 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-20 bg-surface">
+      <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form */}
             <div
               className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0 animate-fade-in-left' : 'opacity-0 -translate-x-10'
                 }`}
             >
               <Card className="h-full border border-border bg-surface shadow-card">
-                <CardContent className="p-8">
+                <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 bg-job-tag-bg rounded-xl flex items-center justify-center shadow-card">
                       <Send className="h-6 w-6 text-primary" />

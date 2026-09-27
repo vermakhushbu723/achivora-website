@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function FAQPage() {
   const navigate = useNavigate();
@@ -128,7 +129,8 @@ export default function FAQPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-primary-gradient">
+        <HeroBackdrop image="support" intensity="strong" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-light/25 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -144,7 +146,7 @@ export default function FAQPage() {
               <HelpCircle className="h-10 w-10 text-white" />
             </div>
             <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Help Centre</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
               Frequently Asked <span className="text-primary-light">Questions</span>
             </h1>
             <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -153,7 +155,7 @@ export default function FAQPage() {
           </div>
 
           {/* Search Bar */}
-          <div className="max-w-2xl mx-auto mb-12">
+          <div className="max-w-2xl mx-auto mb-8">
             <div className="relative">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-text-sub" />
               <Input
@@ -169,7 +171,7 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ Content */}
-      <section className="py-20 bg-surface">
+      <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-8">
             {filteredCategories.length > 0 ? (
@@ -181,7 +183,7 @@ export default function FAQPage() {
                   }`}
                   style={{ animationDelay: `${categoryIndex * 100}ms` }}
                 >
-                  <CardContent className="p-6 md:p-8">
+                  <CardContent className="p-6 md:p-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 flex items-center gap-3">
                       <span className="w-2 h-8 bg-primary rounded-full" />
                       {category.category}
@@ -220,14 +222,14 @@ export default function FAQPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary-gradient relative overflow-hidden">
+      <section className="py-12 bg-primary-gradient relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-white leading-tight mb-4">
               Still Have Questions?
             </h2>
             <p className="text-lg text-white/75 mb-8 max-w-2xl mx-auto">

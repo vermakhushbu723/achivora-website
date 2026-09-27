@@ -1,5 +1,6 @@
 import {
   ArrowLeft,
+  ArrowRight,
   Bell,
   Check,
   ChevronRight,
@@ -10,7 +11,6 @@ import {
   Sparkles,
   Star,
   User,
-
 } from 'lucide-react';
 
 /**
@@ -250,7 +250,10 @@ function Detail(s: Extract<ScreenSpec, { kind: 'detail' }>) {
 
       <div className="absolute bottom-3 inset-x-4 h-9 rounded-xl bg-primary-gradient flex items-center justify-between px-3">
         <span className="text-white text-[9px] font-bold truncate">{s.ctaMeta ?? ''}</span>
-        <span className="text-white text-[9px] font-black shrink-0">{s.cta} →</span>
+        <span className="text-white text-[9px] font-black shrink-0 inline-flex items-center gap-0.5">
+          {s.cta}
+          <ArrowRight className="h-2.5 w-2.5" />
+        </span>
       </div>
     </div>
   );

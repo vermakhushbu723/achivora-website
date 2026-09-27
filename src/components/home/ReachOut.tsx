@@ -1,7 +1,8 @@
 import { useState, type FormEvent } from 'react';
-import { Send, ShieldCheck } from 'lucide-react';
+import { MapPin, Send, ShieldCheck } from 'lucide-react';
 import { toast } from 'sonner';
 import { BUDGET_OPTIONS, SITE } from '@/constants/site';
+import { submitForm, type ApiError } from '@/lib/api';
 import { Reveal, Section } from './Section';
 
 const FIELD =
@@ -11,27 +12,40 @@ export default function ReachOut() {
   const [sending, setSending] = useState(false);
   const [nda, setNda] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Capture the form now: React clears currentTarget once the handler returns.
     const form = e.currentTarget;
+    const data = new FormData(form);
     setSending(true);
 
-    // No backend wired up yet — acknowledge locally and reset.
-    window.setTimeout(() => {
-      setSending(false);
-      toast.success("Thanks — we'll get back to you within one working day.");
+    try {
+      await submitForm('enquiry', {
+        name: data.get('name'),
+        email: data.get('email'),
+        phone: data.get('phone'),
+        budget: data.get('budget'),
+        brief: data.get('brief'),
+        nda,
+      });
+      toast.success("Thanks - we'll get back to you within one working day.");
       form.reset();
       setNda(false);
-    }, 700);
+    } catch (err) {
+      const { message, fields } = err as ApiError;
+      // A 422 names the offending input; anything else is a single message.
+      toast.error(fields ? Object.values(fields)[0] : message);
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
     <Section id="reach-out" band="surface">
-      <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="grid lg:grid-cols-2 gap-8 items-start">
         <Reveal variant="left">
           <span className="eyebrow">Reach Out</span>
-          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-text-main leading-tight">
+          <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-text-main leading-tight">
             Partnering for Business Success
           </h2>
           <p className="mt-4 text-lg text-text-sub leading-relaxed">
@@ -42,7 +56,9 @@ export default function ReachOut() {
           <div className="mt-8 space-y-4">
             {SITE.offices.map((office) => (
               <div key={office.country} className="surface-card p-5 flex gap-4">
-                <span className="text-2xl">{office.flag}</span>
+                <span className="w-10 h-10 rounded-xl bg-job-tag-bg flex items-center justify-center shrink-0">
+                  <MapPin className="h-5 w-5 text-primary" />
+                </span>
                 <div>
                   <p className="font-bold text-text-main text-sm">{office.country}</p>
                   <p className="text-text-sub text-sm mt-0.5">{office.address}</p>
@@ -60,7 +76,7 @@ export default function ReachOut() {
         </Reveal>
 
         <Reveal variant="right">
-          <form onSubmit={handleSubmit} className="surface-card p-7 sm:p-8 space-y-4">
+          <form onSubmit={handleSubmit} className="surface-card p-5 sm:p-6 space-y-4">
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="ro-name" className="block text-sm font-semibold text-text-main mb-2">

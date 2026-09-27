@@ -33,10 +33,10 @@ export default function ValueProp() {
 
   return (
     <Section band="canvas">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="grid lg:grid-cols-2 gap-8 items-center">
         <Reveal variant="left">
           <span className="eyebrow">{VALUE_PROP.eyebrow}</span>
-          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-text-main leading-tight">
+          <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-text-main leading-tight">
             {VALUE_PROP.title}
           </h2>
           {VALUE_PROP.paragraphs.map((p) => (
@@ -59,7 +59,7 @@ export default function ValueProp() {
         <Reveal variant="right">
           <div
             ref={ref}
-            className="relative rounded-3xl bg-primary-gradient p-8 shadow-card-hover overflow-hidden"
+            className="relative rounded-3xl bg-primary-gradient p-6 shadow-card-hover overflow-hidden"
           >
             <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-white/10 blur-2xl pointer-events-none" />
             <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-white/10 blur-2xl pointer-events-none" />

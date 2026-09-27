@@ -34,10 +34,10 @@ export default function PartnersSection() {
   ];
 
   return (
-    <section id="partners-section" className="py-20 bg-surface">
+    <section id="partners-section" className="py-12 bg-surface">
       <div className="container mx-auto px-4">
         <div
-          className={`text-center mb-12 transition-all duration-1000 ${
+          className={`text-center mb-8 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
@@ -58,7 +58,7 @@ export default function PartnersSection() {
               }`}
               style={{ animationDelay: `${index * 50}ms` }}
             >
-              <CardContent className="p-8 flex items-center justify-center">
+              <CardContent className="p-6 flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-job-tag-bg rounded-xl flex items-center justify-center mb-3 mx-auto shadow-card group-hover:bg-job-tag-bg transition-all duration-300">
                     <span className="text-2xl font-bold text-primary">{partner.logo}</span>

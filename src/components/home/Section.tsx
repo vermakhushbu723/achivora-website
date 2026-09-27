@@ -22,7 +22,7 @@ export function Section({
   children: ReactNode;
 }) {
   return (
-    <section id={id} className={`py-20 ${BAND[band]} ${className}`}>
+    <section id={id} className={`py-12 ${BAND[band]} ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
     </section>
   );
@@ -50,7 +50,7 @@ export function SectionHeading({
   return (
     <div
       ref={ref}
-      className={`reveal ${shown ? 'is-shown' : ''} mb-12 ${
+      className={`reveal ${shown ? 'is-shown' : ''} mb-8 ${
         align === 'center' ? 'text-center' : 'text-left'
       }`}
     >
@@ -66,7 +66,7 @@ export function SectionHeading({
         </span>
       )}
       <h2
-        className={`mt-3 text-3xl md:text-4xl font-extrabold leading-tight ${
+        className={`mt-3 text-2xl md:text-3xl font-extrabold leading-tight ${
           onDark ? 'text-white' : 'text-text-main'
         }`}
       >

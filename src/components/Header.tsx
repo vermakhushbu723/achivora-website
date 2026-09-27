@@ -6,6 +6,7 @@ import { SITE } from '@/constants/site';
 import { MEGA_MENUS, type MegaMenu } from '@/constants/megaMenu';
 import { icon } from '@/components/home/icons';
 import Logo from './Logo';
+import ThemeToggle from './ThemeToggle';
 
 const SOCIALS = [
   { Icon: SiFacebook, href: SITE.social.facebook, label: 'Facebook' },
@@ -19,7 +20,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
-  const closeTimer = useRef<number | null>(null);
+  const navRef = useRef<HTMLDivElement | null>(null);
 
   const navigate = useNavigate();
   const currentPath = useRouterState().location.pathname;
@@ -44,44 +45,49 @@ export default function Header() {
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
+  // A click outside the header dismisses an open mega menu.
+  useEffect(() => {
+    if (!openMenu) return;
+    const onPointerDown = (e: PointerEvent) => {
+      if (!navRef.current?.contains(e.target as Node)) setOpenMenu(null);
+    };
+    window.addEventListener('pointerdown', onPointerDown);
+    return () => window.removeEventListener('pointerdown', onPointerDown);
+  }, [openMenu]);
+
   const go = (path: string) => {
     navigate({ to: path });
     setMobileOpen(false);
     setOpenMenu(null);
   };
 
-  /** Grace period so the pointer can cross the gap into the panel. */
-  const hoverOpen = (label: string) => {
-    if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    setOpenMenu(label);
-  };
-  const hoverClose = () => {
-    if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    closeTimer.current = window.setTimeout(() => setOpenMenu(null), 140);
-  };
+  /**
+   * Mega menus open on click, not hover: a pointer crossing the bar should
+   * never take over the screen. The label toggles its own panel, and a
+   * pointerdown anywhere outside the header closes whatever is open.
+   */
+  const toggleMenu = (label: string) =>
+    setOpenMenu((current) => (current === label ? null : label));
 
-  const solid = isScrolled || mobileOpen || openMenu !== null;
+  /** The contact strip folds away once you scroll, or a panel takes over. */
+  const stripHidden = isScrolled || mobileOpen || openMenu !== null;
 
   const isActive = (menu: MegaMenu) =>
     currentPath === menu.path || currentPath.startsWith(`${menu.path}/`);
 
   const linkClass = (active: boolean) =>
-    `px-4 py-2 rounded-full text-sm font-semibold transition-colors duration-150 inline-flex items-center gap-1 ${
-      solid
-        ? active
-          ? 'text-primary bg-job-tag-bg'
-          : 'text-text-body hover:text-primary hover:bg-job-tag-bg'
-        : active
-          ? 'text-white bg-white/15'
-          : 'text-white/85 hover:text-white hover:bg-white/10'
+    `px-3.5 py-1.5 rounded-full text-sm font-semibold transition-colors duration-150 inline-flex items-center gap-1 ${
+      active
+        ? 'text-primary bg-job-tag-bg'
+        : 'text-text-body hover:text-primary hover:bg-job-tag-bg'
     }`;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header ref={navRef} className="sticky top-0 z-50">
       {/* ── Top contact bar ── */}
       <div
-        className={`hidden lg:block transition-all duration-300 overflow-hidden ${
-          solid ? 'max-h-0 opacity-0' : 'max-h-12 opacity-100 border-b border-white/10'
+        className={`hidden lg:block bg-[rgb(var(--c-band-dark))] transition-all duration-300 overflow-hidden ${
+          stripHidden ? 'max-h-0 opacity-0' : 'max-h-12 opacity-100 border-b border-white/10'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,7 +97,7 @@ export default function Header() {
                 href={SITE.phoneHref}
                 className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
               >
-                <span>🇮🇳</span> {SITE.phone}
+                <Phone className="h-3.5 w-3.5" /> {SITE.phone}
               </a>
               <a
                 href={SITE.emailHref}
@@ -123,20 +129,11 @@ export default function Header() {
       </div>
 
       {/* ── Main bar ── */}
-      <div
-        className={`transition-all duration-300 ${
-          solid
-            ? 'bg-white/95 backdrop-blur-md shadow-card border-b border-border'
-            : 'bg-transparent'
-        }`}
-      >
+      <div className="bg-surface backdrop-blur-md shadow-card border-b border-border transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-14 lg:h-16">
             <button onClick={() => go('/')} className="group">
-              <Logo
-                onDark={!solid}
-                markClassName="h-10 w-10 group-hover:scale-105 transition-transform"
-              />
+              <Logo markClassName="h-8 group-hover:scale-105 transition-transform" />
             </button>
 
             {/* Desktop nav */}
@@ -146,14 +143,10 @@ export default function Header() {
               </button>
 
               {MEGA_MENUS.map((menu) => (
-                <div
-                  key={menu.label}
-                  onMouseEnter={() => hoverOpen(menu.label)}
-                  onMouseLeave={hoverClose}
-                >
+                <div key={menu.label}>
                   <button
-                    onClick={() => go(menu.path)}
-                    className={linkClass(isActive(menu))}
+                    onClick={() => toggleMenu(menu.label)}
+                    className={linkClass(isActive(menu) || openMenu === menu.label)}
                     aria-expanded={openMenu === menu.label}
                     aria-haspopup="true"
                   >
@@ -177,32 +170,30 @@ export default function Header() {
 
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-3">
+              <ThemeToggle />
               <a
                 href={SITE.phoneHref}
-                className={`text-sm font-bold px-4 py-2 rounded-full border-2 inline-flex items-center gap-2 transition-all duration-150 hover:-translate-y-0.5 ${
-                  solid
-                    ? 'border-primary text-primary hover:bg-primary hover:text-white'
-                    : 'border-primary text-white hover:bg-primary hover:text-white'
-                }`}
+                className="text-xs font-bold px-3.5 py-1.5 rounded-full border-2 border-primary text-primary inline-flex items-center gap-1.5 transition-all duration-150 hover:-translate-y-0.5 hover:bg-primary hover:text-white"
               >
-                <Phone className="h-4 w-4" />
+                <Phone className="h-3.5 w-3.5" />
                 Talk To Experts
               </a>
-              <button onClick={() => go('/contact')} className="btn-primary text-sm px-5 py-2">
+              <button onClick={() => go('/contact')} className="btn-primary text-xs px-4 py-1.5">
                 Get a Quote
               </button>
             </div>
 
-            {/* Mobile toggle */}
-            <button
-              className={`lg:hidden p-2 rounded-lg transition-colors ${
-                solid ? 'text-text-main hover:bg-bg-soft' : 'text-white hover:bg-white/10'
-              }`}
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            {/* Mobile controls */}
+            <div className="lg:hidden flex items-center gap-2">
+              <ThemeToggle />
+              <button
+                className="p-2 rounded-lg text-text-main hover:bg-bg-soft transition-colors"
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label="Toggle menu"
+              >
+                {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -210,8 +201,6 @@ export default function Header() {
         {MEGA_MENUS.map((menu) => (
           <div
             key={menu.label}
-            onMouseEnter={() => hoverOpen(menu.label)}
-            onMouseLeave={hoverClose}
             className={`hidden lg:block absolute left-0 right-0 top-full origin-top transition-all duration-200 ${
               openMenu === menu.label
                 ? 'opacity-100 visible translate-y-0'
@@ -222,7 +211,7 @@ export default function Header() {
               <div className="bg-surface rounded-2xl border border-border shadow-card-hover overflow-hidden">
                 <div className="grid grid-cols-12">
                   {/* Link columns */}
-                  <div className="col-span-9 p-7 grid grid-cols-3 gap-x-8 gap-y-7">
+                  <div className="col-span-9 p-5 grid grid-cols-3 gap-x-8 gap-y-7">
                     {menu.columns.map((column) => {
                       const ColIcon = icon(column.icon);
                       return (
@@ -257,7 +246,7 @@ export default function Header() {
                   </div>
 
                   {/* Promo panel */}
-                  <div className="col-span-3 bg-primary-gradient p-7 flex flex-col justify-center">
+                  <div className="col-span-3 bg-primary-gradient p-5 flex flex-col justify-center">
                     <h3 className="font-extrabold text-white text-lg leading-snug mb-2">
                       {menu.feature.title}
                     </h3>
@@ -281,7 +270,7 @@ export default function Header() {
 
       {/* ── Mobile menu ── */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-border shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto">
+        <div className="lg:hidden bg-surface border-t border-border shadow-card-hover max-h-[calc(100vh-4rem)] overflow-y-auto">
           <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
             <button
               onClick={() => go('/')}
@@ -338,9 +327,10 @@ export default function Header() {
                       ))}
                       <button
                         onClick={() => go(menu.path)}
-                        className="mx-4 mb-1 text-primary text-sm font-bold text-left"
+                        className="mx-4 mb-1 text-primary text-sm font-bold text-left inline-flex items-center gap-1.5"
                       >
-                        View all {menu.label} →
+                        View all {menu.label}
+                        <ArrowRight className="h-3.5 w-3.5" />
                       </button>
                     </div>
                   )}

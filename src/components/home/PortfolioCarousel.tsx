@@ -53,7 +53,7 @@ export default function PortfolioCarousel() {
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
         <div className="max-w-2xl">
           <span className="eyebrow">Our Diverse Portfolio</span>
-          <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-text-main leading-tight">
+          <h2 className="mt-3 text-2xl md:text-3xl font-extrabold text-text-main leading-tight">
             Our Excellence is Driven By Client Satisfaction
           </h2>
         </div>

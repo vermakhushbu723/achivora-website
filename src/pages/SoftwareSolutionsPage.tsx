@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Code2, CheckCircle, ArrowRight, Database, Cpu, Network, GitBranch, Server, Boxes } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from '@tanstack/react-router';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function SoftwareSolutionsPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -54,7 +55,8 @@ export default function SoftwareSolutionsPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-primary-gradient">
+        <HeroBackdrop image="dualScreens" intensity="strong" />
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=2074&auto=format&fit=crop"
@@ -76,7 +78,7 @@ export default function SoftwareSolutionsPage() {
               <Code2 className="h-10 w-10 text-white" />
             </div>
             <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Service</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
               Software <span className="text-primary-light">Solutions</span>
             </h1>
             <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -87,10 +89,10 @@ export default function SoftwareSolutionsPage() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-20 bg-surface">
+      <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
           <Card className="border border-border bg-surface shadow-card">
-            <CardContent className="p-8 md:p-12">
+            <CardContent className="p-6 md:p-12">
               <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
                 Enterprise Software Development
               </h2>
@@ -106,9 +108,9 @@ export default function SoftwareSolutionsPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="section-title">
               Key Features
             </h2>
@@ -141,9 +143,9 @@ export default function SoftwareSolutionsPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-surface">
+      <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="section-title">
               What You Get
             </h2>
@@ -169,9 +171,9 @@ export default function SoftwareSolutionsPage() {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="section-title">
               Technologies We Use
             </h2>
@@ -196,9 +198,9 @@ export default function SoftwareSolutionsPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-surface">
+      <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="section-title">
               Our Development Process
             </h2>
@@ -231,14 +233,14 @@ export default function SoftwareSolutionsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary-gradient relative overflow-hidden">
+      <section className="py-12 bg-primary-gradient relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-white leading-tight mb-4">
               Ready for Custom Software?
             </h2>
             <p className="text-lg text-white/75 mb-8 max-w-2xl mx-auto">

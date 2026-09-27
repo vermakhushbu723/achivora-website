@@ -5,6 +5,7 @@ import { BLOG_POSTS } from '@/data/blog';
 import { Reveal, Section, SectionHeading } from '@/components/home/Section';
 import BuildTogether from '@/components/home/BuildTogether';
 import NotFoundPage from './NotFoundPage';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function BlogPostPage() {
   const { slug } = useParams({ strict: false }) as { slug?: string };
@@ -26,7 +27,8 @@ export default function BlogPostPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="reading" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <img
             src={post.image}
@@ -52,7 +54,7 @@ export default function BlogPostPage() {
             {post.category}
           </span>
 
-          <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.15]">
+          <h1 className="mt-5 text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.15]">
             {post.title}
           </h1>
 

@@ -70,10 +70,10 @@ export default function ProjectProcess() {
   ];
 
   return (
-    <section id="project-process" className="py-20 bg-tint-blue">
+    <section id="project-process" className="py-12 bg-tint-blue">
       <div className="container mx-auto px-4">
         <div
-          className={`text-center mb-12 transition-all duration-1000 ${
+          className={`text-center mb-8 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
@@ -97,7 +97,7 @@ export default function ProjectProcess() {
                   }`}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <CardContent className="p-8">
+                  <CardContent className="p-6">
                     <div className="absolute -top-4 -left-4 w-12 h-12 bg-primary-gradient rounded-xl flex items-center justify-center shadow-card font-bold text-white text-xl">
                       {index + 1}
                     </div>

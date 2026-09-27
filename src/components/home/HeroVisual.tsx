@@ -7,73 +7,45 @@ import {
   Smartphone,
   ShieldCheck,
   Sparkles,
+  Star,
   type LucideIcon,
 } from 'lucide-react';
 
 /**
- * Hero orbit: a glass core surrounded by two counter-rotating rings of
- * capability chips. The rings spin with CSS transforms only (cheap on the
- * compositor), each chip counter-spins so its icon stays upright, and the
- * core steps through what we build — icon, counted-up metric, and a ring
- * that fills over the dwell so the next step never arrives unannounced.
- * Everything freezes under `prefers-reduced-motion`.
+ * Hero orbit: a glass core inside one rotating ring of capability chips.
+ *
+ * The ring spins with CSS transforms only (cheap on the compositor) and each
+ * chip counter-spins so its label stays upright. The core steps through what
+ * we build — icon, counted-up metric, and a ring that fills over the dwell so
+ * the next step never arrives unannounced — and the chip matching the current
+ * step lights up, so the two halves read as one idea. Everything freezes
+ * under `prefers-reduced-motion`.
+ *
+ * Geometry note: the whole thing has to fit the hero's right-hand column, so
+ * the orbit radius is held just under half that column's width. One ring at a
+ * generous radius reads better here than two cramped ones.
  */
 const DWELL = 3600;
+const RADIUS = 148;
 
 type Orbit = { icon: LucideIcon; label: string };
 
-const ORBIT_INNER: Orbit[] = [
-  { icon: Code2, label: 'Web' },
-  { icon: Smartphone, label: 'Mobile' },
-  { icon: Cloud, label: 'Cloud' },
-];
-
-const ORBIT_OUTER: Orbit[] = [
+const ORBIT: Orbit[] = [
   { icon: Bot, label: 'AI' },
+  { icon: Smartphone, label: 'Mobile' },
   { icon: Database, label: 'Data' },
+  { icon: Cloud, label: 'Cloud' },
   { icon: ShieldCheck, label: 'Security' },
+  { icon: Code2, label: 'Web' },
   { icon: Sparkles, label: 'Design' },
 ];
 
-/** `to` drives the count-up; `suffix` and `decimals` shape how it reads.
- *  `ring` links the step to the orbit chip that should light up with it. */
+/** `to` drives the count-up; `ring` links the step to the chip that lights up. */
 const CORE_ROTATION = [
-  {
-    icon: Bot,
-    ring: 'AI',
-    title: 'AI Agents',
-    to: 40,
-    suffix: '%',
-    decimals: 0,
-    caption: 'less manual work',
-  },
-  {
-    icon: Smartphone,
-    ring: 'Mobile',
-    title: 'Mobile Apps',
-    to: 4.8,
-    suffix: '★',
-    decimals: 1,
-    caption: 'average store rating',
-  },
-  {
-    icon: Cloud,
-    ring: 'Cloud',
-    title: 'Cloud Platforms',
-    to: 99.9,
-    suffix: '%',
-    decimals: 1,
-    caption: 'uptime delivered',
-  },
-  {
-    icon: Code2,
-    ring: 'Web',
-    title: 'Custom Software',
-    to: 250,
-    suffix: '+',
-    decimals: 0,
-    caption: 'products shipped',
-  },
+  { icon: Bot, ring: 'AI', title: 'AI Agents', to: 40, suffix: '%', decimals: 0, caption: 'less manual work' },
+  { icon: Smartphone, ring: 'Mobile', title: 'Mobile Apps', to: 4.8, suffix: 'star', decimals: 1, caption: 'average store rating' },
+  { icon: Cloud, ring: 'Cloud', title: 'Cloud Platforms', to: 99.9, suffix: '%', decimals: 1, caption: 'uptime delivered' },
+  { icon: Code2, ring: 'Web', title: 'Custom Software', to: 250, suffix: '+', decimals: 0, caption: 'products shipped' },
 ];
 
 /** Counts from zero to `to` on every change, easing out so it settles softly. */
@@ -91,8 +63,7 @@ function useCountUp(to: number, decimals: number, run: boolean) {
 
     const tick = (now: number) => {
       const t = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - t, 3);
-      setValue(to * eased);
+      setValue(to * (1 - Math.pow(1 - t, 3)));
       if (t < 1) frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
@@ -100,60 +71,6 @@ function useCountUp(to: number, decimals: number, run: boolean) {
   }, [to, decimals, run]);
 
   return value.toFixed(decimals);
-}
-
-function Ring({
-  items,
-  radius,
-  duration,
-  reverse,
-  activeLabel,
-}: {
-  items: Orbit[];
-  radius: number;
-  duration: string;
-  reverse?: boolean;
-  activeLabel: string;
-}) {
-  return (
-    <div
-      className={`orbit ${reverse ? 'orbit--reverse' : ''} absolute inset-0`}
-      style={{ ['--orbit-duration' as string]: duration }}
-    >
-      {items.map((item, i) => {
-        const angle = (360 / items.length) * i;
-        const Icon = item.icon;
-        const isActive = item.label === activeLabel;
-        return (
-          <div
-            key={item.label}
-            className="absolute left-1/2 top-1/2"
-            style={{
-              transform: `translate(-50%, -50%) rotate(${angle}deg) translateY(-${radius}px) rotate(-${angle}deg)`,
-            }}
-          >
-            <div
-              className={`orbit__chip ${reverse ? 'orbit__chip--reverse' : ''}`}
-              style={{ ['--orbit-duration' as string]: duration }}
-            >
-              <span
-                className={`flex items-center gap-2 px-3 py-2 rounded-xl backdrop-blur-md border transition-all duration-500 ${
-                  isActive
-                    ? 'bg-primary/90 border-primary shadow-cta scale-110'
-                    : 'bg-white/10 border-white/20 shadow-card'
-                }`}
-              >
-                <Icon className={`h-4 w-4 ${isActive ? 'text-white' : 'text-primary-light'}`} />
-                <span className="text-white text-xs font-bold whitespace-nowrap">
-                  {item.label}
-                </span>
-              </span>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
 }
 
 export default function HeroVisual() {
@@ -175,49 +92,77 @@ export default function HeroVisual() {
   const core = CORE_ROTATION[active];
   const CoreIcon = core.icon;
   const count = useCountUp(core.to, core.decimals, animated);
-
-  /* Circumference of the dwell ring; re-keyed each step so it restarts. */
-  const CIRC = 2 * Math.PI * 34;
+  const CIRC = 2 * Math.PI * 30;
 
   return (
-    <div className="relative hidden lg:flex items-center justify-center h-[34rem]">
+    <div className="relative hidden lg:flex items-center justify-center h-[23rem]">
       {/* Glow bed */}
-      <div className="absolute w-[24rem] h-[24rem] rounded-full bg-primary/25 blur-3xl pointer-events-none" />
+      <div className="absolute w-[17rem] h-[17rem] rounded-full bg-primary/25 blur-3xl pointer-events-none" />
 
-      {/* Static guide rings the chips travel along */}
-      <div className="absolute w-[17rem] h-[17rem] rounded-full border border-white/10" />
-      <div className="absolute w-[26rem] h-[26rem] rounded-full border border-dashed border-white/10" />
+      {/* Track the chips travel along */}
+      <div
+        className="absolute rounded-full border border-dashed border-white/10"
+        style={{ width: RADIUS * 2, height: RADIUS * 2 }}
+      />
 
-      {/* Rotating rings */}
-      <div className="absolute w-[17rem] h-[17rem]">
-        <Ring items={ORBIT_INNER} radius={136} duration="26s" activeLabel={core.ring} />
-      </div>
-      <div className="absolute w-[26rem] h-[26rem]">
-        <Ring items={ORBIT_OUTER} radius={208} duration="38s" reverse activeLabel={core.ring} />
+      {/* Rotating ring */}
+      <div
+        className="orbit absolute"
+        style={{
+          width: RADIUS * 2,
+          height: RADIUS * 2,
+          ['--orbit-duration' as string]: '34s',
+        }}
+      >
+        {ORBIT.map((item, i) => {
+          const angle = (360 / ORBIT.length) * i;
+          const Icon = item.icon;
+          const isActive = item.label === core.ring;
+          return (
+            <div
+              key={item.label}
+              className="absolute left-1/2 top-1/2"
+              style={{
+                transform: `translate(-50%, -50%) rotate(${angle}deg) translateY(-${RADIUS}px) rotate(-${angle}deg)`,
+              }}
+            >
+              <div
+                className="orbit__chip"
+                style={{ ['--orbit-duration' as string]: '34s' }}
+              >
+                <span
+                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg backdrop-blur-md border transition-all duration-500 ${
+                    isActive
+                      ? 'bg-primary/90 border-primary shadow-cta scale-110'
+                      : 'bg-white/10 border-white/20'
+                  }`}
+                >
+                  <Icon className={`h-3.5 w-3.5 ${isActive ? 'text-white' : 'text-primary-light'}`} />
+                  <span className="text-white text-[11px] font-bold whitespace-nowrap">
+                    {item.label}
+                  </span>
+                </span>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* Core card */}
       <div className="relative z-10 animate-float">
-        <div className="w-56 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 p-6 text-center shadow-cta">
+        <div className="w-40 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-4 text-center shadow-cta">
           {/* Icon badge inside a ring that fills across the dwell */}
-          <div className="relative mx-auto mb-4 h-20 w-20">
-            <svg className="absolute inset-0 -rotate-90" viewBox="0 0 80 80">
-              <circle
-                cx="40"
-                cy="40"
-                r="34"
-                fill="none"
-                stroke="rgba(255,255,255,0.15)"
-                strokeWidth="3"
-              />
+          <div className="relative mx-auto mb-2.5 h-16 w-16">
+            <svg className="absolute inset-0 -rotate-90" viewBox="0 0 64 64">
+              <circle cx="32" cy="32" r="30" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="2.5" />
               <circle
                 key={active}
-                cx="40"
-                cy="40"
-                r="34"
+                cx="32"
+                cy="32"
+                r="30"
                 fill="none"
                 stroke="oklch(var(--primary))"
-                strokeWidth="3"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeDasharray={CIRC}
                 strokeDashoffset={animated ? CIRC : 0}
@@ -231,29 +176,33 @@ export default function HeroVisual() {
 
             <span
               key={`badge-${active}`}
-              className="orbit__badge absolute inset-3 flex items-center justify-center rounded-2xl bg-primary-gradient shadow-cta"
+              className="orbit__badge absolute inset-2.5 flex items-center justify-center rounded-xl bg-primary-gradient shadow-cta"
             >
-              <CoreIcon className="h-7 w-7 text-white" />
+              <CoreIcon className="h-5 w-5 text-white" />
             </span>
           </div>
 
           <div key={core.title} className="orbit__swap">
-            <p className="text-white font-extrabold text-base leading-tight">{core.title}</p>
-            <p className="mt-2 text-4xl font-black text-primary-light tabular-nums">
+            <p className="text-white font-extrabold text-sm leading-tight">{core.title}</p>
+            <p className="mt-1 text-2xl font-black text-primary-light tabular-nums leading-none">
               {count}
-              <span className="text-2xl align-top">{core.suffix}</span>
+              {core.suffix === 'star' ? (
+                <Star className="inline h-4 w-4 -mt-1 ml-0.5" fill="currentColor" />
+              ) : (
+                <span className="text-lg align-top">{core.suffix}</span>
+              )}
             </p>
-            <p className="mt-1 text-white/60 text-xs">{core.caption}</p>
+            <p className="mt-1 text-white/60 text-[11px] leading-snug">{core.caption}</p>
           </div>
 
-          <div className="mt-5 flex justify-center gap-1.5">
+          <div className="mt-3 flex justify-center gap-1.5">
             {CORE_ROTATION.map((c, i) => (
               <button
                 key={c.title}
                 onClick={() => setActive(i)}
                 aria-label={`Show ${c.title}`}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  i === active ? 'w-6 bg-primary' : 'w-1.5 bg-white/30 hover:bg-white/60'
+                className={`h-1 rounded-full transition-all duration-300 ${
+                  i === active ? 'w-5 bg-primary' : 'w-1 bg-white/30 hover:bg-white/60'
                 }`}
               />
             ))}

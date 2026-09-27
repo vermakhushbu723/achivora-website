@@ -21,7 +21,7 @@ export function AppSuiteSection({ domain }: { domain: AppDomain }) {
           const RoleIcon = icon(role.icon);
           return (
             <Reveal key={role.title} delay={i * 80}>
-              <div className="surface-card h-full p-7 text-center hover:-translate-y-1.5 transition-all duration-300 group">
+              <div className="surface-card h-full p-5 text-center hover:-translate-y-1.5 transition-all duration-300 group">
                 <span className="w-16 h-16 rounded-2xl bg-job-tag-bg mx-auto flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-primary">
                   <RoleIcon className="h-8 w-8 text-primary transition-colors duration-300 group-hover:text-white" />
                 </span>
@@ -48,7 +48,7 @@ function RoleScreens({ role, flip }: { role: AppRoleSpec; flip: boolean }) {
 
   return (
     <div
-      className={`grid lg:grid-cols-2 gap-12 items-center ${
+      className={`grid lg:grid-cols-2 gap-8 items-center ${
         flip ? 'lg:[&>*:first-child]:order-2' : ''
       }`}
     >

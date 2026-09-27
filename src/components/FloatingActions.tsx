@@ -71,7 +71,7 @@ export default function FloatingActions() {
           role="presentation"
         >
           <div
-            className="relative w-full max-w-md bg-surface rounded-2xl border border-border shadow-card-hover p-7"
+            className="relative w-full max-w-md bg-surface rounded-2xl border border-border shadow-card-hover p-5"
             onClick={(e) => e.stopPropagation()}
           >
             <button

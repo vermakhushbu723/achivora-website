@@ -21,7 +21,7 @@ function TechChip({ tech }: { tech: string }) {
 
   return (
     <span className="group flex items-center gap-2.5 whitespace-nowrap pl-3 pr-5 py-2.5 rounded-xl bg-tint-blue border border-border text-text-main text-sm font-semibold hover:bg-primary hover:text-white hover:border-primary transition-colors cursor-default">
-      <span className="w-8 h-8 rounded-lg bg-white shadow-xs flex items-center justify-center shrink-0 overflow-hidden">
+      <span className="w-8 h-8 rounded-lg bg-surface border border-border flex items-center justify-center shrink-0 overflow-hidden">
         {src ? (
           <img
             src={src}

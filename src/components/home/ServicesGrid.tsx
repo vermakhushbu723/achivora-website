@@ -1,6 +1,7 @@
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { useNavigate } from '@tanstack/react-router';
 import { SERVICES } from '@/constants/site';
+import { photoForSlug } from '@/constants/media';
 import { icon } from './icons';
 import { Reveal, Section, SectionHeading } from './Section';
 
@@ -20,9 +21,22 @@ export default function ServicesGrid() {
           const Icon = icon(service.icon);
           return (
             <Reveal key={service.title} delay={i * 80}>
-              <article className="surface-card h-full p-7 flex flex-col hover:-translate-y-1.5 transition-all duration-300 group">
+              <article className="media-card surface-card h-full flex flex-col overflow-hidden hover:-translate-y-1.5 transition-all duration-300 group">
+                {/* Photograph banner; the accent tile overlaps its lower edge */}
+                <div className="relative h-36 overflow-hidden">
+                  <img
+                    src={photoForSlug(service.title, 600)}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    className="media-card__img absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
+                </div>
+
+                <div className="relative px-7 pb-7 -mt-7 flex flex-col flex-1">
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
+                  className="w-14 h-14 rounded-2xl border border-border flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
                   style={{ backgroundColor: service.bg }}
                 >
                   <Icon className="h-7 w-7" style={{ color: service.accent }} />
@@ -53,6 +67,7 @@ export default function ServicesGrid() {
                   Learn more
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </button>
+                </div>
               </article>
             </Reveal>
           );

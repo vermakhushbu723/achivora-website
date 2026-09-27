@@ -2,6 +2,7 @@ import { Target, Users, Award, TrendingUp, Lightbulb, Heart, Rocket } from 'luci
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
 import TeamSection from '@/components/TeamSection';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -54,7 +55,8 @@ export default function AboutPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-primary-gradient">
+        <HeroBackdrop image="teamWhiteboard" intensity="strong" />
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop"
@@ -68,7 +70,7 @@ export default function AboutPage() {
               }`}
           >
             <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Our Story</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
               About <span className="text-primary-light">Achivora</span>
             </h1>
             <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -79,9 +81,9 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 bg-surface">
+      <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div
               className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0 animate-fade-in-left' : 'opacity-0 -translate-x-10'
                 }`}
@@ -132,9 +134,9 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="section-title">
               Our Core Values
             </h2>
@@ -151,7 +153,7 @@ export default function AboutPage() {
                   }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardContent className="p-8">
+                <CardContent className="p-6">
                   <div className="w-14 h-14 bg-job-tag-bg rounded-xl flex items-center justify-center mb-6 shadow-card">
                     <value.icon className="h-7 w-7 text-primary" />
                   </div>
@@ -168,9 +170,9 @@ export default function AboutPage() {
       <TeamSection />
 
       {/* Timeline Section */}
-      <section className="py-20 bg-tint-blue">
+      <section className="py-12 bg-tint-blue">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="section-title">
               Our Journey
             </h2>
@@ -188,7 +190,7 @@ export default function AboutPage() {
                     }`}
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
-                  <CardContent className="p-8">
+                  <CardContent className="p-6">
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0">
                         <div className="w-20 h-20 bg-job-tag-bg rounded-xl flex items-center justify-center shadow-card">

@@ -12,6 +12,14 @@ export default defineConfig({
     server: {
         port: 3000,
         open: true,
+        // The API runs beside the dev server; proxying keeps the browser on
+        // one origin, so there is no CORS dance and no base URL in the code.
+        proxy: {
+            '/api': {
+                target: 'http://localhost:5000',
+                changeOrigin: true,
+            },
+        },
     },
     build: {
         outDir: 'dist',

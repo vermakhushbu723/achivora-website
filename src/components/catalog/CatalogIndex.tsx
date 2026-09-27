@@ -5,6 +5,8 @@ import type { CatalogEntry } from '@/data/catalog-types';
 import { icon } from '@/components/home/icons';
 import { Reveal, Section } from '@/components/home/Section';
 import BuildTogether from '@/components/home/BuildTogether';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
+import { photoForSlug } from '@/constants/media';
 
 /** Searchable, category-filtered listing shared by the three catalogue indexes. */
 export default function CatalogIndex({
@@ -48,7 +50,8 @@ export default function CatalogIndex({
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="teamDesk" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
@@ -58,7 +61,7 @@ export default function CatalogIndex({
           <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
             {eyebrow}
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
             {title} <span className="text-primary">{highlight}</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">{tagline}</p>
@@ -102,7 +105,7 @@ export default function CatalogIndex({
         </p>
 
         {visible.length === 0 ? (
-          <p className="text-center text-text-sub py-16">Nothing matches that search.</p>
+          <p className="text-center text-text-sub py-10">Nothing matches that search.</p>
         ) : (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {visible.map((entry, i) => {
@@ -111,28 +114,41 @@ export default function CatalogIndex({
                 <Reveal key={entry.slug} delay={Math.min(i, 8) * 60}>
                   <button
                     onClick={() => navigate({ to: `${basePath}/${entry.slug}` })}
-                    className="surface-card h-full w-full p-7 text-left flex flex-col hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden"
+                    className="media-card surface-card h-full w-full text-left flex flex-col hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden"
                   >
+                    {/* Photograph banner; the icon badge overlaps its lower edge */}
+                    <span className="relative block h-36 overflow-hidden">
+                      <img
+                        src={photoForSlug(entry.slug, 600)}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        className="media-card__img absolute inset-0 w-full h-full object-cover"
+                      />
+                      <span className="absolute inset-0 bg-gradient-to-t from-surface via-surface/35 to-transparent" />
+                      <span className="tag bg-surface/90 text-remote-txt absolute top-3 left-3 backdrop-blur-sm">
+                        {entry.category}
+                      </span>
+                    </span>
+
                     <span className="absolute inset-x-0 bottom-0 h-1 bg-primary-gradient scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
 
-                    <span className="w-14 h-14 rounded-2xl bg-job-tag-bg flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
-                      <Icon className="h-7 w-7 text-primary" />
-                    </span>
+                    <span className="relative px-7 pb-7 -mt-7 flex flex-col flex-1">
+                      <span className="w-14 h-14 rounded-2xl bg-job-tag-bg border border-border flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <Icon className="h-7 w-7 text-primary" />
+                      </span>
 
-                    <span className="tag bg-tint-blue text-remote-txt self-start mb-3">
-                      {entry.category}
-                    </span>
+                      <h2 className="font-bold text-text-main text-lg mb-2 leading-snug">
+                        {entry.label}
+                      </h2>
+                      <p className="text-text-sub text-sm leading-relaxed flex-1 line-clamp-3">
+                        {entry.tagline}
+                      </p>
 
-                    <h2 className="font-bold text-text-main text-lg mb-2 leading-snug">
-                      {entry.label}
-                    </h2>
-                    <p className="text-text-sub text-sm leading-relaxed flex-1 line-clamp-3">
-                      {entry.tagline}
-                    </p>
-
-                    <span className="inline-flex items-center gap-1.5 text-primary text-sm font-bold mt-4">
-                      Learn more
-                      <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      <span className="inline-flex items-center gap-1.5 text-primary text-sm font-bold mt-4">
+                        Learn more
+                        <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </span>
                     </span>
                   </button>
                 </Reveal>

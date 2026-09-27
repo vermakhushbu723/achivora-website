@@ -3,36 +3,92 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
+    /* ──────────────────────────────────────────────────────────────────────
+       Two themes, one set of names. Every colour the markup can reach is a
+       variable here, so a class like `bg-surface` or `text-text-main` is
+       correct in both themes and no component carries a `dark:` variant.
+       `.dark` is the default — App.tsx boots next-themes with it.
+       ───────────────────────────────────────────────────────────────────── */
+    :root,
+    .light {
         --radius: 0.75rem;
 
-        /* ── Achivora light theme ────────────────────────────────────────
-           Silk green #2f9e6f -> #1c7a55 · light green #7fd1a4 · white surfaces        */
-        --background: 1 0 0;                    /* #FFFFFF */
-        --foreground: 0.2303 0.0083 264.40;     /* #1b1d21 */
+        /* Brand — silk green */
+        --c-primary: 47 158 111;            /* #2f9e6f */
+        --c-primary-dark: 28 122 85;        /* #1c7a55 */
+        --c-primary-light: 127 209 164;     /* #7fd1a4 */
+
+        /* Secondary sky */
+        --c-sky: 41 171 226;
+        --c-sky-dark: 11 134 200;
+        --c-sky-deep: 12 119 189;
+        --c-sky-bright: 11 160 219;
+
+        /* Surfaces */
+        --c-bg: 255 255 255;
+        --c-surface: 255 255 255;
+        --c-surface-2: 250 252 251;
+        --c-bg-soft: 243 243 243;
+        --c-input-bg: 247 247 247;
+        --c-tint-blue: 238 250 255;
+        --c-tint-blue-2: 241 251 255;
+        --c-tint-green: 233 249 240;
+        --c-tint-green-2: 216 243 229;
+
+        /* Ink */
+        --c-text-main: 27 29 33;
+        --c-text-body: 78 78 78;
+        --c-text-sub: 109 109 109;
+        --c-text-hint: 153 153 153;
+
+        /* Tags / status */
+        --c-job-tag-bg: 233 249 240;
+        --c-job-tag-txt: 47 158 111;
+        --c-remote-bg: 238 250 255;
+        --c-remote-txt: 11 134 200;
+        --c-urgent-bg: 255 235 235;
+        --c-urgent-txt: 230 57 70;
+        --c-course-clr: 155 89 182;
+        --c-course-bg: 245 238 251;
+        --c-success: 34 164 93;
+        --c-error: 230 57 70;
+        --c-warning: 127 209 164;
+
+        /* Dark bands that stay dark in both themes (hero, footer, strips) */
+        --c-hero-a: 27 29 33;
+        --c-hero-b: 12 119 189;
+        --c-hero-c: 41 171 226;
+        --c-band-dark: 25 25 25;
+
+        --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.07);
+        --shadow-card-hover: 0 8px 32px rgba(47, 158, 111, 0.18);
+
+        /* shadcn token bridge (oklch) */
+        --background: 1 0 0;
+        --foreground: 0.2303 0.0083 264.40;
         --card: 1 0 0;
         --card-foreground: 0.2303 0.0083 264.40;
         --popover: 1 0 0;
         --popover-foreground: 0.2303 0.0083 264.40;
 
-        --primary: 0.6252 0.1224 160.90;        /* #2f9e6f silk green */
+        --primary: 0.6252 0.1224 160.90;
         --primary-foreground: 1 0 0;
-        --primary-dark: 0.5167 0.1036 161.76;   /* #1c7a55 deep silk green */
-        --primary-light: 0.7957 0.1037 158.85;  /* #7fd1a4 light green */
+        --primary-dark: 0.5167 0.1036 161.76;
+        --primary-light: 0.7957 0.1037 158.85;
 
-        --secondary: 0.9776 0.0144 224.49;      /* #eefaff */
+        --secondary: 0.9776 0.0144 224.49;
         --secondary-foreground: 0.5936 0.1373 241.64;
 
-        --muted: 0.9642 0 0;                    /* #f3f3f3 */
-        --muted-foreground: 0.5348 0 0;         /* #6d6d6d */
+        --muted: 0.9642 0 0;
+        --muted-foreground: 0.5348 0 0;
 
-        --accent: 0.9678 0.0206 161.48;         /* #e9f9f0 */
+        --accent: 0.9678 0.0206 161.48;
         --accent-foreground: 0.6252 0.1224 160.90;
 
-        --destructive: 0.6122 0.2082 22.24;     /* #e63946 */
+        --destructive: 0.6122 0.2082 22.24;
         --destructive-foreground: 1 0 0;
 
-        --border: 0.9280 0 0;                   /* #e7e7e7 */
+        --border: 0.9280 0 0;
         --input: 0.9280 0 0;
         --ring: 0.6252 0.1224 160.90;
 
@@ -40,11 +96,11 @@
         --button-primary: 0.6252 0.1224 160.90;
         --button-hover: 0.5167 0.1036 161.76;
 
-        --chart-1: 0.6252 0.1224 160.90;        /* silk green */
-        --chart-2: 0.6985 0.1327 232.37;        /* sky        */
-        --chart-3: 0.5936 0.1373 241.64;        /* deep blue  */
-        --chart-4: 0.7957 0.1037 158.85;        /* light green*/
-        --chart-5: 0.6347 0.1513 153.41;        /* green      */
+        --chart-1: 0.6252 0.1224 160.90;
+        --chart-2: 0.6985 0.1327 232.37;
+        --chart-3: 0.5936 0.1373 241.64;
+        --chart-4: 0.7957 0.1037 158.85;
+        --chart-5: 0.6347 0.1513 153.41;
 
         --sidebar: 1 0 0;
         --sidebar-foreground: 0.2303 0.0083 264.40;
@@ -56,76 +112,121 @@
         --sidebar-ring: 0.6252 0.1224 160.90;
     }
 
-    /* The site is light-only; `.dark` mirrors `:root` so any stray
-       dark-class markup keeps rendering in the Growork palette. */
+    /* ── Dark theme (the default) ─────────────────────────────────────────
+       Greens lift slightly so they keep their punch against dark surfaces,
+       and every tint is rebuilt as a deep wash rather than a pale one.   */
     .dark {
-        /* ── Achivora light theme ────────────────────────────────────────
-           Silk green #2f9e6f -> #1c7a55 · light green #7fd1a4 · white surfaces        */
-        --background: 1 0 0;                    /* #FFFFFF */
-        --foreground: 0.2303 0.0083 264.40;     /* #1b1d21 */
-        --card: 1 0 0;
-        --card-foreground: 0.2303 0.0083 264.40;
-        --popover: 1 0 0;
-        --popover-foreground: 0.2303 0.0083 264.40;
+        --c-primary: 61 186 132;            /* #3dba84 */
+        --c-primary-dark: 45 154 108;       /* #2d9a6c */
+        --c-primary-light: 140 223 180;     /* #8cdfb4 */
 
-        --primary: 0.6252 0.1224 160.90;        /* #2f9e6f silk green */
-        --primary-foreground: 1 0 0;
-        --primary-dark: 0.5167 0.1036 161.76;   /* #1c7a55 deep silk green */
-        --primary-light: 0.7957 0.1037 158.85;  /* #7fd1a4 light green */
+        --c-sky: 74 186 233;
+        --c-sky-dark: 43 154 205;
+        --c-sky-deep: 38 138 190;
+        --c-sky-bright: 60 176 224;
 
-        --secondary: 0.9776 0.0144 224.49;      /* #eefaff */
-        --secondary-foreground: 0.5936 0.1373 241.64;
+        --c-bg: 11 15 14;                   /* #0b0f0e */
+        --c-surface: 20 26 24;              /* #141a18 */
+        --c-surface-2: 26 34 31;
+        --c-bg-soft: 16 21 20;
+        --c-input-bg: 23 30 28;
+        --c-tint-blue: 15 26 32;
+        --c-tint-blue-2: 18 30 36;
+        --c-tint-green: 17 35 28;
+        --c-tint-green-2: 22 46 36;
 
-        --muted: 0.9642 0 0;                    /* #f3f3f3 */
-        --muted-foreground: 0.5348 0 0;         /* #6d6d6d */
+        --c-text-main: 232 237 235;
+        --c-text-body: 183 194 190;
+        --c-text-sub: 150 163 160;
+        --c-text-hint: 111 124 121;
 
-        --accent: 0.9678 0.0206 161.48;         /* #e9f9f0 */
-        --accent-foreground: 0.6252 0.1224 160.90;
+        --c-job-tag-bg: 17 35 28;
+        --c-job-tag-txt: 90 205 152;
+        --c-remote-bg: 15 26 32;
+        --c-remote-txt: 96 190 235;
+        --c-urgent-bg: 48 20 22;
+        --c-urgent-txt: 247 113 122;
+        --c-course-clr: 187 134 214;
+        --c-course-bg: 40 27 48;
+        --c-success: 61 186 132;
+        --c-error: 247 113 122;
+        --c-warning: 140 223 180;
 
-        --destructive: 0.6122 0.2082 22.24;     /* #e63946 */
-        --destructive-foreground: 1 0 0;
+        --c-hero-a: 8 11 10;
+        --c-hero-b: 15 74 110;
+        --c-hero-c: 22 110 150;
+        --c-band-dark: 14 18 17;
 
-        --border: 0.9280 0 0;                   /* #e7e7e7 */
-        --input: 0.9280 0 0;
-        --ring: 0.6252 0.1224 160.90;
+        --shadow-card: 0 2px 14px rgba(0, 0, 0, 0.55);
+        --shadow-card-hover: 0 10px 34px rgba(61, 186, 132, 0.22);
 
-        --button-default: 0.6252 0.1224 160.90;
-        --button-primary: 0.6252 0.1224 160.90;
-        --button-hover: 0.5167 0.1036 161.76;
+        --background: 0.1607 0.0064 165;
+        --foreground: 0.9350 0.0051 165;
+        --card: 0.2049 0.0095 165;
+        --card-foreground: 0.9350 0.0051 165;
+        --popover: 0.2049 0.0095 165;
+        --popover-foreground: 0.9350 0.0051 165;
 
-        --chart-1: 0.6252 0.1224 160.90;        /* silk green */
-        --chart-2: 0.6985 0.1327 232.37;        /* sky        */
-        --chart-3: 0.5936 0.1373 241.64;        /* deep blue  */
-        --chart-4: 0.7957 0.1037 158.85;        /* light green*/
-        --chart-5: 0.6347 0.1513 153.41;        /* green      */
+        --primary: 0.7009 0.1305 160.50;
+        --primary-foreground: 0.1607 0.0064 165;
+        --primary-dark: 0.6096 0.1187 160.90;
+        --primary-light: 0.8419 0.1004 158.50;
 
-        --sidebar: 1 0 0;
-        --sidebar-foreground: 0.2303 0.0083 264.40;
-        --sidebar-primary: 0.6252 0.1224 160.90;
-        --sidebar-primary-foreground: 1 0 0;
-        --sidebar-accent: 0.9678 0.0206 161.48;
-        --sidebar-accent-foreground: 0.6252 0.1224 160.90;
-        --sidebar-border: 0.9280 0 0;
-        --sidebar-ring: 0.6252 0.1224 160.90;
+        --secondary: 0.2530 0.0210 232;
+        --secondary-foreground: 0.7600 0.1000 235;
+
+        --muted: 0.2300 0.0060 165;
+        --muted-foreground: 0.6600 0.0080 165;
+
+        --accent: 0.2450 0.0290 161;
+        --accent-foreground: 0.7009 0.1305 160.50;
+
+        --destructive: 0.6700 0.1800 22;
+        --destructive-foreground: 0.9800 0 0;
+
+        --border: 0.2700 0.0080 165;
+        --input: 0.2700 0.0080 165;
+        --ring: 0.7009 0.1305 160.50;
+
+        --button-default: 0.7009 0.1305 160.50;
+        --button-primary: 0.7009 0.1305 160.50;
+        --button-hover: 0.6096 0.1187 160.90;
+
+        --chart-1: 0.7009 0.1305 160.50;
+        --chart-2: 0.7300 0.1200 232;
+        --chart-3: 0.6600 0.1250 241;
+        --chart-4: 0.8419 0.1004 158.50;
+        --chart-5: 0.7000 0.1450 153;
+
+        --sidebar: 0.1830 0.0080 165;
+        --sidebar-foreground: 0.9350 0.0051 165;
+        --sidebar-primary: 0.7009 0.1305 160.50;
+        --sidebar-primary-foreground: 0.1607 0.0064 165;
+        --sidebar-accent: 0.2450 0.0290 161;
+        --sidebar-accent-foreground: 0.7009 0.1305 160.50;
+        --sidebar-border: 0.2700 0.0080 165;
+        --sidebar-ring: 0.7009 0.1305 160.50;
     }
 
     * {
         @apply border-border;
     }
 
+    body {
+        @apply bg-bg text-text-body font-sans antialiased;
+        /* Theme swaps should read as a dip, not a flash. */
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease;
+    }
+
     html {
         scroll-behavior: smooth;
-        font-family: 'Mulish', 'Segoe UI', system-ui, sans-serif;
+        color-scheme: light;
     }
 
-    body {
-        @apply bg-bg text-text-main antialiased;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
+    html.dark {
+        color-scheme: dark;
     }
 }
 
@@ -153,17 +254,17 @@
 
     .btn-white {
         @apply inline-flex items-center justify-center gap-2 px-6 py-3
-               bg-white text-primary font-bold rounded-full
+               bg-surface text-primary font-bold rounded-full
                hover:bg-tint-green
                transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0;
     }
 
     .section-title {
-        @apply text-3xl md:text-[2.6rem] font-extrabold text-text-main leading-[1.15];
+        @apply text-2xl md:text-[2rem] font-extrabold text-text-main leading-[1.2];
     }
 
     .section-subtitle {
-        @apply text-lg text-text-body max-w-2xl mx-auto;
+        @apply text-base text-text-body max-w-2xl mx-auto;
     }
 
     .surface-card {
@@ -179,7 +280,7 @@
 
 @layer utilities {
     .text-gradient {
-        background: linear-gradient(90deg, #2f9e6f 0%, #1c7a55 100%);
+        background: linear-gradient(90deg, rgb(var(--c-primary)) 0%, rgb(var(--c-primary-light)) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -481,7 +582,7 @@
     to {
         opacity: 1;
         transform: translateY(0);
-        filter: blur(0);
+        filter: blur(0px);
     }
 }
 
@@ -496,12 +597,12 @@
 }
 
 .orbit__badge {
-    animation: orbitBadgeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: orbitBadgeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     transform-style: preserve-3d;
 }
 
 .orbit__swap {
-    animation: orbitSwapIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: orbitSwapIn 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .orbit__dwell {
@@ -516,5 +617,162 @@
     .orbit__swap,
     .orbit__dwell {
         animation: none;
+    }
+}
+
+/* ── Footer motion ─────────────────────────────────────────────────────────
+   Three small loops keep the band alive without pulling focus: a brand beam
+   crossing the top edge, a slow colour wash behind the content, and a heart
+   that beats. All of them stop for reduced-motion readers.               */
+@keyframes footerBeam {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes footerAurora {
+    0%,
+    100% {
+        transform: translate3d(-8%, 0, 0) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate3d(8%, -6%, 0) scale(1.15);
+        opacity: 0.8;
+    }
+}
+
+@keyframes footerHeart {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.35);
+    }
+    30% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(1.25);
+    }
+    60% {
+        transform: scale(1);
+    }
+}
+
+.footer-beam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    overflow: hidden;
+    background: rgb(255 255 255 / 0.08);
+}
+
+.footer-beam::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgb(var(--c-primary)) 40%,
+        rgb(var(--c-primary-light)) 50%,
+        rgb(var(--c-primary)) 60%,
+        transparent 100%
+    );
+    animation: footerBeam 6s linear infinite;
+}
+
+.footer-aurora {
+    position: absolute;
+    top: -6rem;
+    left: 20%;
+    width: 36rem;
+    height: 24rem;
+    border-radius: 9999px;
+    background: radial-gradient(
+        circle,
+        rgb(var(--c-primary) / 0.22) 0%,
+        transparent 68%
+    );
+    filter: blur(60px);
+    animation: footerAurora 16s ease-in-out infinite;
+}
+
+/* Social tiles lift on hover; the stagger comes from an inline delay. */
+.footer-social:hover {
+    transform: translateY(-3px);
+}
+
+/* Links slide a touch to the right as they highlight. */
+.footer-link {
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-link:hover {
+    transform: translateX(3px);
+}
+
+.footer-heart {
+    animation: footerHeart 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-beam::after,
+    .footer-aurora,
+    .footer-heart {
+        animation: none;
+    }
+
+    .footer-social:hover,
+    .footer-link:hover {
+        transform: none;
+    }
+}
+
+/* ── Hero photography ──────────────────────────────────────────────────────
+   A slow Ken Burns drift keeps a still hero from reading as wallpaper. The
+   scale floor is above 1 so no edge is ever exposed mid-pan.            */
+@keyframes heroPan {
+    0% {
+        transform: scale(1.08) translate3d(0, 0, 0);
+    }
+    50% {
+        transform: scale(1.16) translate3d(-1.5%, -1.5%, 0);
+    }
+    100% {
+        transform: scale(1.08) translate3d(0, 0, 0);
+    }
+}
+
+.hero-pan {
+    animation: heroPan 26s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* Cards that reveal their photograph on hover. */
+.media-card__img {
+    transition:
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.4s ease;
+}
+
+.media-card:hover .media-card__img {
+    transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-pan,
+    .media-card:hover .media-card__img {
+        animation: none;
+        transform: none;
     }
 }

@@ -4,6 +4,7 @@ import { useNavigate } from '@tanstack/react-router';
 import { BLOG_POSTS } from '@/data/blog';
 import { Reveal, Section } from '@/components/home/Section';
 import BuildTogether from '@/components/home/BuildTogether';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function InsightsPage() {
   const navigate = useNavigate();
@@ -36,7 +37,8 @@ export default function InsightsPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="writing" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
@@ -46,7 +48,7 @@ export default function InsightsPage() {
           <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
             AI, Software & Tech Insights
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
             Insights, Trends & <span className="text-primary">Strategies</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -88,7 +90,7 @@ export default function InsightsPage() {
         </div>
 
         {posts.length === 0 ? (
-          <p className="text-center text-text-sub py-16">
+          <p className="text-center text-text-sub py-10">
             No articles match that search yet.
           </p>
         ) : (
@@ -111,7 +113,7 @@ export default function InsightsPage() {
                     </span>
                   </div>
 
-                  <div className="p-8 flex flex-col justify-center">
+                  <div className="p-6 flex flex-col justify-center">
                     <span className="tag bg-tint-blue text-remote-txt self-start mb-3">
                       {featured.category}
                     </span>

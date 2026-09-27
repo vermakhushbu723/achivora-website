@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { SITE } from '@/constants/site';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function PrivacyPolicyPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -101,7 +102,8 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-primary-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-primary-gradient">
+        <HeroBackdrop image="security" intensity="strong" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-light/25 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -116,7 +118,7 @@ export default function PrivacyPolicyPage() {
               <Shield className="h-10 w-10 text-white" />
             </div>
             <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Legal</p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
               Privacy <span className="text-primary-light">Policy</span>
             </h1>
             <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -127,11 +129,11 @@ export default function PrivacyPolicyPage() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 bg-surface">
+      <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="border border-border bg-surface shadow-card mb-8">
-              <CardContent className="p-8 md:p-12">
+              <CardContent className="p-6 md:p-12">
                 <p className="text-lg text-text-sub leading-relaxed mb-6">
                   At Achivora, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services. Please read this policy carefully to understand our practices regarding your personal data.
                 </p>
@@ -148,7 +150,7 @@ export default function PrivacyPolicyPage() {
                   }`}
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <CardContent className="p-8 md:p-10">
+                <CardContent className="p-6 md:p-10">
                   <h2 className="text-2xl md:text-3xl font-bold text-text-main mb-6 flex items-center gap-3">
                     <span className="w-2 h-8 bg-primary rounded-full" />
                     {section.title}

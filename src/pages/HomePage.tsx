@@ -6,6 +6,7 @@ import PortfolioCarousel from '@/components/home/PortfolioCarousel';
 import SolutionsGrid from '@/components/home/SolutionsGrid';
 import { AppPreviewStrip } from '@/components/showcase/AppShowcase';
 import BuildTogether from '@/components/home/BuildTogether';
+import Showreel from '@/components/home/Showreel';
 import Industries from '@/components/home/Industries';
 import TechMarquee from '@/components/home/TechMarquee';
 import ProcessSteps from '@/components/home/ProcessSteps';
@@ -28,6 +29,7 @@ export default function HomePage() {
       <PortfolioCarousel />
       <SolutionsGrid />
       <AppPreviewStrip />
+      <Showreel />
       <BuildTogether />
       <Industries />
       <TechMarquee />

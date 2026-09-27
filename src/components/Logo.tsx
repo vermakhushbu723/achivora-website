@@ -1,108 +1,76 @@
 /**
- * Achivora identity mark.
+ * Achivora identity.
  *
- * The glyph is an "A" whose right stroke breaks out of the letterform and
- * continues upward as an arrow — "achieve / rise". The crossbar is cut short
- * on the right so the arrow reads as motion rather than a closed triangle.
- * A sky-blue spark sits at the apex as the secondary-colour accent.
- *
- * Drawn as SVG so it stays crisp at any size, follows the brand gradient,
- * and can invert for dark backgrounds without shipping a second file.
+ * The artwork is the supplied PNG lockup in `public/`. Two files ship: the
+ * original, whose "Achi" is set in near-black, and a derived variant whose
+ * dark ink is white so the lockup holds up on the dark header, hero and
+ * footer. The glyph-only crop covers compact slots where the wordmark would
+ * be unreadable anyway.
  */
 
-let gradientSeq = 0;
+import { useTheme } from 'next-themes';
 
-export function LogoMark({
-  className = 'h-9 w-9',
-  variant = 'brand',
-}: {
-  className?: string;
-  /** `brand` = silk-green gradient tile · `white` = flat white on a dark ground */
-  variant?: 'brand' | 'white';
-}) {
-  // Unique gradient ids so multiple marks on one page never collide.
-  const id = `achivora-logo-${(gradientSeq += 1)}`;
-  const white = variant === 'white';
+const LOCKUP = '/logo.png';
+const LOCKUP_DARK = '/logo-dark.png';
+const MARK = '/logo-mark.png';
 
+/** Square glyph on its own — favicon-sized slots, avatars, tight bars. */
+export function LogoMark({ className = 'h-9 w-9' }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 48 48"
-      className={className}
-      role="img"
-      aria-label="Achivora"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <linearGradient id={`${id}-tile`} x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#2f9e6f" />
-          <stop offset="1" stopColor="#1c7a55" />
-        </linearGradient>
-      </defs>
-
-      {/* Rounded tile */}
-      <rect
-        width="48"
-        height="48"
-        rx="13"
-        fill={white ? '#ffffff' : `url(#${id}-tile)`}
-      />
-
-      {/* Left stroke of the A */}
-      <path
-        d="M13 35.5 22.4 13.6a1.8 1.8 0 0 1 3.3 0l2.4 5.6"
-        stroke={white ? '#2f9e6f' : '#ffffff'}
-        strokeWidth="3.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-
-      {/* Right stroke, continuing past the apex as an arrow */}
-      <path
-        d="M24 35.5 31.4 18.4 38 24.8"
-        stroke={white ? '#2f9e6f' : '#ffffff'}
-        strokeWidth="3.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-
-      {/* Crossbar, deliberately short on the right */}
-      <path
-        d="M18.4 28.4h8.2"
-        stroke={white ? '#2f9e6f' : '#ffffff'}
-        strokeWidth="3.4"
-        strokeLinecap="round"
-        opacity="0.9"
-      />
-
-      {/* Sky-blue spark at the arrow tip */}
-      <circle cx="38" cy="24.8" r="3.1" fill={white ? '#29abe2' : '#29abe2'} />
-    </svg>
+    <img
+      src={MARK}
+      alt="Achivora"
+      width={330}
+      height={291}
+      className={`${className} object-contain`}
+      loading="eager"
+      decoding="async"
+    />
   );
 }
 
-/** Mark plus wordmark, used in the header and footer. */
+/**
+ * Full lockup. Sizing is driven by height alone so the aspect ratio is never
+ * squashed. The light-ink artwork is used whenever the ground is dark —
+ * either because the call site says so (`onDark`, e.g. over the hero video)
+ * or because the site is in its dark theme.
+ */
 export default function Logo({
   onDark = false,
   className = '',
-  markClassName = 'h-9 w-9',
-  textClassName = 'text-xl',
+  /** Kept for call sites that size the old SVG mark; applied to the lockup. */
+  markClassName = 'h-9',
 }: {
   onDark?: boolean;
   className?: string;
   markClassName?: string;
+  /** No longer used — the wordmark is part of the artwork. */
   textClassName?: string;
 }) {
+  const { resolvedTheme } = useTheme();
+  // next-themes only knows the theme after mount, but the inline script in
+  // index.html has already put the class on <html> — read that first so the
+  // first painted frame is the right artwork.
+  const domDark =
+    typeof document !== 'undefined' && document.documentElement.classList.contains('dark');
+  const dark = onDark || (resolvedTheme ? resolvedTheme === 'dark' : domDark);
+
+  // Call sites pass square classes like `h-10 w-10` for the old glyph; the
+  // lockup is ~2.9:1, so any width class is dropped in favour of `w-auto`.
+  const height = markClassName
+    .split(' ')
+    .filter((c) => !c.startsWith('w-'))
+    .join(' ');
+
   return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <LogoMark className={`${markClassName} shrink-0`} variant="brand" />
-      <span
-        className={`font-extrabold tracking-tight leading-none ${textClassName} ${
-          onDark ? 'text-white' : 'text-text-main'
-        }`}
-      >
-        Achi<span className="text-primary">vora</span>
-      </span>
-    </span>
+    <img
+      src={dark ? LOCKUP_DARK : LOCKUP}
+      alt="Achivora"
+      width={856}
+      height={291}
+      className={`${height} w-auto object-contain ${className}`}
+      loading="eager"
+      decoding="async"
+    />
   );
 }

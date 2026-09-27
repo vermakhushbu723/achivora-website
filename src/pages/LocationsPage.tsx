@@ -4,6 +4,7 @@ import { useNavigate } from '@tanstack/react-router';
 import { CITY_CATALOG, CITY_LIST } from '@/data/cities';
 import { Reveal, Section, SectionHeading } from '@/components/home/Section';
 import BuildTogether from '@/components/home/BuildTogether';
+import HeroBackdrop from '@/components/media/HeroBackdrop';
 
 export default function LocationsPage() {
   const navigate = useNavigate();
@@ -24,7 +25,8 @@ export default function LocationsPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-hero-gradient">
+      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
+        <HeroBackdrop image="cityIndia" intensity="medium" />
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
@@ -34,7 +36,7 @@ export default function LocationsPage() {
           <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
             Explore By Location
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-5">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
             Serving Businesses <span className="text-primary">Across India</span>
           </h1>
           <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
@@ -65,7 +67,7 @@ export default function LocationsPage() {
         />
 
         {cities.length === 0 ? (
-          <p className="text-center text-text-sub py-16">No city matches that search.</p>
+          <p className="text-center text-text-sub py-10">No city matches that search.</p>
         ) : (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {cities.map((city, i) => {

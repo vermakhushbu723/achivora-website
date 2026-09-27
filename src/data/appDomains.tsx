@@ -92,7 +92,7 @@ export const APP_DOMAINS: AppDomain[] = [
               kind: 'detail',
               title: 'Spice Garden',
               sub: 'North Indian · Biryani · 25 min',
-              tags: ['4.6 ★', '50% OFF'],
+              tags: ['4.6 rating', '50% OFF'],
               rows: [
                 { name: 'Paneer Butter Masala', meta: '₹240', action: 'ADD' },
                 { name: 'Hyderabadi Biryani', meta: '₹300', action: 'ADD' },
@@ -406,7 +406,7 @@ export const APP_DOMAINS: AppDomain[] = [
             label: 'Choose your ride',
             spec: {
               kind: 'list',
-              place: 'Sector 62 → Connaught Place',
+              place: 'Sector 62 to Connaught Place',
               searchHint: 'Where would you like to go?',
               chips: ['Now', 'Schedule', 'Rentals', 'Outstation'],
               items: [
@@ -422,7 +422,7 @@ export const APP_DOMAINS: AppDomain[] = [
               kind: 'map',
               status: 'Arriving in 3 min',
               agent: 'Suresh · DL 1C AA 4821',
-              agentMeta: 'White Swift Dzire · 4.8 ★',
+              agentMeta: 'White Swift Dzire · 4.8 rating',
               steps: [
                 ['Driver assigned', true],
                 ['Arriving at pickup', true],
@@ -904,7 +904,7 @@ export const APP_DOMAINS: AppDomain[] = [
               title: 'Pandit Ramesh',
               sub: 'Online · ₹22/min',
               messages: [
-                { text: 'Namaste 🙏 Please share your birth details.' },
+                { text: 'Namaste. Please share your birth details.' },
                 { me: true, text: '14 March 1996, 6:20 AM, Lucknow' },
                 { text: 'Your Guru mahadasha begins next month — a strong window for career moves.' },
                 { me: true, text: 'Should I change jobs then?' },
@@ -1024,7 +1024,7 @@ export const APP_DOMAINS: AppDomain[] = [
               title: 'Ananya S.',
               sub: 'Interest accepted',
               messages: [
-                { text: 'Hi! Thanks for reaching out 🙂' },
+                { text: 'Hi! Thanks for reaching out.' },
                 { me: true, text: 'Hello! Your profile really stood out.' },
                 { text: 'Likewise. Are your families based in Bengaluru too?' },
               ],
@@ -1147,7 +1147,7 @@ export const APP_DOMAINS: AppDomain[] = [
               searchHint: 'Search your matches…',
               chips: ['New', 'Chats', 'Likes you', 'Nearby'],
               items: [
-                { title: 'Riya', meta: 'Matched 2h ago · Say hi 👋', badge: 'NEW' },
+                { title: 'Riya', meta: 'Matched 2h ago · Say hi', badge: 'NEW' },
                 { title: 'Meera', meta: 'You: See you Saturday!', badge: '2' },
                 { title: 'Aditi', meta: 'Matched yesterday', badge: 'NEW' },
               ],
@@ -1160,7 +1160,7 @@ export const APP_DOMAINS: AppDomain[] = [
               title: 'Riya',
               sub: 'Online now',
               messages: [
-                { text: 'Hey! Loved your travel photos 🙌' },
+                { text: 'Hey! Loved your travel photos.' },
                 { me: true, text: 'Thanks! That was Spiti last winter.' },
                 { text: 'No way, it is on my list. Coffee this weekend?' },
               ],
@@ -1966,7 +1966,7 @@ export const APP_DOMAINS: AppDomain[] = [
             spec: {
               kind: 'map',
               status: 'ETA 4h 20m · 312 km left',
-              agent: 'Trip TR-4821 · Noida → Jaipur',
+              agent: 'Trip TR-4821 · Noida to Jaipur',
               agentMeta: 'HR 55 AB 1234 · 18T container',
               steps: [
                 ['Loaded at origin', true],
@@ -2807,7 +2807,7 @@ APP_DOMAINS.push(
               title: 'Planner',
               sub: 'Coordinating 5 agents',
               messages: [
-                { text: 'Ledger Agent → reconciliation complete, 12 variances above threshold.' },
+                { text: 'Ledger Agent: reconciliation complete, 12 variances above threshold.' },
                 { text: 'Delegating variance analysis to Variance Agent.' },
                 { me: true, text: 'Prioritise anything over ₹1L.' },
                 { text: 'Understood. 4 variances qualify. Escalating those to review first.' },
