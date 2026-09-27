@@ -76,18 +76,27 @@ function useCountUp(to: number, decimals: number, run: boolean) {
 export default function HeroVisual() {
   const [active, setActive] = useState(0);
   const [animated, setAnimated] = useState(true);
+  /** True for one frame after a step change, which drives the enter transition. */
+  const [entering, setEntering] = useState(false);
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setAnimated(false);
       return;
     }
-    const timer = window.setInterval(
-      () => setActive((i) => (i + 1) % CORE_ROTATION.length),
-      DWELL,
-    );
+    const timer = window.setInterval(() => {
+      setActive((i) => (i + 1) % CORE_ROTATION.length);
+      setEntering(true);
+    }, DWELL);
     return () => window.clearInterval(timer);
   }, []);
+
+  // Release the entering state on the next frame so the transition plays.
+  useEffect(() => {
+    if (!entering) return;
+    const frame = requestAnimationFrame(() => setEntering(false));
+    return () => cancelAnimationFrame(frame);
+  }, [entering]);
 
   const core = CORE_ROTATION[active];
   const CoreIcon = core.icon;
@@ -175,14 +184,19 @@ export default function HeroVisual() {
             </svg>
 
             <span
-              key={`badge-${active}`}
-              className="orbit__badge absolute inset-2.5 flex items-center justify-center rounded-xl bg-primary-gradient shadow-cta"
+              className={`absolute inset-2.5 flex items-center justify-center rounded-xl bg-primary-gradient shadow-cta transition-all duration-500 ${
+                entering ? 'scale-75 rotate-[-25deg]' : 'scale-100 rotate-0'
+              }`}
             >
               <CoreIcon className="h-5 w-5 text-white" />
             </span>
           </div>
 
-          <div key={core.title} className="orbit__swap">
+          <div
+            className={`transition-all duration-500 ${
+              entering ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
+            }`}
+          >
             <p className="text-white font-extrabold text-sm leading-tight">{core.title}</p>
             <p className="mt-1 text-2xl font-black text-primary-light tabular-nums leading-none">
               {count}
@@ -199,7 +213,10 @@ export default function HeroVisual() {
             {CORE_ROTATION.map((c, i) => (
               <button
                 key={c.title}
-                onClick={() => setActive(i)}
+                onClick={() => {
+                  setActive(i);
+                  setEntering(true);
+                }}
                 aria-label={`Show ${c.title}`}
                 className={`h-1 rounded-full transition-all duration-300 ${
                   i === active ? 'w-5 bg-primary' : 'w-1 bg-white/30 hover:bg-white/60'
