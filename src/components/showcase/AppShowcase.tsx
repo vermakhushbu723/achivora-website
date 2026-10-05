@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
 import PhoneMockup from './PhoneMockup';
+import type { ScreenSpec } from './screens';
+import PhoneScreenshot from './PhoneScreenshot';
+import { APP_SCREENSHOTS } from '@/constants/media';
 import { icon } from '@/components/home/icons';
 import { resolveDomain, type AppDomain, type AppRoleSpec } from '@/data/appDomains';
 import { Reveal, Section, SectionHeading } from '@/components/home/Section';
@@ -178,11 +181,51 @@ const PREVIEW_SLUGS = [
   'ai-agent-development',
 ];
 
+/**
+ * One card in the strip: a real screenshot where we have one, the generated
+ * mockup where we do not. The caption follows whichever is showing, so a
+ * missing file never leaves a screen labelled as something it is not.
+ */
+function PreviewCard({
+  src,
+  label,
+  spec,
+  fallbackLabel,
+}: {
+  src: string;
+  label: string;
+  spec: ScreenSpec;
+  fallbackLabel: string;
+}) {
+  const [usingFallback, setUsingFallback] = useState(false);
+  const lift = 'transition-transform duration-500 hover:-translate-y-2';
+
+  return (
+    <figure className="flex flex-col items-center">
+      {usingFallback ? (
+        <PhoneMockup spec={spec} className={lift} />
+      ) : (
+        <PhoneScreenshot
+          src={src}
+          alt={`${label} screen`}
+          className={lift}
+          onFallback={() => setUsingFallback(true)}
+          fallback={null}
+        />
+      )}
+      <figcaption className="mt-4 text-text-main font-bold text-sm">
+        {usingFallback ? fallbackLabel : label}
+      </figcaption>
+    </figure>
+  );
+}
+
 export function AppPreviewStrip() {
-  // One flagship screen from four different products, so the strip shows range.
-  const cards = PREVIEW_SLUGS.map((slug) => {
-    const domain = resolveDomain(slug);
-    return { label: domain.label, spec: domain.roles[0].screens[0].spec };
+  /* Real screenshots of shipped apps, each paired with the generated mockup
+     that stands in if its file has not been added yet. */
+  const cards = APP_SCREENSHOTS.map((shot, i) => {
+    const domain = resolveDomain(PREVIEW_SLUGS[i % PREVIEW_SLUGS.length]);
+    return { ...shot, spec: domain.roles[0].screens[0].spec, fallbackLabel: domain.label };
   });
 
   return (
@@ -201,15 +244,12 @@ export function AppPreviewStrip() {
         <div className="relative flex gap-6 overflow-x-auto pb-4 lg:justify-center snap-x">
           {cards.map((card, i) => (
             <Reveal key={card.label} delay={i * 90} className="snap-center">
-              <figure className="flex flex-col items-center">
-                <PhoneMockup
-                  spec={card.spec}
-                  className="transition-transform duration-500 hover:-translate-y-2"
-                />
-                <figcaption className="mt-4 text-text-main font-bold text-sm">
-                  {card.label}
-                </figcaption>
-              </figure>
+              <PreviewCard
+                src={card.src}
+                label={card.label}
+                spec={card.spec}
+                fallbackLabel={card.fallbackLabel}
+              />
             </Reveal>
           ))}
         </div>

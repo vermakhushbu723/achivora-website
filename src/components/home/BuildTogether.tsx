@@ -8,6 +8,7 @@ export default function BuildTogether() {
 
   const contacts = [
     { Icon: Phone, label: 'Call us', value: SITE.phone, href: SITE.phoneHref },
+    { Icon: Phone, label: 'Alternate', value: SITE.phoneAlt, href: SITE.phoneAltHref },
     {
       Icon: MessageCircle,
       label: 'WhatsApp',

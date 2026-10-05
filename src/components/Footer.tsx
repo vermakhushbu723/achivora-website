@@ -66,14 +66,16 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white text-sm mb-3">Get In Touch</h4>
             <ul className="space-y-2 text-sm text-white/50">
-              <li>
-                <a
-                  href={SITE.phoneHref}
-                  className="footer-link inline-flex items-center gap-2 hover:text-white transition-colors"
-                >
-                  <Phone className="h-3.5 w-3.5 shrink-0" /> {SITE.phone}
-                </a>
-              </li>
+              {SITE.phones.map((line) => (
+                <li key={line.href}>
+                  <a
+                    href={line.href}
+                    className="footer-link inline-flex items-center gap-2 hover:text-white transition-colors"
+                  >
+                    <Phone className="h-3.5 w-3.5 shrink-0" /> {line.display}
+                  </a>
+                </li>
+              ))}
               <li>
                 <a
                   href={SITE.emailHref}

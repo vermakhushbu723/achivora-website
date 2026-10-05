@@ -49,6 +49,8 @@ export const TECH_ICONS: Record<string, string> = {
   AWS: 'amazonwebservices/amazonwebservices-original-wordmark',
   'Google Cloud': 'googlecloud',
   Docker: 'docker',
+  // Used by the hero orbit, not the technology marquee.
+  TensorFlow: 'tensorflow',
   Blockchain: 'solidity',
   PWA: 'chrome',
   AMP: 'google',

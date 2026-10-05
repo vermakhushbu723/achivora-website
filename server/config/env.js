@@ -23,4 +23,21 @@ export const env = {
   corsOrigins: (process.env.CORS_ORIGINS ?? 'http://localhost:3000,http://localhost:4173')
     .split(',')
     .map((o) => o.trim()),
+
+  /* WhatsApp alerts for new submissions. See server/services/whatsapp.js
+     for what each provider needs. */
+  whatsapp: {
+    enabled: (process.env.WHATSAPP_ENABLED ?? 'true') !== 'false',
+    to: process.env.WHATSAPP_TO ?? '+918447049584',
+    provider: process.env.WHATSAPP_PROVIDER ?? 'callmebot',
+
+    callmebotKey: process.env.WHATSAPP_CALLMEBOT_KEY ?? '',
+
+    metaToken: process.env.WHATSAPP_META_TOKEN ?? '',
+    metaPhoneId: process.env.WHATSAPP_META_PHONE_ID ?? '',
+
+    twilioSid: process.env.WHATSAPP_TWILIO_SID ?? '',
+    twilioToken: process.env.WHATSAPP_TWILIO_TOKEN ?? '',
+    twilioFrom: process.env.WHATSAPP_TWILIO_FROM ?? '',
+  },
 };

@@ -68,7 +68,7 @@ export default function ValueProp() {
               By the numbers
             </p>
             <p className="relative text-white font-bold text-lg mb-4">
-              A decade of shipped work
+              Two years of shipped work
             </p>
 
             <div className="relative grid grid-cols-2 gap-px bg-white/15 rounded-2xl overflow-hidden">

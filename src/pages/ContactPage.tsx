@@ -72,6 +72,13 @@ export default function ContactPage() {
       description: 'Call us during business hours'
     },
     {
+      icon: Phone,
+      title: 'Alternate Phone',
+      value: SITE.phoneAlt,
+      link: SITE.phoneAltHref,
+      description: 'Also on WhatsApp'
+    },
+    {
       icon: MapPin,
       title: 'Address',
       value: SITE.offices[0].address,

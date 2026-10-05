@@ -81,6 +81,20 @@ export const VIDEO = {
 } as const;
 
 /**
+ * Real product screenshots for the "Apps we design and ship" strip.
+ *
+ * Drop the PNG/JPG files at these paths under `public/`. Any file that is
+ * missing falls back to the generated mockup for that slot, so the strip is
+ * never broken and screenshots can be added one at a time.
+ */
+export const APP_SCREENSHOTS = [
+  { src: '/showcase/app-1.png', label: 'Job Discovery App' },
+  { src: '/showcase/app-2.png', label: 'Job Listings & Filters' },
+  { src: '/showcase/app-3.png', label: 'Multi-City Search' },
+  { src: '/showcase/app-4.png', label: 'Personalised Matches' },
+] as const;
+
+/**
  * Deterministic photo pick for a catalogue entry, so a given slug always
  * gets the same picture across renders and pages without hand-mapping
  * several hundred slugs.

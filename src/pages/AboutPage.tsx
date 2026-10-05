@@ -45,11 +45,12 @@ export default function AboutPage() {
     }
   ];
 
+  /* The timeline tracks the company's real history: founded in 2024. */
   const milestones = [
-    { year: '2014', title: 'Company Founded', description: 'Started with a vision to transform businesses through technology' },
-    { year: '2017', title: '100+ Projects', description: 'Reached our first major milestone with satisfied clients worldwide' },
-    { year: '2020', title: 'Team Expansion', description: 'Grew our team to 50+ talented developers and designers' },
-    { year: '2024', title: '1000+ Projects', description: 'Celebrating a decade of excellence with over 1000 successful projects' }
+    { year: '2024', title: 'Company Founded', description: 'Started with a vision to transform businesses through technology' },
+    { year: '2025', title: 'First 20 Projects', description: 'Delivered our first wave of web and mobile builds for Indian businesses' },
+    { year: '2025', title: 'Team Expansion', description: 'Grew into a full in-house team of developers, designers and QA' },
+    { year: '2026', title: '35+ Projects', description: 'Serving clients across 20+ cities with a 98% retention rate' }
   ];
 
   return (

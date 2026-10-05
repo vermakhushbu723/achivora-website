@@ -93,12 +93,15 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-11 text-xs">
             <div className="flex items-center gap-5 text-white/70">
-              <a
-                href={SITE.phoneHref}
-                className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
-              >
-                <Phone className="h-3.5 w-3.5" /> {SITE.phone}
-              </a>
+              {SITE.phones.map((line) => (
+                <a
+                  key={line.href}
+                  href={line.href}
+                  className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
+                >
+                  <Phone className="h-3.5 w-3.5" /> {line.display}
+                </a>
+              ))}
               <a
                 href={SITE.emailHref}
                 className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
@@ -350,10 +353,12 @@ export default function Header() {
             </button>
 
             <div className="flex flex-col gap-2 mt-3 pt-3 border-t border-border">
-              <a href={SITE.phoneHref} className="btn-secondary">
-                <Phone className="h-4 w-4" />
-                {SITE.phone}
-              </a>
+              {SITE.phones.map((line) => (
+                <a key={line.href} href={line.href} className="btn-secondary">
+                  <Phone className="h-4 w-4" />
+                  {line.display}
+                </a>
+              ))}
               <button onClick={() => go('/contact')} className="btn-primary">
                 Get a Quote
               </button>

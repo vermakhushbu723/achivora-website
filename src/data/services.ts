@@ -217,12 +217,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -232,8 +232,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -483,12 +483,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -498,8 +498,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -749,12 +749,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -764,8 +764,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -808,7 +808,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers web application built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered web application projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered web application projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -1015,12 +1015,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -1030,8 +1030,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -1281,12 +1281,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -1296,8 +1296,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -1547,12 +1547,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -1562,8 +1562,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -1813,12 +1813,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -1828,8 +1828,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -1872,7 +1872,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers PHP application built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered PHP application projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered PHP application projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -2079,12 +2079,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -2094,8 +2094,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -2345,12 +2345,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -2360,8 +2360,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -2611,12 +2611,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -2626,8 +2626,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -2877,12 +2877,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -2892,8 +2892,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -2936,7 +2936,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers content platform built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered content platform projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered content platform projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -3143,12 +3143,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -3158,8 +3158,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -3409,12 +3409,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -3424,8 +3424,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -3675,12 +3675,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -3690,8 +3690,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -3941,12 +3941,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -3956,8 +3956,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -3998,7 +3998,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers product experience built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered product experience projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered product experience projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -4205,12 +4205,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -4220,8 +4220,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -4469,12 +4469,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -4484,8 +4484,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -4733,12 +4733,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -4748,8 +4748,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -4998,12 +4998,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -5013,8 +5013,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -5056,7 +5056,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers local search presence built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered local search presence projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered local search presence projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -5263,12 +5263,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -5278,8 +5278,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -5528,12 +5528,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -5543,8 +5543,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -5793,12 +5793,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -5808,8 +5808,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -6058,12 +6058,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -6073,8 +6073,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -6116,7 +6116,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers social presence built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered social presence projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered social presence projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -6323,12 +6323,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -6338,8 +6338,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -6588,12 +6588,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -6603,8 +6603,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -6853,12 +6853,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -6868,8 +6868,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -7118,12 +7118,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -7133,8 +7133,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -7176,7 +7176,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers lead pipeline built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered lead pipeline projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered lead pipeline projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -7383,12 +7383,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -7398,8 +7398,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -7648,12 +7648,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -7663,8 +7663,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -7913,12 +7913,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -7928,8 +7928,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -8178,12 +8178,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -8193,8 +8193,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -8236,7 +8236,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers data operations built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered data operations projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered data operations projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -8443,12 +8443,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -8458,8 +8458,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -8709,12 +8709,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -8724,8 +8724,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -8975,12 +8975,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -8990,8 +8990,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -9240,12 +9240,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -9255,8 +9255,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -9298,7 +9298,7 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     "tagline": "Achivora delivers delivery pipeline built for Indian businesses that need it to work, not just to launch.",
     "subheading": "Your Vision, Our Expertise",
     "intro": [
-      "For over a decade we have delivered delivery pipeline projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running since 2012.",
+      "Since 2024 we have delivered delivery pipeline projects for Indian businesses of every size, from first-time founders to enterprise IT teams modernising something that has been running for years.",
       "Every engagement includes discovery, design, build, QA and post-launch support. One accountable team handles all of it, so nothing is lost in a handoff between the people who designed it and the people who built it."
     ],
     "capabilities": [
@@ -9505,12 +9505,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -9520,8 +9520,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],
@@ -9770,12 +9770,12 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
     ],
     "achievements": [
       {
-        "value": "1560",
+        "value": "35",
         "suffix": "+",
         "label": "Projects Delivered"
       },
       {
-        "value": "120",
+        "value": "20",
         "suffix": "+",
         "label": "Cities Served"
       },
@@ -9785,8 +9785,8 @@ export const SERVICE_CATALOG: readonly CatalogEntry[] = [
         "label": "Customer Retention"
       },
       {
-        "value": "10",
-        "suffix": "+",
+        "value": "2",
+        "suffix": "",
         "label": "Years In Operation"
       }
     ],

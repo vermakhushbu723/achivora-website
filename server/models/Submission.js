@@ -35,6 +35,19 @@ const submissionSchema = new mongoose.Schema(
     },
     notes: { type: String, default: '', maxlength: 2000 },
 
+    /* Outcome of the WhatsApp alert, so the admin panel can show whether
+       the notification actually went out rather than assuming it did. */
+    notification: {
+      status: {
+        type: String,
+        enum: ['pending', 'sent', 'failed', 'skipped', 'disabled'],
+        default: 'pending',
+      },
+      provider: { type: String, default: '' },
+      error: { type: String, default: '' },
+      at: { type: Date },
+    },
+
     /* Light provenance, useful when the same person writes in twice. */
     meta: {
       page: { type: String, default: '' },

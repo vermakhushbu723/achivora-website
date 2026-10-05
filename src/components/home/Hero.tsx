@@ -28,19 +28,12 @@ export default function Hero() {
       {/* Readability scrim — darker on the left where the copy sits */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#1b1d21]/94 via-[#1b1d21]/80 to-[#1b1d21]/55" />
 
-      {/* Brand wash + faint grid */}
+      {/* Brand wash. The grid overlay that used to sit here read as a frame
+          drawn over the footage, so it is gone; the glow alone is enough. */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-40 -left-32 w-[30rem] h-[30rem] rounded-full bg-primary/20 blur-3xl" />
         <div className="absolute -bottom-40 right-0 w-96 h-96 rounded-full bg-sky/20 blur-3xl" />
       </div>
-      <div
-        className="absolute inset-0 opacity-[0.06] pointer-events-none"
-        style={{
-          backgroundImage:
-            'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
-          backgroundSize: '64px 64px',
-        }}
-      />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1.15fr_1fr] gap-8 items-center">

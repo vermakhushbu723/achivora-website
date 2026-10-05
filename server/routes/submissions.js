@@ -2,6 +2,7 @@ import { Router } from 'express';
 import rateLimit from 'express-rate-limit';
 import { Submission } from '../models/Submission.js';
 import { requireAdmin } from '../middleware/auth.js';
+import { notifySubmission } from '../services/whatsapp.js';
 
 export const submissionsRouter = Router();
 
@@ -73,6 +74,16 @@ for (const [formType, shape] of Object.entries(PUBLIC_FORMS)) {
           ip: req.ip ?? '',
         },
       });
+
+      // The visitor should not wait on a third-party gateway, and a gateway
+      // outage must not turn a saved submission into an error on their
+      // screen — so the alert goes out after the response, and its outcome
+      // is written back to the record for the admin panel to show.
+      notifySubmission(doc)
+        .then((notification) =>
+          Submission.findByIdAndUpdate(doc._id, { notification }).catch(() => {}),
+        )
+        .catch(() => {});
 
       return res.status(201).json({ ok: true, id: doc._id });
     } catch (err) {

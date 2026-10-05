@@ -320,6 +320,12 @@ function DetailPanel({
             {item.meta?.page && <Row label="Page">{item.meta.page}</Row>}
           </dl>
 
+          {/* Whether the WhatsApp alert for this submission actually sent */}
+          <div>
+            <p className="font-semibold text-text-main mb-1.5">WhatsApp alert</p>
+            <NotificationState notification={item.notification} />
+          </div>
+
           {item.message && (
             <div>
               <p className="font-semibold text-text-main mb-1.5">Message</p>
@@ -378,6 +384,42 @@ function DetailPanel({
         </div>
       </aside>
     </>
+  );
+}
+
+const ALERT_STYLE: Record<string, string> = {
+  sent: 'bg-tint-green-2 text-success',
+  pending: 'bg-job-tag-bg text-job-tag-txt',
+  failed: 'bg-urgent-bg text-error',
+  skipped: 'bg-bg-soft text-text-sub',
+  disabled: 'bg-bg-soft text-text-hint',
+};
+
+const ALERT_WORDING: Record<string, string> = {
+  sent: 'Delivered to WhatsApp',
+  pending: 'Sending…',
+  failed: 'Could not send',
+  skipped: 'Not configured',
+  disabled: 'Alerts turned off',
+};
+
+function NotificationState({ notification }: { notification?: Submission['notification'] }) {
+  const state = notification?.status ?? 'pending';
+
+  return (
+    <div className="space-y-1.5">
+      <span className={`tag !text-[10px] !py-0.5 ${ALERT_STYLE[state] ?? ALERT_STYLE.pending}`}>
+        {ALERT_WORDING[state] ?? state}
+      </span>
+      {notification?.provider && (
+        <p className="text-text-hint">via {notification.provider}</p>
+      )}
+      {notification?.error && (
+        <p className="text-text-sub leading-relaxed bg-bg-soft rounded-lg p-2">
+          {notification.error}
+        </p>
+      )}
+    </div>
   );
 }
 

@@ -1,15 +1,7 @@
 import { useEffect, useState } from 'react';
-import {
-  Bot,
-  Cloud,
-  Code2,
-  Database,
-  Smartphone,
-  ShieldCheck,
-  Sparkles,
-  Star,
-  type LucideIcon,
-} from 'lucide-react';
+import { Star } from 'lucide-react';
+import { photo, type PhotoKey } from '@/constants/media';
+import { techIconSrc } from '@/constants/techIcons';
 
 /**
  * Hero orbit: a glass core inside one rotating ring of capability chips.
@@ -28,25 +20,47 @@ import {
 const DWELL = 3600;
 const RADIUS = 148;
 
-type Orbit = { icon: LucideIcon; label: string };
+/** `tech` names a logo in the shared icon map, so the chips show the real
+ *  full-colour marks rather than monochrome glyphs. */
+type Orbit = { tech: string; label: string };
 
 const ORBIT: Orbit[] = [
-  { icon: Bot, label: 'AI' },
-  { icon: Smartphone, label: 'Mobile' },
-  { icon: Database, label: 'Data' },
-  { icon: Cloud, label: 'Cloud' },
-  { icon: ShieldCheck, label: 'Security' },
-  { icon: Code2, label: 'Web' },
-  { icon: Sparkles, label: 'Design' },
+  { tech: 'TensorFlow', label: 'AI' },
+  { tech: 'Flutter', label: 'Mobile' },
+  { tech: 'MongoDB', label: 'Data' },
+  { tech: 'Google Cloud', label: 'Cloud' },
+  { tech: 'Docker', label: 'DevOps' },
+  { tech: 'ReactJS', label: 'Web' },
+  { tech: 'Figma', label: 'Design' },
 ];
 
-/** `to` drives the count-up; `ring` links the step to the chip that lights up. */
-const CORE_ROTATION = [
-  { icon: Bot, ring: 'AI', title: 'AI Agents', to: 40, suffix: '%', decimals: 0, caption: 'less manual work' },
-  { icon: Smartphone, ring: 'Mobile', title: 'Mobile Apps', to: 4.8, suffix: 'star', decimals: 1, caption: 'average store rating' },
-  { icon: Cloud, ring: 'Cloud', title: 'Cloud Platforms', to: 99.9, suffix: '%', decimals: 1, caption: 'uptime delivered' },
-  { icon: Code2, ring: 'Web', title: 'Custom Software', to: 250, suffix: '+', decimals: 0, caption: 'products shipped' },
+/**
+ * `to` drives the count-up, `ring` links the step to the chip that lights
+ * up, and `image` is the photograph the card leads with so each step shows
+ * the work rather than only naming it.
+ */
+const CORE_ROTATION: {
+  image: PhotoKey;
+  tech: string;
+  ring: string;
+  title: string;
+  to: number;
+  suffix: string;
+  decimals: number;
+  caption: string;
+}[] = [
+  { image: 'network', tech: 'TensorFlow', ring: 'AI', title: 'AI Agents', to: 40, suffix: '%', decimals: 0, caption: 'less manual work' },
+  { image: 'mobileApp', tech: 'Flutter', ring: 'Mobile', title: 'Mobile Apps', to: 4.8, suffix: 'star', decimals: 1, caption: 'average store rating' },
+  { image: 'cloud', tech: 'Google Cloud', ring: 'Cloud', title: 'Cloud Platforms', to: 99.9, suffix: '%', decimals: 1, caption: 'uptime delivered' },
+  { image: 'code', tech: 'ReactJS', ring: 'Web', title: 'Custom Software', to: 35, suffix: '+', decimals: 0, caption: 'products shipped' },
 ];
+
+/** Logo tile used on a chip and on the core card. */
+function TechLogo({ tech, className = 'h-4 w-4' }: { tech: string; className?: string }) {
+  const src = techIconSrc(tech, 'original');
+  if (!src) return null;
+  return <img src={src} alt="" aria-hidden="true" className={`${className} object-contain`} />;
+}
 
 /** Counts from zero to `to` on every change, easing out so it settles softly. */
 function useCountUp(to: number, decimals: number, run: boolean) {
@@ -99,7 +113,6 @@ export default function HeroVisual() {
   }, [entering]);
 
   const core = CORE_ROTATION[active];
-  const CoreIcon = core.icon;
   const count = useCountUp(core.to, core.decimals, animated);
   const CIRC = 2 * Math.PI * 30;
 
@@ -125,7 +138,6 @@ export default function HeroVisual() {
       >
         {ORBIT.map((item, i) => {
           const angle = (360 / ORBIT.length) * i;
-          const Icon = item.icon;
           const isActive = item.label === core.ring;
           return (
             <div
@@ -140,13 +152,17 @@ export default function HeroVisual() {
                 style={{ ['--orbit-duration' as string]: '34s' }}
               >
                 <span
-                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg backdrop-blur-md border transition-all duration-500 ${
+                  className={`flex items-center gap-2 pl-1.5 pr-3 py-1.5 rounded-full backdrop-blur-md border transition-all duration-500 ${
                     isActive
                       ? 'bg-primary/90 border-primary shadow-cta scale-110'
                       : 'bg-white/10 border-white/20'
                   }`}
                 >
-                  <Icon className={`h-3.5 w-3.5 ${isActive ? 'text-white' : 'text-primary-light'}`} />
+                  {/* The logos are full colour, so they sit on a light tile
+                      to stay legible against the dark hero. */}
+                  <span className="w-6 h-6 rounded-full bg-white flex items-center justify-center shrink-0">
+                    <TechLogo tech={item.tech} className="h-3.5 w-3.5" />
+                  </span>
                   <span className="text-white text-[11px] font-bold whitespace-nowrap">
                     {item.label}
                   </span>
@@ -159,8 +175,27 @@ export default function HeroVisual() {
 
       {/* Core card */}
       <div className="relative z-10 animate-float">
-        <div className="w-40 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-4 text-center shadow-cta">
-          {/* Icon badge inside a ring that fills across the dwell */}
+        <div className="w-44 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 text-center shadow-cta overflow-hidden">
+          {/* Photograph for the current step, cross-faded on each change */}
+          <div className="relative h-20 overflow-hidden">
+            {CORE_ROTATION.map((step, i) => (
+              <img
+                key={step.title}
+                src={photo(step.image, 400)}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                  i === active ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f0e]/95 via-[#0b0f0e]/35 to-transparent" />
+          </div>
+
+          <div className="px-4 pb-4 -mt-8 relative">
+          {/* Logo badge inside a ring that fills across the dwell */}
           <div className="relative mx-auto mb-2.5 h-16 w-16">
             <svg className="absolute inset-0 -rotate-90" viewBox="0 0 64 64">
               <circle cx="32" cy="32" r="30" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="2.5" />
@@ -184,11 +219,11 @@ export default function HeroVisual() {
             </svg>
 
             <span
-              className={`absolute inset-2.5 flex items-center justify-center rounded-xl bg-primary-gradient shadow-cta transition-all duration-500 ${
+              className={`absolute inset-2.5 flex items-center justify-center rounded-xl bg-white shadow-cta transition-all duration-500 ${
                 entering ? 'scale-75 rotate-[-25deg]' : 'scale-100 rotate-0'
               }`}
             >
-              <CoreIcon className="h-5 w-5 text-white" />
+              <TechLogo tech={core.tech} className="h-6 w-6" />
             </span>
           </div>
 
@@ -223,6 +258,7 @@ export default function HeroVisual() {
                 }`}
               />
             ))}
+          </div>
           </div>
         </div>
       </div>

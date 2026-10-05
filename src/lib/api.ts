@@ -100,6 +100,13 @@ export type Submission = {
   extra?: Record<string, unknown>;
   status: 'new' | 'in-progress' | 'done' | 'archived';
   notes?: string;
+  /** Outcome of the WhatsApp alert that fires on submission. */
+  notification?: {
+    status: 'pending' | 'sent' | 'failed' | 'skipped' | 'disabled';
+    provider?: string;
+    error?: string;
+    at?: string;
+  };
   meta?: { page?: string; userAgent?: string; ip?: string };
   createdAt: string;
   updatedAt: string;

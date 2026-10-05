@@ -11,6 +11,9 @@
  */
 const PHONE_DISPLAY = '+91 9026170655';
 const PHONE_E164 = '+919026170655';
+/** Second line, also the WhatsApp number form submissions are sent to. */
+const PHONE_ALT_DISPLAY = '+91 8447049584';
+const PHONE_ALT_E164 = '+918447049584';
 const EMAIL = 'achivora9026@gmail.com';
 
 export const SITE = {
@@ -23,13 +26,24 @@ export const SITE = {
   /** Dial form, for `tel:` hrefs. */
   phoneHref: `tel:${PHONE_E164}`,
 
+  /** Second line. */
+  phoneAlt: PHONE_ALT_DISPLAY,
+  phoneAltHref: `tel:${PHONE_ALT_E164}`,
+
+  /** Both numbers, for the places that list every way to reach us. */
+  phones: [
+    { display: PHONE_DISPLAY, href: `tel:${PHONE_E164}` },
+    { display: PHONE_ALT_DISPLAY, href: `tel:${PHONE_ALT_E164}` },
+  ],
+
   email: EMAIL,
   /** Kept as separate keys so copy can still say "sales" / "careers". */
   salesEmail: EMAIL,
   careerEmail: EMAIL,
   emailHref: `mailto:${EMAIL}`,
 
-  whatsapp: `https://wa.me/${PHONE_E164.replace('+', '')}`,
+  /* Chat goes to the WhatsApp line, which is the second number. */
+  whatsapp: `https://wa.me/${PHONE_ALT_E164.replace('+', '')}`,
 
   businessHours: 'Monday - Friday: 9:00 AM - 6:00 PM',
   /**
@@ -111,10 +125,10 @@ export const VALUE_PROP = {
 };
 
 export const STATS = [
-  { value: 1560, suffix: '+', label: 'Projects Delivered' },
-  { value: 120, suffix: '+', label: 'Cities Served' },
+  { value: 35, suffix: '+', label: 'Projects Delivered' },
+  { value: 20, suffix: '+', label: 'Cities Served' },
   { value: 98, suffix: '%', label: 'Customer Retention' },
-  { value: 8, suffix: '+', label: 'Years In Industry' },
+  { value: 2, suffix: '', label: 'Years In Industry' },
 ];
 
 /* ── Services ────────────────────────────────────────────────────────────── */
@@ -493,7 +507,7 @@ export const OVERVIEW = {
   title:
     'Your AI-Driven Web Design Company in India for Stunning Websites & Apps',
   paragraphs: [
-    'Achivora is a full-service web design and software development company building digital products for businesses across India. For over a decade we have helped founders, marketing teams and enterprise IT departments turn rough ideas into platforms their customers actually enjoy using.',
+    'Achivora is a full-service web design and software development company building digital products for businesses across India. Since 2024 we have helped founders, marketing teams and enterprise IT departments turn rough ideas into platforms their customers actually enjoy using.',
     'Every engagement starts with the business problem rather than the technology. We map the workflow, design the experience around it, and only then choose the stack — which is why our products tend to survive contact with real users.',
   ],
   blocks: [
