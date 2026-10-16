@@ -68,59 +68,29 @@ export const SITE = {
   },
 };
 
-/* ── Navigation ──────────────────────────────────────────────────────────── */
-
-export const NAV_LINKS = [
-  { label: 'Services', path: '/services' },
-  { label: 'Solutions', path: '/solutions' },
-  { label: 'Industries', path: '/industries' },
-  { label: 'Portfolio', path: '/portfolio' },
-  { label: 'Insights', path: '/insights' },
-  { label: 'Contact Us', path: '/contact' },
-];
-
-export const SERVICE_MENU = [
-  { label: 'Website Development', path: '/website-development' },
-  { label: 'App Development', path: '/app-development' },
-  { label: 'Software Solutions', path: '/software-solutions' },
-  { label: 'All Services', path: '/services' },
-];
-
 /* ── Hero ────────────────────────────────────────────────────────────────── */
 
 export const HERO = {
-  eyebrow: 'Web & Software Development Company in India',
-  title: 'Where Innovation Meets Imagination',
+  eyebrow: 'Web & Software Development Company in Noida, India',
   body:
-    'We deliver smart, scalable custom software and enterprise-ready web applications that help Indian businesses grow faster in the digital age.',
+    'Custom websites, mobile apps, AI solutions and business software — designed, built and supported by one in-house team.',
   primaryCta: { label: 'Our Services', path: '/services' },
-  secondaryCta: { label: 'Talk To Experts', path: '/contact' },
+  secondaryCta: { label: 'Get a Free Quote', path: '/contact' },
 };
 
-/** Client strip — rendered as an infinite marquee of wordmarks. */
-export const CLIENTS = [
-  'NorthPeak',
-  'Sensorix',
-  'Verdant',
-  'Aurelia',
-  'Caretrack',
-  'Keyline Property',
-  'StudyLoop',
-  'BlueHarbor',
-  'Vantage Labs',
-  'Corewave',
-  'Lumina',
-  'Skyforge',
-];
-
-/* ── Value proposition + stats ───────────────────────────────────────────── */
+/* ── About + stats ───────────────────────────────────────────────────────── */
 
 export const VALUE_PROP = {
-  eyebrow: 'Your Digital Partners in Growth',
-  title: 'Empowering Businesses with AI, Software & Digital Innovation',
+  eyebrow: 'About Achivora',
+  title: 'Website, App & Software Development Company in India',
   paragraphs: [
-    'An outdated digital strategy quietly costs you customers every single day — slow websites, disconnected systems and manual processes that never scale with the business behind them.',
-    'Achivora replaces that with engineered, future-ready platforms. We combine product thinking, modern engineering and AI to build software that is fast, secure and genuinely built for the way your business works.',
+    'Achivora is a web design and software development company in Noida Sector 62. Since 2024 we have helped startups and growing businesses across India launch websites, mobile apps, AI tools and business software that customers actually enjoy using.',
+    'We start with your business goal, design around it, and only then pick the technology — so what we build is fast, secure, SEO-ready and yours to own.',
+  ],
+  highlights: [
+    'Senior engineers on every project',
+    'Fixed quotes agreed before work starts',
+    'You own the code, design and hosting',
   ],
 };
 
@@ -131,90 +101,71 @@ export const STATS = [
   { value: 2, suffix: '', label: 'Years In Industry' },
 ];
 
-/* ── Services ────────────────────────────────────────────────────────────── */
+/* ── Services (home page cards) ──────────────────────────────────────────── */
 
 export const SERVICES = [
   {
-    icon: 'Brain',
-    title: 'AI Development Services',
-    description:
-      'We build intelligent AI solutions that automate workflows, surface insight and make your products measurably smarter.',
+    icon: 'Globe',
+    title: 'Website Development & Design',
+    description: 'Fast, mobile-friendly, SEO-ready websites and web applications built to bring in enquiries.',
+    path: '/services/web-development',
     links: [
-      'AI Software Development',
-      'AI App Development',
-      'AI Agent Development',
-      'AI Chatbot Development',
-      'AI Integration Services',
+      { label: 'Web & UI/UX Design', path: '/services/web-design' },
+      { label: 'WordPress & CMS', path: '/services/wordpress-development' },
+      { label: 'E-commerce Stores', path: '/industries/e-commerce-development' },
     ],
-    accent: '#0A66C2',
-    bg: '#E8F3FF',
   },
   {
     icon: 'Smartphone',
     title: 'Mobile App Development',
-    description:
-      'From concept to deployment, we craft mobile apps that feel effortless and perform beautifully on every device.',
+    description: 'Android, iOS, Flutter and React Native apps — from first idea to Play Store and App Store.',
+    path: '/services/mobile-app-development',
     links: [
-      'Android App Development',
-      'iOS App Development',
-      'Flutter App Development',
-      'Hybrid App Development',
-      'Cross-Platform Apps',
+      { label: 'Food & Grocery Delivery Apps', path: '/industries/food-delivery-app-development' },
+      { label: 'Taxi & Logistics Apps', path: '/industries/transportation-logistics' },
+      { label: 'On-Demand Service Apps', path: '/industries/on-demand-app-development' },
     ],
-    accent: '#057642',
-    bg: '#E8F6EF',
   },
   {
-    icon: 'Globe',
-    title: 'Web Development Services',
-    description:
-      'Our web design team builds fast, accessible, search-ready websites that turn visitors into paying customers.',
+    icon: 'Brain',
+    title: 'AI Development',
+    description: 'AI apps, chatbots, agents and automation that save time and make your software smarter.',
+    path: '/solutions/ai-software-development',
     links: [
-      'Custom Web Application',
-      'Web Design Services',
-      'WordPress Development',
-      'Laravel Development',
-      'Shopify Development',
+      { label: 'AI Agents & Chatbots', path: '/solutions/ai-agent-development' },
+      { label: 'AI Integration & Automation', path: '/solutions/ai-software-development' },
     ],
-    accent: '#9B59B6',
-    bg: '#F5EEFB',
+  },
+  {
+    icon: 'Building2',
+    title: 'Business Software',
+    description: 'Custom CRM, ERP, HRMS and POS software shaped around how your team actually works.',
+    path: '/solutions',
+    links: [
+      { label: 'CRM Software', path: '/solutions/crm-development' },
+      { label: 'ERP Software', path: '/solutions/custom-erp-software' },
+      { label: 'HRMS & Payroll', path: '/solutions/hr-management-system' },
+    ],
   },
   {
     icon: 'Boxes',
-    title: 'Software Product Development',
-    description:
-      'We transform ideas into scalable products — validated, engineered and shipped with a roadmap that keeps going.',
+    title: 'SaaS & Product Development',
+    description: 'MVPs, SaaS platforms and enterprise apps — validated fast, then built to scale.',
+    path: '/solutions/software-product-development',
     links: [
-      'SaaS Development',
-      'MVP Development',
-      'Enterprise App Development',
-      'Custom API Development',
+      { label: 'Hire Dedicated Developers', path: '/solutions/it-staff-augmentation' },
+      { label: 'Cloud & DevOps', path: '/services/cloud-consulting' },
     ],
-    accent: '#2f9e6f',
-    bg: '#e9f9f0',
   },
   {
-    icon: 'Cloud',
-    title: 'Cloud Consulting Services',
-    description:
-      'Modernize your cloud infrastructure for resilience and cost control, with automation baked in from day one.',
-    links: ['Cloud Migration', 'DevOps Consulting', 'Cloud Cost Optimization'],
-    accent: '#378FE9',
-    bg: '#E8F3FF',
-  },
-  {
-    icon: 'Cpu',
-    title: 'Advanced Technology Services',
-    description:
-      'Specialist teams for the harder problems — quality engineering, distributed ledgers and connected devices.',
+    icon: 'TrendingUp',
+    title: 'SEO & Digital Marketing',
+    description: 'Technical and local SEO, Google and Meta ads and social media that turn traffic into leads.',
+    path: '/services/seo-services',
     links: [
-      'QA & Testing Services',
-      'Blockchain Development',
-      'IoT Development',
-      'Staff Augmentation',
+      { label: 'SEO Services', path: '/services/seo-services' },
+      { label: 'Digital Marketing', path: '/services/digital-marketing' },
     ],
-    accent: '#CC1016',
-    bg: '#FFEBEB',
   },
 ];
 
@@ -295,74 +246,6 @@ export const PORTFOLIO = [
   },
 ];
 
-/* ── Solutions ───────────────────────────────────────────────────────────── */
-
-export const SOLUTIONS = [
-  {
-    icon: 'Users',
-    title: 'AI-Powered CRM Solutions',
-    description:
-      'Pipelines that score themselves, follow-ups that write themselves, and a single view of every customer.',
-  },
-  {
-    icon: 'Building2',
-    title: 'Advanced ERP Management Systems',
-    description:
-      'Finance, inventory, procurement and production connected in one system your whole company can trust.',
-  },
-  {
-    icon: 'UserCog',
-    title: 'Smart Workforce & HRM Solutions',
-    description:
-      'Hiring, onboarding, attendance, payroll and appraisals — automated end to end, with zero spreadsheets.',
-  },
-  {
-    icon: 'GraduationCap',
-    title: 'Intelligent LMS Solutions',
-    description:
-      'Course delivery, adaptive assessments and completion analytics for training teams and institutions.',
-  },
-  {
-    icon: 'Sparkles',
-    title: 'Custom AI Solutions',
-    description:
-      'Purpose-built models, agents and copilots trained on your data and wired into your existing tools.',
-  },
-  {
-    icon: 'Radio',
-    title: 'IoT & Connected Device Solutions',
-    description:
-      'Device fleets, telemetry pipelines and control dashboards built for scale and real-time reliability.',
-  },
-];
-
-/* ── Industries ──────────────────────────────────────────────────────────── */
-
-export const INDUSTRIES = [
-  { icon: 'ShoppingCart', label: 'Ecommerce & Multivendor' },
-  { icon: 'Plane', label: 'Travel & Hospitality' },
-  { icon: 'HeartPulse', label: 'Healthcare' },
-  { icon: 'Building', label: 'Real Estate & Construction' },
-  { icon: 'GraduationCap', label: 'Education' },
-  { icon: 'Truck', label: 'Transportation & Logistics' },
-  { icon: 'Zap', label: 'Utilities & On Demand' },
-  { icon: 'Landmark', label: 'Finance & Insurance' },
-  { icon: 'Clapperboard', label: 'Media & Entertainment' },
-  { icon: 'Factory', label: 'Manufacturing' },
-];
-
-/* ── Technologies ────────────────────────────────────────────────────────── */
-
-export const TECHNOLOGIES = [
-  'HTML 5', 'CSS3', 'Bootstrap', 'Javascript', 'jQuery', 'Angular', 'ReactJS',
-  'VueJS', 'Next.js', 'NuxtJS', 'Laravel', 'CodeIgniter', 'NestJS', 'ExpressJS',
-  'PHP', 'Node', 'Python', 'WordPress', 'Shopify', 'WooCommerce',
-  'React Native', 'Flutter', 'Swift', 'Kotlin', 'Android', 'iOS',
-  'MySQL', 'MongoDB', 'MariaDB', 'PostgreSQL', 'GitHub', 'BitBucket',
-  'GitLab', 'Figma', 'XD', 'Illustrator', 'After Effects', 'AWS',
-  'Google Cloud', 'Docker', 'Blockchain', 'PWA', 'AMP', 'ChatGPT', 'Chatbot',
-];
-
 /* ── Process ─────────────────────────────────────────────────────────────── */
 
 export const PROCESS = [
@@ -393,156 +276,58 @@ export const PROCESS = [
   },
 ];
 
-/* ── Recognition ─────────────────────────────────────────────────────────── */
-
-export const RECOGNITION = [
-  { source: 'Clutch', text: 'Rated top for reliable and innovative web solutions' },
-  { source: 'GoodFirms', text: 'Customers love us for performance, design and support' },
-  { source: 'Google Reviews', text: 'Trusted by clients with excellent reviews and feedback' },
-  { source: 'DesignRush', text: 'Recognized for proven results and client satisfaction' },
-  { source: 'Awwwards', text: 'Awarded for creativity, strategy and design excellence' },
-  { source: 'Trustpilot', text: 'Highly rated for service, transparency and user experience' },
-  { source: 'TopDevelopers', text: 'Ranked among the leading development partners in India' },
-];
-
-/* ── FAQ ─────────────────────────────────────────────────────────────────── */
+/* ── FAQ (home page shows the first six, /faq shows all) ─────────────────── */
 
 export const FAQS = [
   {
-    q: 'Can we start with a smaller engagement or MVP before scaling?',
-    a: 'Absolutely. Most of our long-running partnerships began as a focused MVP or a single module. We scope a tight first release, get it in front of real users, and scale the team and roadmap once the direction is proven.',
+    q: 'What services does Achivora offer?',
+    a: 'Website design and development, Android and iOS app development, AI development, custom business software (CRM, ERP, HRMS, POS), SaaS products, SEO and digital marketing — all from one in-house team in Noida.',
   },
   {
-    q: 'How does your software development process work?',
-    a: 'Five stages: strategic planning, UI/UX design, development, testing and QA, then launch and support. You get a dedicated point of contact, sprint demos every two weeks, and access to the working build throughout.',
+    q: 'How much does a website or app cost?',
+    a: 'It depends on scope. Share a brief and you will get a written, itemised estimate within two working days. The quote is fixed before work starts, with no hidden costs.',
   },
   {
-    q: 'Can I hire your India-based developers?',
-    a: 'Yes. You can hire dedicated developers full-time or part-time, and scale the team up or down monthly. They work in your timezone overlap, join your stand-ups, and use your tooling.',
+    q: 'How long does a project take?',
+    a: 'A business website usually takes 3–6 weeks. A mobile app or custom platform typically takes 2–6 months. You get a clear timeline in the proposal.',
   },
   {
-    q: 'Do you develop AI-powered, web and mobile applications?',
-    a: 'We do all three, and increasingly together. AI features — chat, search, document understanding, forecasting — are built into the same web and mobile products rather than bolted on afterwards.',
+    q: 'How does your development process work?',
+    a: 'Five stages: planning, UI/UX design, development, testing and launch. You get one point of contact, a demo every two weeks and access to the working build throughout.',
   },
   {
-    q: 'Can your software scale as my business grows?',
-    a: 'That is a design constraint from day one. We build on cloud-native infrastructure with clean service boundaries, so capacity, features and teams can all grow without a rewrite.',
+    q: 'Do you provide support and maintenance after launch?',
+    a: 'Yes. Support plans cover monitoring, bug fixes, security updates, backups and new features, with response times agreed in advance.',
   },
   {
-    q: 'How do you ensure software quality, security and reliability?',
-    a: 'Automated test suites, code review on every change, CI/CD pipelines, dependency and vulnerability scanning, plus load and penetration testing before launch. Security is reviewed at design time, not at the end.',
+    q: 'Will I own the code and design?',
+    a: 'Yes. The code, designs, domain and hosting accounts are yours from day one. There is no lock-in.',
   },
   {
-    q: 'Do you provide maintenance and support after launch?',
-    a: 'Yes. Support plans cover monitoring, bug fixes, security patching, performance tuning and feature updates, with response times agreed in advance.',
+    q: 'Can we start small with an MVP?',
+    a: 'Absolutely. We scope a focused first version, put it in front of real users and grow the product once the direction is proven.',
   },
   {
-    q: 'What engagement models do you offer?',
-    a: 'Fixed-scope projects for well-defined work, dedicated teams for ongoing product development, and time-and-materials for work that needs to stay flexible.',
+    q: 'Do you offer fixed-price or hourly billing?',
+    a: 'Both. Fixed price suits a clearly defined scope; monthly or hourly billing suits ongoing development and changing requirements.',
   },
   {
-    q: 'Why should you partner with Achivora for software development?',
-    a: 'Ten years of delivery, 1500+ shipped projects and a 98% retention rate. You get senior engineers who have solved the problem before, transparent communication, and code you fully own.',
+    q: 'Can I hire dedicated developers?',
+    a: 'Yes. You can hire full-time developers who join your stand-ups and tools, and scale the team up or down monthly.',
   },
   {
-    q: 'How much does it cost and how long does it take?',
-    a: 'A marketing website typically runs 3–6 weeks, a mobile app or custom platform 3–6 months. Cost depends on scope — share a brief and you will have a written estimate and timeline within two working days.',
+    q: 'Can you integrate with our existing systems?',
+    a: 'Yes. We regularly connect CRMs, ERPs, Tally, payment gateways, WhatsApp and third-party APIs.',
   },
   {
-    q: 'How do I get started with my project?',
-    a: 'Send us a brief through the form below or call us directly. We follow up with a discovery call, then a written proposal covering scope, timeline, team and cost.',
+    q: 'How do you make sure the software is secure and bug-free?',
+    a: 'Code review on every change, automated tests, real-device QA, vulnerability scanning and load testing before launch.',
   },
   {
-    q: 'Can I hire dedicated developers or extend my existing team?',
-    a: 'Yes. Staff augmentation is one of our most common engagements — our engineers plug into your existing process, repos and rituals with no ramp-up overhead on your side.',
-  },
-  {
-    q: 'What types of businesses do you work with?',
-    a: 'Funded startups building a first product, mid-market companies modernising legacy systems, and enterprises needing specialist capacity. Ten industries, from healthcare to logistics.',
-  },
-  {
-    q: 'Can Achivora integrate software with my existing systems and third-party tools?',
-    a: 'Yes. We routinely integrate CRMs, ERPs, payment gateways, marketing platforms and analytics stacks, either through published APIs or purpose-built connectors.',
+    q: 'How do I get started?',
+    a: 'Fill in the contact form, call or WhatsApp us. We follow up with a short discovery call, then send a written proposal with scope, timeline and cost.',
   },
 ];
-
-/* ── Insights / blog ─────────────────────────────────────────────────────── */
-
-export const INSIGHTS = [
-  {
-    title: 'Benefits of AI Integration: Why Businesses Are Adopting AI Fast',
-    excerpt:
-      'AI has moved from experiment to operating requirement. Here is where it actually pays back, and where it quietly does not.',
-    category: 'Artificial Intelligence',
-    date: 'Aug 12, 2026',
-    readTime: '6 min read',
-    image:
-      'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Top AI Trends Shaping the Future for 2026',
-    excerpt:
-      'Agentic workflows, small specialised models and on-device inference — the shifts that will define the next two years.',
-    category: 'Trends',
-    date: 'Jul 29, 2026',
-    readTime: '8 min read',
-    image:
-      'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Virtualization in Cloud Computing: Definition, Types and Benefits',
-    excerpt:
-      'A practical explainer on hypervisors, containers and when each one is the right unit of deployment.',
-    category: 'Cloud',
-    date: 'Jul 15, 2026',
-    readTime: '7 min read',
-    image:
-      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
-  },
-];
-
-/* ── Long-form company overview ──────────────────────────────────────────── */
-
-export const OVERVIEW = {
-  title:
-    'Your AI-Driven Web Design Company in India for Stunning Websites & Apps',
-  paragraphs: [
-    'Achivora is a full-service web design and software development company building digital products for businesses across India. Since 2024 we have helped founders, marketing teams and enterprise IT departments turn rough ideas into platforms their customers actually enjoy using.',
-    'Every engagement starts with the business problem rather than the technology. We map the workflow, design the experience around it, and only then choose the stack — which is why our products tend to survive contact with real users.',
-  ],
-  blocks: [
-    {
-      title:
-        "Build Your Custom AI-Powered Website with India's Top Development Experts",
-      body:
-        'From marketing sites to complex web applications, we build on modern frameworks with performance budgets, accessibility standards and SEO structure applied from the first commit rather than retrofitted later.',
-    },
-    {
-      title: 'Your All-in-One AI-Powered Web Design Solutions Provider',
-      body:
-        'Design, engineering, QA, DevOps and post-launch support under one roof. One accountable team, one roadmap, and no handoff gaps between the people who design it and the people who build it.',
-    },
-    {
-      title: 'Integrating Future-Ready AI Features and Functionality',
-      body:
-        'Intelligent search, conversational support, document extraction, personalisation and forecasting — added where they measurably improve the product, not where they simply sound impressive.',
-    },
-    {
-      title: 'Experienced Designers and Engineers You Can Trust',
-      body:
-        'A senior-heavy team of 50+ designers, developers and QA engineers, with clear ownership on every project and code that you fully own from the very first day.',
-    },
-  ],
-  integrations: [
-    'CMS Integration',
-    'CRM Integration',
-    'Payment Gateway Integration',
-    'Social Media Integration',
-    'AI-Powered Email Marketing Integration',
-    'AI-Powered SEO Tooling',
-    'AI-Powered Analytics and Tracking',
-  ],
-};
 
 /* ── Contact form ────────────────────────────────────────────────────────── */
 
@@ -553,234 +338,3 @@ export const BUDGET_OPTIONS = [
   '$50K - $100K',
   'Above $100K',
 ];
-
-/* ── Footer ──────────────────────────────────────────────────────────────── */
-
-export const FOOTER_LINKS: Record<string, { label: string; path: string }[]> = {
-  "Services": [
-    {
-      "label": "Web Development",
-      "path": "/services/web-development"
-    },
-    {
-      "label": "Custom API Development",
-      "path": "/services/custom-api-development"
-    },
-    {
-      "label": "SaaS Application Development",
-      "path": "/services/saas-application-development"
-    },
-    {
-      "label": "Custom Web Application",
-      "path": "/services/custom-web-application"
-    },
-    {
-      "label": "Laravel Development",
-      "path": "/services/laravel-development"
-    },
-    {
-      "label": "Mobile App Development",
-      "path": "/services/mobile-app-development"
-    },
-    {
-      "label": "React JS Development",
-      "path": "/services/react-js-development"
-    },
-    {
-      "label": "Custom PHP Development",
-      "path": "/services/custom-php-development"
-    },
-    {
-      "label": "CodeIgniter Development",
-      "path": "/services/codeigniter-development"
-    },
-    {
-      "label": "WordPress Development",
-      "path": "/services/wordpress-development"
-    },
-    {
-      "label": "WooCommerce Development",
-      "path": "/services/woocommerce-development"
-    },
-    {
-      "label": "CMS Development",
-      "path": "/services/cms-development"
-    }
-  ],
-  "Solutions": [
-    {
-      "label": "CRM Development",
-      "path": "/solutions/crm-development"
-    },
-    {
-      "label": "HR Management System",
-      "path": "/solutions/hr-management-system"
-    },
-    {
-      "label": "Custom ERP Software",
-      "path": "/solutions/custom-erp-software"
-    },
-    {
-      "label": "POS Software",
-      "path": "/solutions/pos-software"
-    },
-    {
-      "label": "E-Learning App",
-      "path": "/solutions/e-learning-app"
-    },
-    {
-      "label": "MVP Development",
-      "path": "/solutions/mvp-development"
-    },
-    {
-      "label": "Software Product Development",
-      "path": "/solutions/software-product-development"
-    },
-    {
-      "label": "Enterprise App Development",
-      "path": "/solutions/enterprise-app-development"
-    },
-    {
-      "label": "Application Solutions",
-      "path": "/solutions/application-solutions"
-    },
-    {
-      "label": "On-Demand Application",
-      "path": "/solutions/on-demand-application"
-    }
-  ],
-  "Industries We Serve": [
-    {
-      "label": "Healthcare Web Development",
-      "path": "/industries/healthcare-web-development"
-    },
-    {
-      "label": "Travel Web Development",
-      "path": "/industries/travel-web-development"
-    },
-    {
-      "label": "Real Estate Web Development",
-      "path": "/industries/real-estate-web-development"
-    },
-    {
-      "label": "E-commerce Development",
-      "path": "/industries/e-commerce-development"
-    },
-    {
-      "label": "Transportation & Logistics",
-      "path": "/industries/transportation-logistics"
-    },
-    {
-      "label": "E-Learning Website Design",
-      "path": "/industries/e-learning-website-design"
-    },
-    {
-      "label": "Media & Entertainment",
-      "path": "/industries/media-entertainment"
-    },
-    {
-      "label": "Finance & Insurance",
-      "path": "/industries/finance-insurance"
-    },
-    {
-      "label": "Logistics App Development",
-      "path": "/industries/logistics-app-development"
-    },
-    {
-      "label": "Gaming App Development",
-      "path": "/industries/gaming-app-development"
-    },
-    {
-      "label": "Sports App Development",
-      "path": "/industries/sports-app-development"
-    },
-    {
-      "label": "Grocery App Development",
-      "path": "/industries/grocery-app-development"
-    }
-  ],
-  "Explore By Location": [
-    {
-      "label": "Web Development Company in Delhi",
-      "path": "/locations/web-development-company-in-delhi"
-    },
-    {
-      "label": "Web Development Company in Noida",
-      "path": "/locations/web-development-company-in-noida"
-    },
-    {
-      "label": "Web Development Company in Gurgaon",
-      "path": "/locations/web-development-company-in-gurgaon"
-    },
-    {
-      "label": "Web Development Company in Faridabad",
-      "path": "/locations/web-development-company-in-faridabad"
-    },
-    {
-      "label": "Web Development Company in Ghaziabad",
-      "path": "/locations/web-development-company-in-ghaziabad"
-    },
-    {
-      "label": "Web Development Company in South Delhi",
-      "path": "/locations/web-development-company-in-south-delhi"
-    },
-    {
-      "label": "Web Development Company in Nehru Place",
-      "path": "/locations/web-development-company-in-nehru-place"
-    },
-    {
-      "label": "Web Development Company in Okhla",
-      "path": "/locations/web-development-company-in-okhla"
-    },
-    {
-      "label": "Web Development Company in Mumbai",
-      "path": "/locations/web-development-company-in-mumbai"
-    },
-    {
-      "label": "Web Development Company in Pune",
-      "path": "/locations/web-development-company-in-pune"
-    },
-    {
-      "label": "Web Development Company in Bangalore",
-      "path": "/locations/web-development-company-in-bangalore"
-    },
-    {
-      "label": "Web Development Company in Hyderabad",
-      "path": "/locations/web-development-company-in-hyderabad"
-    }
-  ],
-  "Quick Links": [
-    {
-      "label": "About Us",
-      "path": "/about"
-    },
-    {
-      "label": "Portfolio",
-      "path": "/portfolio"
-    },
-    {
-      "label": "Insights",
-      "path": "/insights"
-    },
-    {
-      "label": "Career",
-      "path": "/career"
-    },
-    {
-      "label": "All Locations",
-      "path": "/locations"
-    },
-    {
-      "label": "Contact Us",
-      "path": "/contact"
-    },
-    {
-      "label": "FAQ",
-      "path": "/faq"
-    },
-    {
-      "label": "Sitemap",
-      "path": "/sitemap"
-    }
-  ]
-};

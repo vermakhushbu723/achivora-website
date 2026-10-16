@@ -4,20 +4,21 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { Link } from '@tanstack/react-router';
+import { ArrowRight } from 'lucide-react';
 import { FAQS } from '@/constants/site';
 import { Reveal, Section, SectionHeading } from './Section';
 
 export default function FaqSection() {
-  // Two balanced columns, mirroring the reference layout on desktop.
-  const mid = Math.ceil(FAQS.length / 2);
-  const columns = [FAQS.slice(0, mid), FAQS.slice(mid)];
+  // The six most-asked questions, in two columns; the rest live on /faq.
+  const top = FAQS.slice(0, 6);
+  const columns = [top.slice(0, 3), top.slice(3)];
 
   return (
     <Section id="faq" band="canvas">
       <SectionHeading
         eyebrow="Frequently Asked Questions"
         title="Got Questions? We've Got Answers"
-        subtitle="The things clients ask us most often, answered plainly"
       />
 
       <div className="grid lg:grid-cols-2 gap-6 items-start">
@@ -41,6 +42,13 @@ export default function FaqSection() {
             </Accordion>
           </Reveal>
         ))}
+      </div>
+
+      <div className="text-center mt-8">
+        <Link to="/faq" className="inline-flex items-center gap-1.5 text-primary font-bold text-sm">
+          See all questions
+          <ArrowRight className="h-4 w-4" />
+        </Link>
       </div>
     </Section>
   );

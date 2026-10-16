@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, Heart, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { Clock, Heart, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { SiFacebook, SiInstagram, SiLinkedin, SiX, SiYoutube } from 'react-icons/si';
 import { useNavigate } from '@tanstack/react-router';
 import Logo from './Logo';
@@ -12,11 +12,20 @@ const SOCIALS = [
   { Icon: SiFacebook, href: SITE.social.facebook, label: 'Facebook' },
 ];
 
+/** Pages the header does not link to directly, plus the main entry points. */
+const FOOTER_LINKS = [
+  { label: 'Services', path: '/services' },
+  { label: 'Solutions', path: '/solutions' },
+  { label: 'Industries', path: '/industries' },
+  { label: 'Locations', path: '/locations' },
+  { label: 'Career', path: '/career' },
+  { label: 'FAQ', path: '/faq' },
+];
+
 /**
- * Compact footer. The navigation lives in the header's mega menus, so
- * repeating those link columns here only added height — this keeps the
- * footer to what the header does not already offer: how to reach us, where
- * we are, and one way to start a project.
+ * Compact footer: brand, a short link list for the pages the header leaves
+ * out, and every way to reach us. The call to action lives in the band just
+ * above the footer on each page, so it is not repeated here.
  */
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,7 +40,7 @@ export default function Footer() {
       <div className="footer-aurora pointer-events-none" aria-hidden="true" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-5">
-        <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr_1fr_1.1fr] pb-8 border-b border-white/10">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.7fr_1.4fr] pb-8 border-b border-white/10">
           {/* Brand + socials */}
           <div>
             <button onClick={() => navigate({ to: '/' })} className="mb-3 group block">
@@ -60,6 +69,23 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h4 className="font-bold text-white text-sm mb-3">Explore</h4>
+            <ul className="space-y-2 text-sm text-white/50">
+              {FOOTER_LINKS.map((link) => (
+                <li key={link.path}>
+                  <button
+                    onClick={() => navigate({ to: link.path })}
+                    className="footer-link hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Contact */}
@@ -94,42 +120,15 @@ export default function Footer() {
                   <MessageCircle className="h-3.5 w-3.5 shrink-0" /> Chat on WhatsApp
                 </a>
               </li>
-              <li className="inline-flex items-start gap-2 pt-1">
+              {SITE.offices.map((office) => (
+                <li key={office.address} className="flex items-start gap-2">
+                  <MapPin className="h-3.5 w-3.5 shrink-0 mt-0.5" /> {office.address}
+                </li>
+              ))}
+              <li className="flex items-start gap-2">
                 <Clock className="h-3.5 w-3.5 shrink-0 mt-0.5" /> {SITE.businessHours}
               </li>
             </ul>
-          </div>
-
-          {/* Presence */}
-          <div>
-            <h4 className="font-bold text-white text-sm mb-3">Our Presence</h4>
-            <div className="space-y-2.5">
-              {SITE.offices.map((office) => (
-                <div key={office.country} className="flex gap-2 text-sm text-white/50">
-                  <MapPin className="h-3.5 w-3.5 shrink-0 mt-0.5" />
-                  <span className="leading-snug">
-                    <span className="text-white/80 font-semibold">{office.country}</span>
-                    <br />
-                    {office.address}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="rounded-2xl bg-white/5 border border-white/10 p-5 self-start">
-            <p className="font-bold text-white text-sm mb-1">Have a project in mind?</p>
-            <p className="text-white/50 text-sm mb-4 leading-snug">
-              Share a brief and get an estimate within two working days.
-            </p>
-            <button
-              onClick={() => navigate({ to: '/contact' })}
-              className="btn-primary w-full py-2.5 text-sm group"
-            >
-              Start Your Project
-              <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-            </button>
           </div>
         </div>
 

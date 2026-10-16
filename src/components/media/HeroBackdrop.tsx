@@ -20,7 +20,8 @@ export default function HeroBackdrop({
   const scrim = {
     soft: 'from-black/70 via-black/55 to-black/70',
     medium: 'from-black/85 via-black/70 to-black/80',
-    strong: 'from-black/92 via-black/85 to-black/90',
+    // Tailwind only generates opacities on its 5-step scale, so no /92 here.
+    strong: 'from-black/90 via-black/85 to-black/90',
   }[intensity];
 
   return (

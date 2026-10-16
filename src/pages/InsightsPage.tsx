@@ -1,75 +1,42 @@
-import { useEffect, useMemo, useState } from 'react';
-import { ArrowRight, CalendarDays, Clock, Search } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { ArrowRight, CalendarDays, Clock } from 'lucide-react';
 import { useNavigate } from '@tanstack/react-router';
 import { BLOG_POSTS } from '@/data/blog';
 import { Reveal, Section } from '@/components/home/Section';
 import BuildTogether from '@/components/home/BuildTogether';
-import HeroBackdrop from '@/components/media/HeroBackdrop';
+import PageHero from '@/components/PageHero';
+import { usePageMeta } from '@/hooks/usePageMeta';
 
 export default function InsightsPage() {
   const navigate = useNavigate();
-  const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All');
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  usePageMeta({
+    title: 'Blog — Web Development, SEO & Digital Marketing Tips',
+    description:
+      'Practical articles on website design, SEO, digital marketing, e-commerce and AI for Indian businesses, from the Achivora team.',
+    path: '/insights',
+  });
 
   const categories = useMemo(
     () => ['All', ...Array.from(new Set(BLOG_POSTS.map((p) => p.category)))],
     [],
   );
 
-  const posts = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return BLOG_POSTS.filter((post) => {
-      const matchesCategory = category === 'All' || post.category === category;
-      const matchesQuery =
-        !q ||
-        post.title.toLowerCase().includes(q) ||
-        post.excerpt.toLowerCase().includes(q);
-      return matchesCategory && matchesQuery;
-    });
-  }, [query, category]);
+  const posts = useMemo(
+    () => (category === 'All' ? BLOG_POSTS : BLOG_POSTS.filter((p) => p.category === category)),
+    [category],
+  );
 
   const [featured, ...rest] = posts;
 
   return (
     <div className="animate-fade-in">
-      {/* Hero */}
-      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
-        <HeroBackdrop image="writing" intensity="medium" />
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
-            AI, Software & Tech Insights
-          </p>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
-            Insights, Trends & <span className="text-primary">Strategies</span>
-          </h1>
-          <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
-            {BLOG_POSTS.length} articles from our engineers and strategists on what is
-            actually working right now.
-          </p>
-
-          <div className="max-w-xl mx-auto mt-9">
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-text-hint" />
-              <input
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search articles…"
-                className="w-full h-14 pl-12 pr-4 rounded-full bg-surface border border-border text-text-main placeholder:text-text-hint focus:outline-none focus:ring-2 focus:ring-primary/40 transition-shadow"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        image="writing"
+        title="Blog"
+        subtitle="Practical writing on websites, SEO, marketing and AI for growing businesses."
+      />
 
       <Section band="canvas">
         {/* Category chips */}

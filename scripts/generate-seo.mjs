@@ -15,11 +15,26 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://achivora.com';
 
-/** Pulls every `"slug": "..."` / `slug: '...'` out of a data file. */
-function slugsFrom(file) {
-  const text = readFileSync(resolve(ROOT, 'src/data', file), 'utf8');
-  const found = [...text.matchAll(/["']?slug["']?\s*:\s*["']([a-z0-9-]+)["']/g)];
-  return [...new Set(found.map((m) => m[1]))];
+const read = (file) => readFileSync(resolve(ROOT, 'src/data', file), 'utf8');
+
+/** Catalogue pages: each entry's own slug and section, not the merged ones it lists. */
+function catalogPaths() {
+  const text = read('catalog.ts');
+  return [...text.matchAll(/^ {4}slug: '([a-z0-9-]+)',\r?\n {4}section: '([a-z]+)'/gm)].map(
+    ([, slug, section]) => `/${section}/${slug}`,
+  );
+}
+
+/** One page per city, slugged the same way as `citySlug` in cities.ts. */
+function cityPaths() {
+  const text = read('cities.ts');
+  return [...text.matchAll(/^  \['([^']+)', '[^']+'\],/gm)].map(
+    ([, city]) => `/locations/web-development-company-in-${city.toLowerCase().replace(/\s+/g, '-')}`,
+  );
+}
+
+function blogPaths() {
+  return [...read('blog.ts').matchAll(/"slug": "([a-z0-9-]+)"/g)].map(([, slug]) => `/insights/${slug}`);
 }
 
 /* Static routes, with the priority and cadence each one earns. A detail page
@@ -36,34 +51,18 @@ const STATIC_ROUTES = [
   { path: '/career', priority: '0.7', changefreq: 'weekly' },
   { path: '/contact', priority: '0.9', changefreq: 'monthly' },
   { path: '/faq', priority: '0.6', changefreq: 'monthly' },
-  { path: '/sitemap', priority: '0.4', changefreq: 'monthly' },
   { path: '/privacy-policy', priority: '0.3', changefreq: 'yearly' },
   { path: '/terms-conditions', priority: '0.3', changefreq: 'yearly' },
-  { path: '/website-development', priority: '0.7', changefreq: 'monthly' },
-  { path: '/app-development', priority: '0.7', changefreq: 'monthly' },
-  { path: '/software-solutions', priority: '0.7', changefreq: 'monthly' },
-];
-
-const COLLECTIONS = [
-  { file: 'services.ts', base: '/services', priority: '0.8' },
-  { file: 'solutions.ts', base: '/solutions', priority: '0.8' },
-  { file: 'industries.ts', base: '/industries', priority: '0.8' },
-  { file: 'cities.ts', base: '/locations', priority: '0.6' },
-  { file: 'blog.ts', base: '/insights', priority: '0.6' },
 ];
 
 const today = new Date().toISOString().slice(0, 10);
 
 const urls = [
-  ...STATIC_ROUTES.map((r) => ({ ...r, loc: `${SITE}${r.path}` })),
-  ...COLLECTIONS.flatMap(({ file, base, priority }) =>
-    slugsFrom(file).map((slug) => ({
-      loc: `${SITE}${base}/${slug}`,
-      priority,
-      changefreq: 'monthly',
-    })),
-  ),
-];
+  ...STATIC_ROUTES,
+  ...catalogPaths().map((path) => ({ path, priority: '0.8' })),
+  ...cityPaths().map((path) => ({ path, priority: '0.6' })),
+  ...blogPaths().map((path) => ({ path, priority: '0.6' })),
+].map((u) => ({ changefreq: 'monthly', ...u, loc: `${SITE}${u.path}` }));
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

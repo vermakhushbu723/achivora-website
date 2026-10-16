@@ -5,6 +5,7 @@ import {
   createRoute,
   lazyRouteComponent,
   Outlet,
+  redirect,
 } from '@tanstack/react-router';
 import { ThemeProvider } from 'next-themes';
 import { Toaster } from '@/components/ui/sonner';
@@ -16,8 +17,7 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 
 import NotFoundPage from './pages/NotFoundPage';
-
-// Legacy standalone service pages, kept so existing links do not break.
+import { REDIRECTS } from './data/redirects';
 
 /** Public marketing shell: header, footer and the floating contact rail. */
 function SiteLayout() {
@@ -36,6 +36,11 @@ function SiteLayout() {
 /* The admin panel is a different product on the same origin, so it hangs
    off the root directly and never renders the marketing chrome. */
 const rootRoute = createRootRoute({
+  // Merged and retired URLs forward to the page that replaced them.
+  beforeLoad: ({ location }) => {
+    const target = REDIRECTS[location.pathname.replace(/\/$/, '') || '/'];
+    if (target) throw redirect({ to: target, replace: true });
+  },
   component: () => (
     <>
       <Outlet />
@@ -105,24 +110,19 @@ const privacyRoute = createRoute({ getParentRoute: () => siteRoute, path: '/priv
 const termsRoute = createRoute({ getParentRoute: () => siteRoute, path: '/terms-conditions', component: lazyRouteComponent(() => import('./pages/TermsConditionsPage')) });
 const portfolioRoute = createRoute({ getParentRoute: () => siteRoute, path: '/portfolio', component: lazyRouteComponent(() => import('./pages/PortfolioPage')) });
 const careerRoute = createRoute({ getParentRoute: () => siteRoute, path: '/career', component: lazyRouteComponent(() => import('./pages/CareerPage')) });
-const sitemapRoute = createRoute({ getParentRoute: () => siteRoute, path: '/sitemap', component: lazyRouteComponent(() => import('./pages/SitemapPage')) });
 
-// Catalogue indexes and their dynamic detail routes
-const servicesRoute = createRoute({ getParentRoute: () => siteRoute, path: '/services', component: lazyRouteComponent(() => import('./pages/ServicesPage')) });
-const serviceDetailRoute = createRoute({ getParentRoute: () => siteRoute, path: '/services/$slug', component: lazyRouteComponent(() => import('./pages/ServiceDetailPage')) });
-const solutionsRoute = createRoute({ getParentRoute: () => siteRoute, path: '/solutions', component: lazyRouteComponent(() => import('./pages/SolutionsPage')) });
-const solutionDetailRoute = createRoute({ getParentRoute: () => siteRoute, path: '/solutions/$slug', component: lazyRouteComponent(() => import('./pages/SolutionDetailPage')) });
-const industriesRoute = createRoute({ getParentRoute: () => siteRoute, path: '/industries', component: lazyRouteComponent(() => import('./pages/IndustriesPage')) });
-const industryDetailRoute = createRoute({ getParentRoute: () => siteRoute, path: '/industries/$slug', component: lazyRouteComponent(() => import('./pages/IndustryDetailPage')) });
+// Catalogue indexes and detail pages share one component
+const catalogPage = lazyRouteComponent(() => import('./pages/CatalogPage'));
+const servicesRoute = createRoute({ getParentRoute: () => siteRoute, path: '/services', component: catalogPage });
+const serviceDetailRoute = createRoute({ getParentRoute: () => siteRoute, path: '/services/$slug', component: catalogPage });
+const solutionsRoute = createRoute({ getParentRoute: () => siteRoute, path: '/solutions', component: catalogPage });
+const solutionDetailRoute = createRoute({ getParentRoute: () => siteRoute, path: '/solutions/$slug', component: catalogPage });
+const industriesRoute = createRoute({ getParentRoute: () => siteRoute, path: '/industries', component: catalogPage });
+const industryDetailRoute = createRoute({ getParentRoute: () => siteRoute, path: '/industries/$slug', component: catalogPage });
 const locationsRoute = createRoute({ getParentRoute: () => siteRoute, path: '/locations', component: lazyRouteComponent(() => import('./pages/LocationsPage')) });
 const cityDetailRoute = createRoute({ getParentRoute: () => siteRoute, path: '/locations/$slug', component: lazyRouteComponent(() => import('./pages/CityDetailPage')) });
 const insightsRoute = createRoute({ getParentRoute: () => siteRoute, path: '/insights', component: lazyRouteComponent(() => import('./pages/InsightsPage')) });
 const blogPostRoute = createRoute({ getParentRoute: () => siteRoute, path: '/insights/$slug', component: lazyRouteComponent(() => import('./pages/BlogPostPage')) });
-
-// Legacy paths
-const websiteDevelopmentRoute = createRoute({ getParentRoute: () => siteRoute, path: '/website-development', component: lazyRouteComponent(() => import('./pages/WebsiteDevelopmentPage')) });
-const appDevelopmentRoute = createRoute({ getParentRoute: () => siteRoute, path: '/app-development', component: lazyRouteComponent(() => import('./pages/AppDevelopmentPage')) });
-const softwareSolutionsRoute = createRoute({ getParentRoute: () => siteRoute, path: '/software-solutions', component: lazyRouteComponent(() => import('./pages/SoftwareSolutionsPage')) });
 
 const routeTree = rootRoute.addChildren([
   siteRoute.addChildren([
@@ -134,7 +134,6 @@ const routeTree = rootRoute.addChildren([
   termsRoute,
   portfolioRoute,
   careerRoute,
-  sitemapRoute,
   servicesRoute,
   serviceDetailRoute,
   solutionsRoute,
@@ -145,9 +144,6 @@ const routeTree = rootRoute.addChildren([
   cityDetailRoute,
   insightsRoute,
   blogPostRoute,
-  websiteDevelopmentRoute,
-  appDevelopmentRoute,
-    softwareSolutionsRoute,
   ]),
   adminRoute.addChildren([
     adminIndexRoute,

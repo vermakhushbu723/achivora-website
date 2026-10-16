@@ -3,13 +3,18 @@ import { Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { SITE } from '@/constants/site';
 import HeroBackdrop from '@/components/media/HeroBackdrop';
+import { usePageMeta } from '@/hooks/usePageMeta';
 
 export default function PrivacyPolicyPage() {
+  usePageMeta({
+    title: 'Privacy Policy',
+    description: 'How Achivora collects, uses and protects the information you share through this website.',
+    path: '/privacy-policy',
+  });
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-    window.scrollTo(0, 0);
   }, []);
 
   const sections = [

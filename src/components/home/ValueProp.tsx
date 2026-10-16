@@ -25,11 +25,6 @@ function Stat({ value, suffix, label, active }: {
 export default function ValueProp() {
   const { ref, shown } = useReveal<HTMLDivElement>(0.3);
 
-  const highlights = [
-    'Product thinking before a single line of code',
-    'Senior engineers on every engagement',
-    'Code and infrastructure you fully own',
-  ];
 
   return (
     <Section band="canvas">
@@ -46,7 +41,7 @@ export default function ValueProp() {
           ))}
 
           <ul className="mt-6 space-y-3">
-            {highlights.map((item) => (
+            {VALUE_PROP.highlights.map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <CheckCircle2 className="h-5 w-5 text-success shrink-0 mt-0.5" />
                 <span className="text-text-main text-sm font-medium">{item}</span>

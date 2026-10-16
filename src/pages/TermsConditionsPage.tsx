@@ -3,13 +3,18 @@ import { FileText } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { SITE } from '@/constants/site';
 import HeroBackdrop from '@/components/media/HeroBackdrop';
+import { usePageMeta } from '@/hooks/usePageMeta';
 
 export default function TermsConditionsPage() {
+  usePageMeta({
+    title: 'Terms & Conditions',
+    description: 'The terms that apply to using the Achivora website and our services.',
+    path: '/terms-conditions',
+  });
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-    window.scrollTo(0, 0);
   }, []);
 
   const sections = [

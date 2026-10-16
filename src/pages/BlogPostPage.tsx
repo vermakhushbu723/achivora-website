@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { ArrowLeft, ArrowRight, CalendarDays, ChevronRight, Clock } from 'lucide-react';
 import { useNavigate, useParams } from '@tanstack/react-router';
 import { BLOG_POSTS } from '@/data/blog';
@@ -6,15 +5,18 @@ import { Reveal, Section, SectionHeading } from '@/components/home/Section';
 import BuildTogether from '@/components/home/BuildTogether';
 import NotFoundPage from './NotFoundPage';
 import HeroBackdrop from '@/components/media/HeroBackdrop';
+import { usePageMeta } from '@/hooks/usePageMeta';
 
 export default function BlogPostPage() {
   const { slug } = useParams({ strict: false }) as { slug?: string };
   const navigate = useNavigate();
   const post = BLOG_POSTS.find((p) => p.slug === slug);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
+  usePageMeta({
+    title: post?.title ?? 'Article not found',
+    description: post?.excerpt ?? '',
+    path: `/insights/${slug ?? ''}`,
+  });
 
   if (!post) return <NotFoundPage />;
 
@@ -46,7 +48,7 @@ export default function BlogPostPage() {
             </button>
             <ChevronRight className="h-3.5 w-3.5" />
             <button onClick={() => navigate({ to: '/insights' })} className="hover:text-white transition-colors">
-              Insights
+              Blog
             </button>
           </nav>
 

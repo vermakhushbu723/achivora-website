@@ -6,8 +6,8 @@ export default function ProcessSteps() {
     <Section id="process" band="canvas">
       <SectionHeading
         eyebrow="How We Work"
-        title="Smart Digital Services for Modern Businesses"
-        subtitle="An expert-driven product development process, refined over 1500+ projects"
+        title="Our Software Development Process"
+        subtitle="Five clear stages, with a working demo every two weeks"
       />
 
       <div className="relative">

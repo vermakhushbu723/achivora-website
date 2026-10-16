@@ -6,16 +6,24 @@ import HeroBackdrop from '@/components/media/HeroBackdrop';
 export default function NotFoundPage() {
   const navigate = useNavigate();
 
+  // Tell crawlers not to index a URL that has no page behind it.
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = 'Page not found | Achivora';
+    const robots = document.head.querySelector<HTMLMetaElement>('meta[name="robots"]');
+    const previous = robots?.content;
+    if (robots) robots.content = 'noindex';
+    return () => {
+      if (robots && previous) robots.content = previous;
+    };
   }, []);
 
   const shortcuts = [
     { label: 'All Services', path: '/services' },
     { label: 'Solutions', path: '/solutions' },
     { label: 'Industries', path: '/industries' },
-    { label: 'Insights', path: '/insights' },
-    { label: 'Sitemap', path: '/sitemap' },
+    { label: 'Blog', path: '/insights' },
+    { label: 'Contact', path: '/contact' },
   ];
 
   return (

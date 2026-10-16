@@ -1,43 +1,9 @@
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
 import PhoneMockup from './PhoneMockup';
-import type { ScreenSpec } from './screens';
-import PhoneScreenshot from './PhoneScreenshot';
-import { APP_SCREENSHOTS } from '@/constants/media';
 import { icon } from '@/components/home/icons';
-import { resolveDomain, type AppDomain, type AppRoleSpec } from '@/data/appDomains';
+import type { AppDomain, AppRoleSpec } from '@/data/appDomains';
 import { Reveal, Section, SectionHeading } from '@/components/home/Section';
-
-/* ── The apps that make up this product ─────────────────────────────────── */
-
-export function AppSuiteSection({ domain }: { domain: AppDomain }) {
-  return (
-    <Section band="canvas">
-      <SectionHeading
-        eyebrow="Core Solution"
-        title={`What we build for your ${domain.label}`}
-        subtitle={`${domain.roles.length} connected apps, one platform — designed, built and shipped together`}
-      />
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {domain.roles.map((role, i) => {
-          const RoleIcon = icon(role.icon);
-          return (
-            <Reveal key={role.title} delay={i * 80}>
-              <div className="surface-card h-full p-5 text-center hover:-translate-y-1.5 transition-all duration-300 group">
-                <span className="w-16 h-16 rounded-2xl bg-job-tag-bg mx-auto flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-primary">
-                  <RoleIcon className="h-8 w-8 text-primary transition-colors duration-300 group-hover:text-white" />
-                </span>
-                <h3 className="font-bold text-text-main text-lg mb-2">{role.title}</h3>
-                <p className="text-text-sub text-sm leading-relaxed">{role.description}</p>
-              </div>
-            </Reveal>
-          );
-        })}
-      </div>
-    </Section>
-  );
-}
 
 /* ── Per-app screen carousel ────────────────────────────────────────────── */
 
@@ -167,92 +133,6 @@ export function AppScreensSection({ domain }: { domain: AppDomain }) {
         {domain.roles.map((role, i) => (
           <RoleScreens key={role.title} role={role} flip={i % 2 === 1} />
         ))}
-      </div>
-    </Section>
-  );
-}
-
-/* ── Compact homepage strip ─────────────────────────────────────────────── */
-
-const PREVIEW_SLUGS = [
-  'food-delivery-app-development',
-  'fintech-app-development',
-  'crm-development',
-  'ai-agent-development',
-];
-
-/**
- * One card in the strip: a real screenshot where we have one, the generated
- * mockup where we do not. The caption follows whichever is showing, so a
- * missing file never leaves a screen labelled as something it is not.
- */
-function PreviewCard({
-  src,
-  label,
-  spec,
-  fallbackLabel,
-}: {
-  src: string;
-  label: string;
-  spec: ScreenSpec;
-  fallbackLabel: string;
-}) {
-  const [usingFallback, setUsingFallback] = useState(false);
-  const lift = 'transition-transform duration-500 hover:-translate-y-2';
-
-  return (
-    <figure className="flex flex-col items-center">
-      {usingFallback ? (
-        <PhoneMockup spec={spec} className={lift} />
-      ) : (
-        <PhoneScreenshot
-          src={src}
-          alt={`${label} screen`}
-          className={lift}
-          onFallback={() => setUsingFallback(true)}
-          fallback={null}
-        />
-      )}
-      <figcaption className="mt-4 text-text-main font-bold text-sm">
-        {usingFallback ? fallbackLabel : label}
-      </figcaption>
-    </figure>
-  );
-}
-
-export function AppPreviewStrip() {
-  /* Real screenshots of shipped apps, each paired with the generated mockup
-     that stands in if its file has not been added yet. */
-  const cards = APP_SCREENSHOTS.map((shot, i) => {
-    const domain = resolveDomain(PREVIEW_SLUGS[i % PREVIEW_SLUGS.length]);
-    return { ...shot, spec: domain.roles[0].screens[0].spec, fallbackLabel: domain.label };
-  });
-
-  return (
-    <Section band="canvas">
-      <SectionHeading
-        eyebrow="Product Showcase"
-        title="Apps we design and ship"
-        subtitle="Delivery, fintech, enterprise and AI — every screen below is a product we build"
-      />
-
-      <div className="relative">
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[36rem] h-72 rounded-full bg-primary/10 blur-3xl" />
-        </div>
-
-        <div className="relative flex gap-6 overflow-x-auto pb-4 lg:justify-center snap-x">
-          {cards.map((card, i) => (
-            <Reveal key={card.label} delay={i * 90} className="snap-center">
-              <PreviewCard
-                src={card.src}
-                label={card.label}
-                spec={card.spec}
-                fallbackLabel={card.fallbackLabel}
-              />
-            </Reveal>
-          ))}
-        </div>
       </div>
     </Section>
   );

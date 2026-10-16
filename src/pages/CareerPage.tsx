@@ -1,18 +1,9 @@
-import { useEffect, useState } from 'react';
-import {
-  ArrowRight,
-  Briefcase,
-  Clock,
-  GraduationCap,
-  HeartPulse,
-  MapPin,
-  Rocket,
-  Users,
-} from 'lucide-react';
+import { useState } from 'react';
+import { ArrowRight, Briefcase, Clock, MapPin, Rocket, Users } from 'lucide-react';
 import { SITE } from '@/constants/site';
 import { Reveal, Section, SectionHeading } from '@/components/home/Section';
-import BuildTogether from '@/components/home/BuildTogether';
-import HeroBackdrop from '@/components/media/HeroBackdrop';
+import PageHero from '@/components/PageHero';
+import { usePageMeta } from '@/hooks/usePageMeta';
 import ApplyDialog from '@/components/career/ApplyDialog';
 
 const OPENINGS = [
@@ -30,9 +21,6 @@ const OPENINGS = [
 
 const PERKS = [
   { icon: Rocket, title: 'Real ownership', description: 'You own features end to end, not a slice of a ticket someone else scoped.' },
-  { icon: GraduationCap, title: 'Learning budget', description: 'An annual budget for courses, certifications and conferences, no approval theatre.' },
-  { icon: HeartPulse, title: 'Health cover', description: 'Medical insurance for you and your immediate family from day one.' },
-  { icon: Clock, title: 'Flexible hours', description: 'Core overlap hours, and the rest of the day is yours to structure.' },
   { icon: Users, title: 'Senior mentorship', description: 'Paired with a senior engineer or designer for your first six months.' },
   { icon: Briefcase, title: 'Hybrid by default', description: 'Two days in the Noida office, three from wherever you work best.' },
 ];
@@ -41,43 +29,28 @@ export default function CareerPage() {
   /** The opening whose application dialog is on screen, if any. */
   const [applyingTo, setApplyingTo] = useState<string | null>(null);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  usePageMeta({
+    title: 'Careers — Developer & Designer Jobs in Noida',
+    description: `Join Achivora in Noida. ${OPENINGS.length} open roles for React, Laravel and Flutter developers, UI/UX designers, QA, DevOps and marketing.`,
+    path: '/career',
+  });
 
   return (
     <div className="animate-fade-in">
-      {/* Hero */}
-      <section className="relative pt-12 pb-12 overflow-hidden bg-hero-gradient">
-        <HeroBackdrop image="career" intensity="medium" />
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/25 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
-            Careers at Achivora
-          </p>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
-            Build Things That <span className="text-primary">Actually Ship</span>
-          </h1>
-          <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
-            We are a senior-heavy team in Noida working on products used by real
-            businesses across India. {OPENINGS.length} roles open right now.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        image="career"
+        title="Careers at Achivora"
+        subtitle={`A senior-heavy team in Noida building products for businesses across India. ${OPENINGS.length} roles open right now.`}
+      />
 
       {/* Perks */}
       <Section band="surface">
         <SectionHeading
           eyebrow="Why Join Us"
           title="What working here is actually like"
-          subtitle="No ping-pong tables in the pitch. Here is what we do offer."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-3 gap-6">
           {PERKS.map((perk, i) => (
             <Reveal key={perk.title} delay={i * 70}>
               <div className="surface-card h-full p-5 hover:-translate-y-1.5 transition-all duration-300">
@@ -156,8 +129,6 @@ export default function CareerPage() {
         open={applyingTo !== null}
         onOpenChange={(open) => !open && setApplyingTo(null)}
       />
-
-      <BuildTogether />
     </div>
   );
 }

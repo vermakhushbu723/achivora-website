@@ -1,17 +1,17 @@
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent } from '@/components/ui/card';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { toast } from 'sonner';
 import { SITE } from '@/constants/site';
-import HeroBackdrop from '@/components/media/HeroBackdrop';
+import PageHero from '@/components/PageHero';
+import { usePageMeta } from '@/hooks/usePageMeta';
 import { submitForm, type ApiError } from '@/lib/api';
 
 export default function ContactPage() {
-  const [isVisible, setIsVisible] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -20,10 +20,11 @@ export default function ContactPage() {
     message: ''
   });
 
-  useEffect(() => {
-    setIsVisible(true);
-    window.scrollTo(0, 0);
-  }, []);
+  usePageMeta({
+    title: 'Contact Us — Get a Free Quote',
+    description: `Contact Achivora, Noida Sector 62, for website, app and software development. Call ${SITE.phone}, WhatsApp or email ${SITE.email}.`,
+    path: '/contact',
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -57,93 +58,37 @@ export default function ContactPage() {
   };
 
   const contactInfo = [
-    {
-      icon: Mail,
-      title: 'Email',
-      value: SITE.email,
-      link: SITE.emailHref,
-      description: 'Send us an email anytime'
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: SITE.phone,
-      link: SITE.phoneHref,
-      description: 'Call us during business hours'
-    },
-    {
-      icon: Phone,
-      title: 'Alternate Phone',
-      value: SITE.phoneAlt,
-      link: SITE.phoneAltHref,
-      description: 'Also on WhatsApp'
-    },
-    {
-      icon: MapPin,
-      title: 'Address',
-      value: SITE.offices[0].address,
-      link: null,
-      description: 'Visit our office'
-    },
-    {
-      icon: Clock,
-      title: 'Business Hours',
-      value: SITE.businessHours,
-      link: null,
-      description: 'We are here to help'
-    }
+    ...SITE.phones.map((p) => ({ icon: Phone, value: p.display, link: p.href })),
+    { icon: MessageCircle, value: 'Chat on WhatsApp', link: SITE.whatsapp },
+    { icon: Mail, value: SITE.email, link: SITE.emailHref },
+    { icon: MapPin, value: SITE.offices[0].address, link: null },
+    { icon: Clock, value: SITE.businessHours, link: null },
   ];
 
   return (
     <div className="animate-fade-in">
-      {/* Hero Section */}
-      <section className="relative pt-12 pb-12 overflow-hidden bg-primary-gradient">
-        <HeroBackdrop image="officeMeeting" intensity="strong" />
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop"
-            alt="Contact Background"
-            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
-          />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div
-            className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 animate-fade-in-up' : 'opacity-0 translate-y-10'
-              }`}
-          >
-            <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">Let's Talk</p>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-[1.1] mb-5">
-              Get in <span className="text-primary-light">Touch</span>
-            </h1>
-            <p className="text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
-              Let's discuss how we can help your business grow with our expert development services
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        image="officeMeeting"
+        title="Contact Us"
+        subtitle="Tell us about your project and get a written estimate within two working days."
+      />
 
       {/* Contact Form and Info */}
       <section className="py-12 bg-surface">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form */}
-            <div
-              className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0 animate-fade-in-left' : 'opacity-0 -translate-x-10'
-                }`}
-            >
+            <div>
               <Card className="h-full border border-border bg-surface shadow-card">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 bg-job-tag-bg rounded-xl flex items-center justify-center shadow-card">
                       <Send className="h-6 w-6 text-primary" />
                     </div>
-                    <h2 className="text-3xl font-bold text-text-main">
+                    <h2 className="text-2xl font-bold text-text-main">
                       Send Us a Message
                     </h2>
                   </div>
-                  <p className="text-text-sub mb-8">
-                    Fill out the form below and we'll get back to you as soon as possible
-                  </p>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <Label htmlFor="name" className="text-base">Name *</Label>
@@ -210,78 +155,29 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Information */}
-            <div
-              className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-x-0 animate-fade-in-right' : 'opacity-0 translate-x-10'
-                }`}
-            >
-              <div className="space-y-6">
-                <div>
-                  <h2 className="text-3xl font-bold text-text-main mb-3">
-                    Contact Information
-                  </h2>
-                  <p className="text-lg text-text-sub mb-8">
-                    We're here to answer any questions you may have about our services
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  {contactInfo.map((info, index) => (
-                    <Card
-                      key={index}
-                      className="transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover border border-border bg-surface"
-                    >
-                      <CardContent className="p-6">
-                        <div className="flex items-start gap-4">
-                          <div className="w-14 h-14 bg-job-tag-bg rounded-xl flex items-center justify-center flex-shrink-0 shadow-card">
-                            <info.icon className="h-7 w-7 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="font-bold text-lg text-text-main mb-1">
-                              {info.title}
-                            </h3>
-                            <p className="text-sm text-text-sub mb-2">
-                              {info.description}
-                            </p>
-                            {info.link ? (
-                              <a
-                                href={info.link}
-                                className="text-primary hover:text-primary-dark transition-colors font-medium"
-                              >
-                                {info.value}
-                              </a>
-                            ) : (
-                              <p className="text-text-main font-medium">{info.value}</p>
-                            )}
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-
-                <Card className="overflow-hidden border border-border bg-surface shadow-card mt-8">
-                  <CardContent className="p-0">
-                    <div className="aspect-video bg-muted relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-                        alt="Location"
-                        className="w-full h-full object-cover opacity-20"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center">
-                          <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-                          <p className="text-xl text-text-main font-bold mb-2">
-                            Visit Our Office
-                          </p>
-                          <p className="text-text-sub">
-                            We'd love to meet you in person
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+            <div>
+              <h2 className="text-2xl font-bold text-text-main mb-5">Reach us directly</h2>
+              <ul className="space-y-4">
+                {contactInfo.map((info) => (
+                  <li key={info.value} className="flex items-start gap-3">
+                    <span className="w-10 h-10 bg-job-tag-bg rounded-xl flex items-center justify-center shrink-0">
+                      <info.icon className="h-5 w-5 text-primary" />
+                    </span>
+                    {info.link ? (
+                      <a
+                        href={info.link}
+                        target={info.link.startsWith('http') ? '_blank' : undefined}
+                        rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="pt-2 text-text-main font-medium hover:text-primary transition-colors"
+                      >
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="pt-2 text-text-main font-medium">{info.value}</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
