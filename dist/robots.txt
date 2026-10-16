@@ -1,0 +1,9 @@
+# https://achivora.com
+User-agent: *
+Allow: /
+
+# The admin panel holds submitted enquiries; keep it out of the index.
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: https://achivora.com/sitemap.xml
